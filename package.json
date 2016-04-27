@@ -4,6 +4,8 @@
   "description": "Simple boostrap 3 theme to build small and clean admin interfaces",
   "main": "index.js",
   "scripts": {
+    "build": "./bin/build",
+    "watch": "./bin/watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/LinkValue/MajoraAdminTheme/issues"
   },
-  "homepage": "https://github.com/LinkValue/MajoraAdminTheme#readme"
+  "homepage": "https://github.com/LinkValue/MajoraAdminTheme#readme",
+  "devDependencies": {
+    "node-sass": "^3.6.0",
+    "nodemon": "^1.9.2"
+  }
 }

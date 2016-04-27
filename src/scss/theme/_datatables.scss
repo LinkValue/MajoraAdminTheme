@@ -1,0 +1,80 @@
+.dataTables_filter {
+  text-align: left;
+}
+
+.dataTables_length {
+  text-align: right;
+}
+
+.dataTables_info,
+.dataTables_paginate {
+  display: inline-block;
+}
+
+.dataTables_paginate {
+  vertical-align: middle;
+  margin-left: 10px;
+
+  .paginate_button {
+    a {
+      z-index: auto;
+    }
+  }
+}
+
+table.dataTable {
+  th,
+  td {
+    &:active {
+      outline: none;
+    }
+  }
+
+  thead {
+    .sorting,
+    .sorting_asc,
+    .sorting_desc,
+    .sorting_asc_disabled,
+    .sorting_desc_disabled {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        font: normal normal normal .9em/1.5 FontAwesome;
+        text-rendering: auto;
+        color: $gray-neutral-70;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+
+    .sorting::after {
+      content: "\f0dc";
+    }
+
+    .sorting_asc,
+    .sorting_asc_disabled,
+    .sorting_desc,
+    .sorting_desc_disabled {
+      &::before {
+        content: "\f0dd";
+      }
+      &::after {
+        content: "\f0de";
+      }
+    }
+
+    .sorting_asc::after,
+    .sorting_desc::before {
+      color: $color-danger-light;
+    }
+  }
+}
+
+.checkbox-handler {
+  margin-top: 2px;
+}

@@ -1,0 +1,2 @@
+node-sass  --include-path src/scss src/scss/main.scss --output-style expanded dist/css/majora-theme.css
+node-sass  --include-path src/scss src/scss/main.scss --output-style compressed dist/css/majora-theme.min.css

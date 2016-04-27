@@ -1,0 +1,44 @@
+@import 'panel-heading';
+@import 'panel-tabs';
+@import 'panel-signets';
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray-neutral-95;
+}
+
+.panel-sponsor {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray-neutral-95;
+}
+
+.panel-body {
+  flex: 1;
+  background: $white;
+
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.panel-body-sponsor  {
+  flex: 1;
+
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.panel-heading {
+  @extend %panel-heading;
+}
+
+.panel-tabs {
+  @extend %panel-tabs;
+}
+
+.panel-signets {
+  @extend %panel-signets;
+}

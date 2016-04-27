@@ -1,0 +1,89 @@
+.login-body {
+  background-color: $gray-procelain;
+}
+
+.form-signin {
+  max-width: 330px;
+  margin: 100px auto 0;
+  background: $white;
+  border-radius: 5px;
+
+  .checkbox {
+    margin-bottom: 14px;
+    color: $gray-neutral-70;
+    font-weight: 300;
+    font-family: $font-0, $font-1;
+  }
+
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid $gray-neutral-90;
+    box-shadow: none;
+    font-size: 12px;
+  }
+
+  .btn-login {
+    background: $color-danger-light;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: $font-0, $font-1;
+    box-shadow: 0 4px $color-danger-dark;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    color: $gray-neutral-70;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  a {
+    color: $color-primary;
+
+    &:hover {
+      color: $gray-neutral-70;
+    }
+  }
+
+  h2.form-signin-heading {
+    margin: 0;
+    padding: 20px 15px;
+    text-align: center;
+    background: $color-primary;
+    border-radius: 5px 5px 0 0;
+    color: $white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: $font-0, $font-1;
+  }
+}
+
+.login-wrap {
+  padding: 20px;
+}
+
+.log-arrow-up {
+  background: $url-arrow-up no-repeat;
+  width: 20px;
+  height: 11px;
+  position: absolute;
+  right: 20px;
+  top: -10px;
+}
