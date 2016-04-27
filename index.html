@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajoraAdminTheme demo template</title>
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'FontAwesome';
+            src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?v=4.4.0');
+            src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),
+                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),
+                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),
+                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),
+                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+  </head>
+  <body class="">
+    <main id="container">
+      <header class="header white-bg">
+        <div class="sidebar-toggle-box">
+          <i class="fa fa-bars tooltips navigation-toggle" data-placement="right" data-original-title="Toggle Navigation"></i>
+        </div>
+        <!-- logo -->
+        <a href="#" class="logo"><img src="#" alt="MajoraAdminTheme logo"></a>
+        <!-- /logo -->
+        <div class="top-nav ">
+          <!-- search & user info -->
+          <ul class="nav pull-right top-menu">
+            <li>
+              <input type="text" class="form-control search" placeholder="Search">
+            </li>
+            <li class="dropdown language">
+              <a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img src="#" alt="">
+                <span class="username">EN</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><img src="es.png" alt=""> Spanish</a></li>
+                <li><a href="#"><img src="de.png" alt=""> German</a></li>
+                <li><a href="#"><img src="ru.png" alt=""> Russian</a></li>
+                <li><a href="#"><img src="fr.png" alt=""> French</a></li>
+              </ul>
+            </li>
+            <!-- user login dropdown -->
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="" width="29" height="29" >
+                <span class="username">Jhon Doue</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu extended logout">
+                <div class="log-arrow-up"></div>
+                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fa fa-bell-o"></i> Notification</a></li>
+                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+              </ul>
+            </li>
+            <!-- /user login dropdown -->
+          </ul>
+          <!-- /search & user info -->
+        </div>
+      </header>
+      <aside id="navigation" class="nav-collapse">
+        <ul class="sidebar-menu">
+          <li class="menu-item is-open">
+            <a class="menu-link" href="index.html">
+              <i class="menu-icon fa fa-dashboard"></i>
+              <span class="menu-label">Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-item has-sub">
+            <span class="menu-link">
+              <a class="menu-label" href="#" >
+                <i class="menu-icon fa fa-laptop"></i>
+                Sub Menu
+              </a>
+              <span class="menu-sub-toggle" role="toggle-sub-menu">
+                <i class="fa fa-chevron-down"></i>
+              </span>
+            </span>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a class="menu-link" href="#">Menu Item 1</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">Menu Item 2</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <section id="main-content">
+        <section class="wrapper">
+
+          <!-- breadcrumbs -->
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="breadcrumb">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-street-view"></i>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="active">
+                  Sub
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- panels -->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel">
+                <header class="panel-heading composed red">
+                  <a href class="combo">
+                    <i class="fa fa-bar-chart-o"></i>
+                  </a>
+                  <h3>Col-lg-6</h3>
+                  <span class="combo pull-right">
+                   Data text
+                  </span>
+                </header>
+                <div class="panel-body">
+                  <p>Panel col large 6</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="panel">
+                <header class="panel-heading composed red">
+                  <a href class="combo">
+                    <i class="fa fa-bar-chart-o"></i>
+                  </a>
+                  <h3>Col-lg-6</h3>
+                  <span class="combo pull-right">
+                   Data text
+                  </span>
+                </header>
+                <div class="panel-signets">
+                  <ul class="signets-list">
+                    <li class="signet">
+                      <a href="#">
+                        <i class="icon fa fa-edit"></i>
+                        <span class="no-wrap">Signet 1</span>
+                      </a>
+                    </li>
+                    <li class="signet active">
+                      <a href="#">
+                        <i class="icon fa fa-edit"></i>
+                        <span class="no-wrap">Signet 2</span>
+                      </a>
+                    </li>
+                    <li class="signet">
+                      <a href="#">
+                        <i class="icon fa fa-edit"></i>
+                        <span class="no-wrap">Signet 3</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="panel-body">
+                    <p>Panel col large 6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="panel">
+                <header class="panel-heading composed navy">
+                  <span class="combo">
+                    <i class="fa fa-bar-chart-o"></i>
+                  </span>
+                  <h3>Col-lg-6</h3>
+                  <a href class="combo pull-right">
+                   Data text
+                  </a>
+                </header>
+                <div class="panel-tabs">
+                  <ul class="tabs-list">
+                    <li class="tab">
+                      <a href="#">
+                        <i class="fa fa-bullseye"></i>
+                        Graphical
+                      </a>
+                    </li>
+                    <li class="tab active">
+                      <a href="#">
+                        <i class=" fa fa-th-large"></i>
+                        Tabular
+                      </a>
+                    </li>
+                    <li class="tab">
+                      <a href="#">
+                        <i class=" fa fa-align-justify"></i>
+                        Listing
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="panel-body">
+                  <p>Panel col large 6</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="panel">
+                <header class="panel-heading navy">
+                  Col-lg-6
+                </header>
+                <div class="panel-body">
+                  <p>Panel col small 6</p>
+                </div>
+                <footer class="panel-footer panel-tabs">
+                  <ul class="tabs-list">
+                    <li class="tab active">
+                      <a href="#">
+                        <i class="fa fa-bullseye"></i>
+                        Graphical
+                      </a>
+                    </li>
+                    <li class="tab">
+                      <a href="#">
+                        <i class=" fa fa-th-large"></i>
+                        Tabular
+                      </a>
+                    </li>
+                    <li class="tab">
+                      <a href="#">
+                        <i class=" fa fa-align-justify"></i>
+                        Listing
+                      </a>
+                    </li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <!--notification start-->
+              <section class="panel">
+                <div class="panel-body">
+                  <div class="alert alert-success alert-block fade in">
+                    <button data-dismiss="alert" class="close close-sm" type="button">
+                      <i class="fa fa-times"></i>
+                    </button>
+                    <h4>
+                      <i class="fa fa-ok-sign"></i>
+                      Success!
+                    </h4>
+                    <p>Best check yo self, you're not looking too good...</p>
+                  </div>
+                  <div class="alert alert-block alert-danger fade in">
+                    <button data-dismiss="alert" class="close close-sm" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                  </div>
+                  <div class="alert alert-success fade in">
+                    <button data-dismiss="alert" class="close close-sm" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <strong>Well done!</strong> You successfully read this important alert message.
+                  </div>
+                  <div class="alert alert-info fade in">
+                    <button data-dismiss="alert" class="close close-sm" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                  </div>
+                  <div class="alert alert-warning fade in">
+                    <button data-dismiss="alert" class="close close-sm" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                  </div>
+                </div>
+              </section>
+              <!--notification end-->
+
+              <!--modal start-->
+              <section class="panel">
+                <header class="panel-heading">
+                  Modal Dialogs
+                </header>
+                <div class="panel-body">
+                  <a class="btn btn-success" data-toggle="modal" href="#myModal">
+                    Dialog
+                  </a>
+                  <a class="btn btn-warning" data-toggle="modal" href="#myModal2">
+                    Confirm
+                  </a>
+                  <a class="btn btn-danger" data-toggle="modal" href="#myModal3">
+                    Alert !
+                  </a>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h4 class="modal-title">Modal Tittle</h4>
+                        </div>
+                        <div class="modal-body">
+                          Body goes here...
+                        </div>
+                        <div class="modal-footer">
+                          <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                          <button class="btn btn-success" type="button">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal -->
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h4 class="modal-title">Modal Tittle</h4>
+                        </div>
+                        <div class="modal-body">
+                          Body goes here...
+                        </div>
+                        <div class="modal-footer">
+                          <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                          <button class="btn btn-warning" type="button"> Confirm</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal -->
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          <h4 class="modal-title">Modal Tittle</h4>
+                        </div>
+                        <div class="modal-body">
+                          Body goes here...
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-danger" type="button"> Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal -->
+                </div>
+              </section>
+              <!--modal start-->
+            </div>
+            <div class="col-lg-6">
+              <section class="panel">
+                <header class="panel-heading">
+                  Default Buttons
+                </header>
+                <div class="panel-body">
+                  <button type="button" class="btn btn-default">Default</button>
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-success">Success</button>
+                  <button type="button" class="btn btn-info">Info</button>
+                  <button type="button" class="btn btn-warning">Warning</button>
+                  <button type="button" class="btn btn-danger">Danger</button>
+                </div>
+              </section>
+
+              <!--tooltips start-->
+              <section class="panel">
+                <div class="panel-body">
+                  <button title="" data-placement="top" data-toggle="tooltip" class="btn btn-default tooltips" type="button" data-original-title="Tooltip on top">Tooltip on top</button>
+                  <button title="" data-placement="left" data-toggle="tooltip" class="btn btn-default tooltips" type="button" data-original-title="Tooltip on left"> left</button>
+                  <button title="" data-placement="bottom" data-toggle="tooltip " class="btn btn-default tooltips" type="button" data-original-title="Tooltip on bottom"> bottom</button>
+                  <button title="" data-placement="right" data-toggle="tooltip" class="btn btn-default tooltips" type="button" data-original-title="Tooltip on right"> right</button>
+                </div>
+              </section>
+              <!--tooltips start-->
+
+              <!--popover start-->
+              <section class="panel">
+                <div class="panel-body">
+                  <button data-original-title="Popovers in top" data-content="And here's some amazing content. It's very engaging. right?" data-placement="top" data-trigger="hover" class="btn btn-info popovers">Popover on Top</button>
+                  <button data-original-title="Popovers in bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">Bottom</button>
+                  <button data-original-title="Popovers in right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="right" data-trigger="hover" class="btn btn-info popovers">Right</button>
+                  <button data-original-title="Popovers in left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="left" data-trigger="hover" class="btn btn-info popovers">Left</button>
+                </div>
+              </section>
+              <!--popover start-->
+
+              <section class="panel">
+                <header class="panel-heading navy">
+                  <ul class="nav nav-tabs">
+                    <li class="active">
+                      <a data-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="">
+                      <a data-toggle="tab" href="#about">About</a>
+                    </li>
+                    <li class="">
+                      <a data-toggle="tab" href="#profile">Profile</a>
+                    </li>
+                    <li class="">
+                      <a data-toggle="tab" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </header>
+                <div class="panel-body">
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane active">Home</div>
+                    <div id="about" class="tab-pane">About</div>
+                    <div id="profile" class="tab-pane">Profile</div>
+                    <div id="contact" class="tab-pane">Contact</div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="site-footer">
+        <div class="text-center">
+          2016 © LinkValue
+        </div>
+      </footer>
+    </main>
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="./js/common-scripts.js"></script>
+  </body>
+</html>

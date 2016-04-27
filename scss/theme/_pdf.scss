@@ -1,0 +1,61 @@
+.pdf {
+    $main-background-color: $white;
+    background: $main-background-color;
+    color: $black;
+    .header-main-content {
+        color: $white;
+        font-weight: bold;
+        .content-top {
+            &::after {
+                // Webkit vendor is for the pdf generator
+                background: -webkit-linear-gradient(left, $color_red_drop, $color_red_drop, transparent);
+                background: linear-gradient(to right, $color_red_drop, transparent);
+            }
+        }
+        .content-bottom {
+            font-style: italic;
+        }
+    }
+    .content-header {
+        h3 {
+            border-bottom-color: $black;
+            span {
+                background: $main-background-color;
+            }
+        }
+    }
+    .content {
+        h4 {
+            border-bottom-color: $gray_default;
+        }
+        table {
+            thead {
+                border-bottom-color: $gray_default;
+            }
+            tfoot, .border-top {
+                border-top-color: $gray_default;
+            }
+        }
+    }
+    .footer {
+        .footer-top {
+            border-top-color: $gray_default;
+            background: $gray_procelain;
+        }
+        .footer-bottom {
+            color: $white;
+            .company {
+                font-weight: bold;
+            }
+        }
+    }
+    &.vehicle_check {
+        .content {
+            table {
+                tr {
+                    border-bottom-color: $gray_default;
+                }
+            }
+        }
+    }
+}

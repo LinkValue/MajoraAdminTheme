@@ -1,0 +1,15 @@
+ul.form-collection {
+	margin-top: 20px;
+
+	li {
+		border: 1px solid $gray_neutral-90;
+		padding: 10px;
+		margin-bottom: 20px;
+		overflow-y: auto;
+
+		&.form-collection-add {
+			border: 0 solid transparent;
+			text-align: right;
+		}
+	}
+}

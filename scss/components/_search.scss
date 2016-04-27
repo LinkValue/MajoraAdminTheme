@@ -1,0 +1,19 @@
+.search {
+	margin-top: 6px;
+	width: 20px;
+	transition: all .3s ease;
+	border: 1px solid $white;
+	box-shadow: none;
+	background: $url_seach no-repeat 10px 8px;
+	padding: 0 5px 0 35px;
+	color: $white;
+	&:focus {
+		margin-top: 5px;
+		width: 180px;
+		border-color: $gray_neutral-70;
+		box-shadow: none;
+		color: $gray_neutral-50;
+		font-weight: 300;
+		transition: all .3s ease;
+	}
+}
