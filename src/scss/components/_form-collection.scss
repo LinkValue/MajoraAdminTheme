@@ -2,9 +2,11 @@ ul.form-collection {
   margin-top: 20px;
 
   li {
-    border: 1px solid $gray-neutral-90;
-    padding: 10px;
     margin-bottom: 20px;
+    padding: 10px;
+
+    border: 1px solid $gray-neutral-90;
+
     overflow-y: auto;
 
     &.form-collection-add {

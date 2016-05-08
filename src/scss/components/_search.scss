@@ -1,20 +1,28 @@
 .search {
-  margin-top: 6px;
   width: 20px;
-  transition: all .3s ease;
-  border: 1px solid $white;
-  box-shadow: none;
-  background: $url-seach no-repeat 10px 8px;
+  margin-top: 6px;
   padding: 0 5px 0 35px;
+
+  transition: all .3s ease;
+
+  border: 1px solid $white;
+  background: $url-seach no-repeat 10px 8px;
   color: $white;
 
+  box-shadow: none;
+
   &:focus {
-    margin-top: 5px;
     width: 180px;
-    border-color: $gray-neutral-70;
-    box-shadow: none;
-    color: $gray-neutral-50;
-    font-weight: 300;
+    margin-top: 5px;
+
     transition: all .3s ease;
+
+    border-color: $gray-neutral-70;
+
+    color: $gray-neutral-50;
+
+    font-weight: 300;
+
+    box-shadow: none;
   }
 }

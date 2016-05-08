@@ -5,20 +5,24 @@
 
   .signets-list {
     display: flex;
-    min-width: 5em;
     flex-direction: column;
+    order: 1;
+
+    min-width: 5em;
+
     margin: 0;
     padding: 0;
-    order: 1;
 
     .no-wrap {
       white-space: nowrap;
     }
 
     .icon {
-      vertical-align: bottom;
       color: $gray-neutral-80;
+
       font-size: 16px;
+
+      vertical-align: bottom;
     }
 
     .signet > * {
@@ -62,22 +66,26 @@
 
   &.reverse .panel-body {
     order: 1;
+
     border-right-width: 1px;
     border-radius: 0 0 4px;
   }
 
   .panel-body {
+    border-width: 0;
     border-style: solid;
     border-color: $signet-shadow;
-    border-width: 0;
+
     box-shadow: 2px 0 2px -2px $signet-shadow;
   }
 
   .signet {
     display: flex;
+
     position: relative;
     margin: 1px 0 0;
     padding: 0;
+
     z-index: 0;
 
     &:first-child {
@@ -86,13 +94,16 @@
 
     > * {
       display: block;
+
       width: 100%;
       height: 100%;
       padding: 15px;
-      text-align: center;
+
       border: none;
-      color: $gray-neutral-40;
       background: transparent;
+      color: $gray-neutral-40;
+
+      text-align: center;
       cursor: pointer;
 
       &:hover {

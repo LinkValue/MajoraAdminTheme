@@ -1,28 +1,29 @@
 %panel-heading {
   display: flex;
   flex-direction: row;
-  line-height: 50px;
+
   padding: 0 16px;
+
   border-radius: 4px 4px 0 0;
+
+  line-height: 50px;
 
   &.collapsible {
     display: block;
   }
 
   &.tab-right {
-    .nav > li {
-      &:first-child.active > a {
-        border-radius: 0;
-      }
+    .nav > li:first-child.active > a {
+      border-radius: 0;
+    }
 
-      &:last-child.active > a {
-        border-radius: 0 4px 0 0;
-      }
+    .nav > li:last-child.active > a {
+      border-radius: 0 4px 0 0;
     }
 
     .nav-tabs > li > a {
-      margin-left: 1px;
       margin-right: 0;
+      margin-left: 1px;
     }
   }
 
@@ -38,29 +39,57 @@
 
     .combo {
       padding: 0 16px;
-      line-height: inherit;
+
       background: $black-a20;
-      border-radius: 4px 0 0;
       color: inherit;
+
+      line-height: inherit;
+
       text-align: center;
+
+      &:first-child {
+        width: 50px;
+
+        border-radius: 4px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 4px 0 0;
+      }
+
+      &.text {
+        font-size: 12px;
+      }
+
+      & + .combo {
+        margin-left: 1px;
+      }
 
       .icon {
         font-size: 16px;
         vertical-align: middle;
       }
-
-      &:first-child {
-        width: 50px;
-      }
-
-      &.pull-right {
-        border-radius: 0 4px 0 0;
-        font-size: 12px;
-      }
     }
 
-    a.combo:hover {
+    a.combo:hover,
+    .combo.dropdown:hover {
       background: $black-a30;
+    }
+
+    .combo.dropdown {
+      display: flex;
+
+      padding: 0;
+    }
+
+    .combo.dropdown .btn {
+      padding: 0 16px;
+
+      border: 0;
+
+      background: none;
+
+      font: inherit;
     }
   }
 
@@ -69,51 +98,45 @@
     font-size: 13px;
     margin: 0 -16px -1px;
 
-    > li {
-      &:first-child {
-        &.active > a {
-          border-radius: 4px 0 0 0;
-        }
+    > li:first-child.active > a {
+      border-radius: 4px 0 0;
 
-        > a:hover {
-          border-radius: 4px 0 0 0;
-        }
+      &:hover {
+        border-radius: 4px 0 0;
       }
+    }
 
-      > a {
-        border-width: 0;
-        border-radius: 0;
-        color: $white;
+    > li > a {
+      border-width: 0;
+      border-radius: 0;
+      color: $white;
 
-        &:hover {
-          color: $gray-navy-dark;
-          background: $white;
-        }
-      }
-
-      &.active > a {
-        border-width: 0;
-        border-radius: 0;
-        color: $gray-navy-dark;
+      &:hover {
         background: $white;
+        color: $gray-navy-dark;
+      }
+    }
 
-        &:hover {
-          border-width: 0;
-          border-radius: 0;
-        }
+    > li.active > a {
+      border-width: 0;
+      border-radius: 0;
 
-        &:focus {
-          border-width: 0;
-          border-radius: 0;
-        }
+      background: $white;
+      color: $gray-navy-dark;
+
+      &:hover,
+      &:focus {
+        border-width: 0;
+        border-radius: 0;
       }
     }
   }
-  span.actions {
-    a {
-      color: $gray-neutral-60;
-      font-size: 12px;
-      margin-left: 10px;
-    }
+
+  .actions a {
+    margin-left: 10px;
+
+    color: $gray-neutral-60;
+
+    font-size: 12px;
   }
 }

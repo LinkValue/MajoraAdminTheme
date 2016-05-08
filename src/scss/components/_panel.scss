@@ -1,6 +1,6 @@
-@import 'panel-heading';
-@import 'panel-tabs';
-@import 'panel-signets';
+@import "panel-heading";
+@import "panel-tabs";
+@import "panel-signets";
 
 .panel {
   display: flex;
@@ -23,7 +23,7 @@
   }
 }
 
-.panel-body-sponsor  {
+.panel-body-sponsor {
   flex: 1;
 
   &:last-child {
