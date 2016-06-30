@@ -1,6 +1,6 @@
 {
   "name": "majora-admin-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple boostrap 3 theme to build small and clean admin interfaces",
   "main": "index.js",
   "scripts": {

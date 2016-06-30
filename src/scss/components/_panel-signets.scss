@@ -44,7 +44,6 @@
   .panel-body,
   .panel-body:last-child {
     order: 0;
-    border-left-width: 1px;
     border-radius: 0 0 0 4px;
   }
 
@@ -66,8 +65,6 @@
 
   &.reverse .panel-body {
     order: 1;
-
-    border-right-width: 1px;
     border-radius: 0 0 4px;
   }
 
@@ -103,7 +100,6 @@
       background: transparent;
       color: $gray-neutral-40;
 
-      text-align: center;
       cursor: pointer;
 
       &:hover {

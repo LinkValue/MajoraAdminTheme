@@ -949,7 +949,6 @@ ul.form-collection li.form-collection-add {
 
 .panel-signets .panel-body, .panel-signets .panel-body:last-child {
   order: 0;
-  border-left-width: 1px;
   border-radius: 0 0 0 4px;
 }
 
@@ -959,6 +958,7 @@ ul.form-collection li.form-collection-add {
 
 .reverse.panel-signets .signets-list .signet > * {
   border-radius: 4px 0 0 4px;
+  text-align: right;
 }
 
 .reverse.panel-signets .signets-list .signet.active > * {
@@ -967,7 +967,6 @@ ul.form-collection li.form-collection-add {
 
 .reverse.panel-signets .panel-body {
   order: 1;
-  border-right-width: 1px;
   border-radius: 0 0 4px;
 }
 
@@ -991,6 +990,7 @@ ul.form-collection li.form-collection-add {
 }
 
 .panel-signets .signet > * {
+  text-align: left;
   display: block;
   width: 100%;
   height: 100%;
