@@ -1,0 +1,19 @@
+.breadcrumb {
+  font-size: 18px;
+
+  background: $white;
+
+  i {
+    color: $color-main;
+  }
+
+  a {
+    color: $color-main-light;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-main;
+    }
+  }
+}

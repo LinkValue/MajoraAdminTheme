@@ -37,15 +37,15 @@
 
 @mixin dropmenu-link--hover {
   text-decoration: none;
-  background-color: $gray-navy-dark;
+  background-color: $color-accent-dark;
   color: $white;
 }
 
 a {
-  color: $gray-navy-light;
+  color: $color-accent-light;
 
   &:hover {
-    color: $gray-navy-darker;
+    color: $color-accent-darker;
   }
 }
 
@@ -55,13 +55,13 @@ a {
 }
 
 .panel-heading {
-  border-color: $gray-procelain;
+  border: none;
   font-size: 16px;
   font-weight: 300;
 }
 
 .panel-title {
-  color: $gray-navy-darker;
+  color: $color-accent-darker;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 0;
@@ -98,7 +98,7 @@ a {
 }
 
 .label-inverse {
-  background-color: $gray-navy-dark;
+  background-color: $color-accent-dark;
 }
 
 .text-danger {
@@ -147,7 +147,7 @@ a {
   color: $gray-neutral-50;
 
   &:focus {
-    border: 1px solid $gray-navy;
+    border: 1px solid $color-accent;
     box-shadow: none;
   }
 }
@@ -257,7 +257,7 @@ ul {
 .btn-white {
   background-clip: padding-box;
   background-color: $white;
-  border-color: $gray-night-a30;
+  border-color: rgba($color-accent, 30%);
   box-shadow: 0 -1px 1px $black-a10 inset;
 
   &.active {
@@ -316,10 +316,6 @@ ul {
     background: $color-danger-light;
     color: $white;
   }
-}
-
-.breadcrumb {
-  background-color: $white;
 }
 
 .list-group-item-heading {

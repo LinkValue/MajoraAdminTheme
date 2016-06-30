@@ -1,4 +1,5 @@
 .top-nav {
+  float: right;
   margin-top: 7px;
 
   .username {
@@ -7,78 +8,31 @@
     font-size: 13px;
   }
 
-  .language {
-    margin-top: 4px;
-
-    .dropdown-menu {
-      border: 1px solid $gray-neutral-90;
-
-      box-shadow: 0 2px 3px $black-a20 !important;
-
-      li a {
-        padding: 10px;
-
-        border-bottom: 1px solid $gray-neutral-90;
-
-        font-size: 13px;
-      }
-
-      li:last-child a {
-        border-bottom: none;
-      }
-    }
-  }
-
-  ul.top-menu > li {
-    float: left;
-
-    > a {
-      margin-right: 15px;
-      padding: 2px 6px;
-
-      border: 1px solid $gray-procelain !important;
-      border-radius: 4px;
-
-      color: $gray-neutral-40;
-
-      font-size: 16px;
-
-      &:hover,
-      &:focus {
-        // scss-lint:disable all
-        border: 1px solid $gray-procelain !important;
-        border-color: $gray-procelain !important;
-        border-radius: 4px;
-
-        color: $gray-neutral-20 !important;
-
-        background-color: $white!important;
-
-        text-decoration: none;
-      }
-    }
-  }
-
   ul.top-menu > li {
     margin-left: 10px;
-
-    .dropdown-menu.logout {
-      width: 268px !important;
-    }
+    float: left;
 
     > a {
       margin-right: 0;
       padding: 6px;
 
-      border: 1px solid $gray-neutral-90;
+      border: 1px solid $color-neutral;
       border-radius: 4px;
 
       background: none;
 
-      &:hover {
-        border: 1px solid $gray-procelain;
 
-        background: $gray-procelain;
+      &:hover {
+        // scss-lint:disable all
+        border: 1px solid $color-neutral ;
+        border-color: $color-neutral ;
+        border-radius: 4px;
+
+        color: $gray-neutral-20;
+
+        background: $color-neutral;
+
+        text-decoration: none;
 
         .caret {
           border-top-color: $black;
@@ -87,26 +41,24 @@
       }
 
       &:focus {
-        border: 1px solid $gray-procelain;
+        border: 1px solid $color-neutral;
 
-        background: $gray-procelain;
+        background: $color-neutral;
       }
+    }
+
+    .dropdown-menu.logout {
+      width: 268px !important;
     }
   }
 
-  li.dropdown .dropdown-menu {
+  .dropdown-menu {
     right: 0;
     left: auto;
-
-    float: right;
-  }
-
-  .dropdown-menu.extended.logout {
-    top: 50px;
   }
 
   .nav .caret {
-    border-top-color: $gray-night;
-    border-bottom-color: $gray-night;
+    border-top-color: $color-accent;
+    border-bottom-color: $color-accent;
   }
 }

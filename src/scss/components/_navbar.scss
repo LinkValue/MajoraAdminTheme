@@ -1,7 +1,7 @@
 .navbar-inverse {
-  border-color: $gray-navy-lighter;
+  border-color: $color-accent-lighter;
 
-  background-color: $gray-navy-lighter;
+  background-color: $color-accent-lighter;
 
   .navbar-nav {
     > li {
@@ -11,7 +11,7 @@
       }
 
       a:hover {
-        color: $gray-navy-darker;
+        color: $color-accent-darker;
       }
     }
 
@@ -19,14 +19,14 @@
       &,
       &:hover,
       &:focus {
-        background-color: $gray-navy;
+        background-color: $color-accent;
       }
     }
 
     > .open > a {
       &,
       &:focus {
-        background-color: $gray-navy;
+        background-color: $color-accent;
       }
     }
 

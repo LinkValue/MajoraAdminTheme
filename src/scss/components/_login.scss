@@ -1,5 +1,5 @@
 .login-body {
-  background-color: $gray-procelain;
+  background-color: $color-bg-body;
 }
 
 .form-signin {
@@ -48,14 +48,14 @@
   .btn-login {
     margin-bottom: 20px;
 
-    background: $color-danger-light;
+    background: $color-bg-main;
     color: $white;
 
     font-family: $font-0, $font-1;
     font-weight: 300;
 
     text-transform: uppercase;
-    box-shadow: 0 4px $color-danger-dark;
+    box-shadow: 0 4px $color-main-dark;
   }
 
   p {

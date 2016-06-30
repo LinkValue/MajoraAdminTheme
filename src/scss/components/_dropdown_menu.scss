@@ -22,7 +22,7 @@
     list-style: none;
 
     &:hover {
-      background-color: $gray-procelain;
+      background-color: $color-bg-body;
       color: $gray-neutral-20;
     }
   }
@@ -35,6 +35,7 @@
 }
 
 .dropdown-menu.logout {
+  top: 50px;
   flex-wrap: wrap;
 
   .dropdown.open & {
@@ -46,7 +47,7 @@
 
     border-bottom: 0;
 
-    color: $gray-night;
+    color: $color-accent;
     text-align: center;
 
     .icon {
@@ -81,6 +82,28 @@
 
     .icon {
       color: inherit;
+    }
+  }
+}
+
+.language {
+  margin-top: 4px;
+
+  .dropdown-menu {
+    top: 46px;
+    border: none;
+    box-shadow: 0 2px 5px $black-a20;
+
+    li a {
+      padding: 10px;
+
+      border-bottom: 1px solid $gray-neutral-90;
+
+      font-size: 13px;
+    }
+
+    li:last-child a {
+      border-bottom: none;
     }
   }
 }

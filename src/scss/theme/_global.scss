@@ -3,22 +3,9 @@
   color: $white;
 }
 
-::-moz-selection {
-  background: $black-a20;
-  color: $white;
-}
-
-.white-bg {
+.header {
   background: $white;
   border-bottom: 1px solid $gray-procelain;
-}
-
-.blue-bg {
-  background: $gray-navy-darker;
-}
-
-.red-bg {
-  background: $color-danger-darker;
 }
 
 .fontawesome-icon-list {
@@ -48,7 +35,7 @@
     color: $gray-neutral-40;
 
     &:hover {
-      color: $gray-night-dark;
+      color: $color-accent-dark;
     }
   }
 
@@ -58,17 +45,14 @@
   }
 }
 
-.panel-heading {
+.bg-main {
+  color: $white;
 
-  &.red {
-    background: $color-danger-light;
-    color: $white;
-    border-bottom: none;
-  }
+  background: $color-bg-main;
+}
 
-  &.navy {
-    background: $gray-navy-lighter;
-    color: $white;
-    border-bottom: none;
-  }
+.bg-alt {
+  color: $white;
+
+  background: $color-bg-alt;
 }
