@@ -4,11 +4,11 @@
   "description": "Simple boostrap 3 theme to build small and clean admin interfaces",
   "main": "index.js",
   "scripts": {
-    "build": "./bin/build",
-    "watch:css": "nodemon -e src/scss/**/*.scss -x \"npm run build\"",
-    "watch:html": "browser-sync start --server --files \"dist/css/*.css\" \"*.html\"",
-    "watch": "parallelshell \"npm run watch:css\" \"npm run watch:html\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass --include-path src/scss src/scss/main.scss --output-style expanded | postcss -c conf/prefix.json | tee dist/css/majora-theme.css | postcss -c conf/minify.json > dist/css/majora-theme.min.css",
+    "watch:css": "nodemon -e 'src/scss/**/*.scss' -x 'npm run build'",
+    "watch:html": "browser-sync start --server --files 'dist/css/*.css' '*.html'",
+    "watch": "parallelshell 'npm run watch:css' 'npm run watch:html'",
+    "test": "echo 'Error: no test specified' && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,7 @@
   },
   "keywords": [
     "admin",
-    "bootstrap",
-    "3",
+    "bootstrap 3",
     "theme"
   ],
   "author": "Yimiprod",
@@ -28,6 +27,7 @@
   "homepage": "https://github.com/LinkValue/MajoraAdminTheme#readme",
   "devDependencies": {
     "browser-sync": "^2.12.5",
+    "cssnano": "^3.7.1",
     "node-sass": "^3.6.0",
     "nodemon": "^1.9.2",
     "parallelshell": "^2.0.0"

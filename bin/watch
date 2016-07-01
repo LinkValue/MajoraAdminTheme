@@ -1,1 +1,0 @@
-nodemon -e src/scss/**/*.scss -x "npm run build"
