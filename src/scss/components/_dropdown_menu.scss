@@ -1,20 +1,25 @@
-.dropdown-menu.extended {
-  padding: 0;
-  width: 235px;
-  max-width: 300px;
-  min-width: 160px;
+@import "../variables/sizes";
+@import "../variables/colors";
 
+.dropdown-menu.extended {
   top: 42px;
 
+  width: 235px;
+  min-width: 160px;
+  max-width: 300px;
+
+  padding: 0;
+
+  border: 0;
+
   border-radius: 4px;
-  border: none;
   box-shadow: 0 2px 5px $black-a20;
 
   .link {
     display: inline-block;
 
     width: 100%;
-    padding: 15px 10px;
+    padding: $generic-spacing 10px;
 
     border-bottom: 1px solid $gray-neutral-90;
 
@@ -91,7 +96,7 @@
 
   .dropdown-menu {
     top: 46px;
-    border: none;
+    border: 0;
     box-shadow: 0 2px 5px $black-a20;
 
     li a {

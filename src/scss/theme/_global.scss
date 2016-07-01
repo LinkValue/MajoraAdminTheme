@@ -1,11 +1,14 @@
+@import "../variables/colors";
+
 ::selection {
   background: $black-a20;
   color: $white;
 }
 
 .header {
+  border-bottom: 1px solid $color-neutral;
+
   background: $white;
-  border-bottom: 1px solid $gray-procelain;
 }
 
 .fontawesome-icon-list {
@@ -40,19 +43,20 @@
   }
 
   i {
-    font-size: 16px;
     padding-right: 10px;
+
+    font-size: 16px;
   }
 }
 
 .bg-main {
-  color: $white;
-
   background: $color-bg-main;
+
+  color: $white;
 }
 
 .bg-alt {
-  color: $white;
-
   background: $color-bg-alt;
+
+  color: $white;
 }

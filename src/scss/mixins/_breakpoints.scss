@@ -1,0 +1,19 @@
+$breakpoints: (
+  phablet: 37.5em,
+  tablet: 50em,
+  laptop: 64em,
+  desktop: 70em
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+
+    @media (min-width: #{$size}) {
+      @content;
+    }
+  } @else {
+    @warn "The breakpoint: `#{$breakpoint}` doesn't exist."
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

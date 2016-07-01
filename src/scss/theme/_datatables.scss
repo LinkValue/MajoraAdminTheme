@@ -1,3 +1,5 @@
+@import "../variables/colors";
+
 .dataTables_filter {
   text-align: left;
 }
@@ -12,13 +14,12 @@
 }
 
 .dataTables_paginate {
-  vertical-align: middle;
   margin-left: 10px;
 
-  .paginate_button {
-    a {
-      z-index: auto;
-    }
+  vertical-align: middle;
+
+  .paginate_button a {
+    z-index: auto;
   }
 }
 

@@ -14,12 +14,14 @@
   }
 
   &.tab-right {
-    .nav > li:first-child.active > a {
-      border-radius: 0;
-    }
+    .nav {
+      li:first-child.active > a {
+        border-radius: 0;
+      }
 
-    .nav > li:last-child.active > a {
-      border-radius: 0 4px 0 0;
+      li:last-child.active > a {
+        border-radius: 0 4px 0 0;
+      }
     }
 
     .nav-tabs > li > a {
@@ -97,9 +99,11 @@
   }
 
   .nav {
-    border: medium none;
-    font-size: 13px;
     margin: 0 -16px -1px;
+
+    border: medium none;
+
+    font-size: 13px;
 
     > li:first-child.active > a {
       border-radius: 4px 0 0;
@@ -116,6 +120,7 @@
 
       &:hover {
         background: $white;
+
         color: $color-accent-dark;
       }
     }
@@ -125,6 +130,7 @@
       border-radius: 0;
 
       background: $white;
+
       color: $color-accent-dark;
 
       &:hover,

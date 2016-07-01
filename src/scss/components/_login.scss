@@ -1,3 +1,7 @@
+@import "../variables/sizes";
+@import "../variables/urls";
+@import "../variables/colors";
+
 .login-body {
   background-color: $color-bg-body;
 }
@@ -35,7 +39,7 @@
 
   input[type="text"],
   input[type="password"] {
-    margin-bottom: 15px;
+    margin-bottom: $generic-spacing;
 
     border: 1px solid $gray-neutral-90;
     border-radius: 5px;
@@ -76,7 +80,7 @@
 
   h2.form-signin-heading {
     margin: 0;
-    padding: 20px 15px;
+    padding: 20px $generic-spacing;
 
     border-radius: 5px 5px 0 0;
 

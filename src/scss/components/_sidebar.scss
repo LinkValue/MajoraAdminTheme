@@ -1,30 +1,29 @@
+@import "../variables/sizes";
+@import "../variables/colors";
+
 $nav-width: 20rem !default;
-$icon-width: 4rem !default;
-$margin-item--fluid: 1rem !default;
-$margin-item--fixed: 20px !default;
-$padding-item--fluid: 1rem !default;
-$padding-item--fixed: 15px !default;
+$nav-icon-width: 4rem !default;
+$nav-item-spacing--fix: 20px !default;
+$nav-item-padding--fix: 15px !default;
+$nav-item-spacing--fluid: 1rem !default;
+$nav-item-padding--fluid: 1rem !default;
 
-$transition: all 300ms ease-in-out;
-
-%sidebar_menu-sub-link {
-  color: $color-main-light;
-}
+$nav-transition: all 300ms ease-in-out !default;
 
 #main-content {
-  margin-left: ($nav-width + $padding-item--fluid * 2);
-  transition: $transition;
+  margin-left: ($nav-width + $nav-item-spacing--fluid * 2);
+  transition: $nav-transition;
   transition-property: margin;
 }
 
 .navigation-closed {
   #main-content {
-    margin-left: ($icon-width + $padding-item--fluid * 2);
+    margin-left: ($nav-icon-width + $nav-item-spacing--fluid * 2);
   }
 
   #navigation {
     .sidebar-menu {
-      width: ($icon-width + $padding-item--fluid * 2);
+      width: ($nav-icon-width + $nav-item-spacing--fluid * 2);
     }
 
     .menu-sub-toggle {
@@ -38,8 +37,8 @@ $transition: all 300ms ease-in-out;
       max-width: 0;
       max-height: 0;
 
-      transition-duration: nth($transition, 2) / 2;
-      transition-delay: 0ms, nth($transition, 2) / 2;
+      transition-duration: nth($nav-transition, 2) / 2;
+      transition-delay: 0ms, nth($nav-transition, 2) / 2;
     }
   }
 }
@@ -47,11 +46,11 @@ $transition: all 300ms ease-in-out;
 .sidebar-toggle-box {
   float: left;
 
-  padding-right: $padding-item--fixed;
-  margin-top: $margin-item--fixed;
+  padding-right: $nav-item-padding--fix;
+  margin-top: $nav-item-spacing--fix;
 
   .fa-bars {
-    font-size: $margin-item--fixed;
+    font-size: $nav-item-spacing--fix;
 
     cursor: pointer;
   }
@@ -69,11 +68,11 @@ $transition: all 300ms ease-in-out;
   display: flex;
   flex-direction: column;
 
-  width: $nav-width + $padding-item--fluid * 2;
+  width: $nav-width + $nav-item-spacing--fluid * 2;
   margin: 75px 0 0;
-  padding: 0 $padding-item--fluid;
+  padding: 0 $nav-item-spacing--fluid;
 
-  transition: $transition;
+  transition: $nav-transition;
 
   .menu-item {
     // flex: 0 0 100%;
@@ -82,7 +81,7 @@ $transition: all 300ms ease-in-out;
 
     margin: 0 0 5px;
 
-    transition: $transition;
+    transition: $nav-transition;
 
     border-radius: 4px;
 
@@ -135,15 +134,15 @@ $transition: all 300ms ease-in-out;
   a.menu-link {
     flex: 1;
 
-    padding: $padding-item--fixed 0;
+    padding: $nav-item-padding--fix 0;
 
     color: $color-accent-light;
   }
 
   .icon {
-    width: $icon-width;
+    width: $nav-icon-width;
 
-    font-size: $padding-item--fixed;
+    font-size: $nav-item-padding--fix;
     text-align: center;
   }
 
@@ -156,7 +155,7 @@ $transition: all 300ms ease-in-out;
     height: 2.2rem;
     margin: 1.25em .5em 0 0;
 
-    transition: $transition;
+    transition: $nav-transition;
 
     border-radius: 50%;
 
@@ -170,8 +169,8 @@ $transition: all 300ms ease-in-out;
 
     .icon-toggle {
       margin: auto;
-      transition: $transition;
-      transition-duration: (nth($transition, 2) / 2);
+      transition: $nav-transition;
+      transition-duration: (nth($nav-transition, 2) / 2);
     }
   }
 
@@ -186,16 +185,16 @@ $transition: all 300ms ease-in-out;
   .sub-menu {
     max-height: 0;
     margin: 0;
-    margin-left: $icon-width;
+    margin-left: $nav-icon-width;
     padding: 0;
 
     overflow: hidden;
 
-    transition: $transition;
+    transition: $nav-transition;
     // scss-lint:disable all
     transition-property: max-width, max-height;
     // scss-lint:enable
-    transition-delay: nth($transition, 2);
+    transition-delay: nth($nav-transition, 2);
 
     .menu-item {
       margin: 0;

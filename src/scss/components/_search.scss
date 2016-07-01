@@ -1,9 +1,14 @@
+@import "../variables/urls";
+@import "../variables/colors";
+
+$search-transition: all 300ms ease;
+
 .search {
   width: 20px;
   margin-top: 6px;
   padding: 0 5px 0 35px;
 
-  transition: all .3s ease;
+  transition: $search-transition;
 
   border: 1px solid $white;
   background: $url-seach no-repeat 10px 8px;
@@ -15,7 +20,7 @@
     width: 180px;
     margin-top: 5px;
 
-    transition: all .3s ease;
+    transition: $search-transition;
 
     border-color: $gray-neutral-70;
 

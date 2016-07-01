@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./bin/build",
     "watch:css": "nodemon -e src/scss/**/*.scss -x \"npm run build\"",
-    "watch:html": "browser-sync start --server --files \"dist/css/*.css\"",
+    "watch:html": "browser-sync start --server --files \"dist/css/*.css\" \"index.html\"",
     "watch": "parallelshell \"npm run watch:css\" \"npm run watch:html\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

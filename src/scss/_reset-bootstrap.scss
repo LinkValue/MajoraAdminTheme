@@ -1,43 +1,57 @@
 // bootstrap button skin override
 @mixin btn-default {
-  background-color: $gray-neutral-50;
   border-color: $gray-neutral-50;
+
+  background-color: $gray-neutral-50;
+
   color: $white;
 }
 
 @mixin btn-primary {
-  background-color: $color-primary-dark;
   border-color: $color-primary-dark;
+
+  background-color: $color-primary-dark;
+
   color: $white;
 }
 
 @mixin btn-success {
-  background-color: $color-success-dark;
   border-color: $color-success-dark;
+
+  background-color: $color-success-dark;
+
   color: $white;
 }
 
 @mixin btn-info {
-  background-color: $color-info-dark;
   border-color: $color-info-dark;
+
+  background-color: $color-info-dark;
+
   color: $white;
 }
 
 @mixin btn-warning {
-  background-color: $color-warning-dark;
   border-color: $color-warning-dark;
+
+  background-color: $color-warning-dark;
+
   color: $white;
 }
 
 @mixin btn-danger {
-  background-color: $color-danger-dark;
   border-color: $color-danger-dark;
+
+  background-color: $color-danger-dark;
+
   color: $white;
 }
 
 @mixin dropmenu-link--hover {
   text-decoration: none;
+
   background-color: $color-accent-dark;
+
   color: $white;
 }
 
@@ -50,23 +64,25 @@ a {
 }
 
 .panel {
-  border: none;
+  border: 0;
   box-shadow: none;
 }
 
 .panel-heading {
-  border: none;
+  border: 0;
   font-size: 16px;
   font-weight: 300;
 }
 
 .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: $color-accent-darker;
+
+  font-family: $font-0, $font-1;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 0;
-  font-family: $font-0, $font-1;
 }
 
 .label {
@@ -126,15 +142,18 @@ a {
 }
 
 .modal-content {
+  border: 0;
+
   box-shadow: none;
-  border: none;
 }
 
 .modal-header {
-  background: $color-primary;
-  color: $white;
+  border-bottom: 0;
   border-radius: 5px 5px 0 0;
-  border-bottom: none;
+
+  background: $color-primary;
+
+  color: $white;
 
   .close {
     margin-top: 0;
@@ -142,9 +161,11 @@ a {
 }
 
 .form-control {
-  border: 1px solid $gray-procelain;
-  box-shadow: none;
+  border: 1px solid $color-neutral;
+
   color: $gray-neutral-50;
+
+  box-shadow: none;
 
   &:focus {
     border: 1px solid $color-accent;
@@ -177,8 +198,10 @@ ul {
 }
 
 .btn-default {
-  background-color: $gray-neutral-70;
   border-color: $gray-neutral-70;
+
+  background-color: $gray-neutral-70;
+
   color: $white;
 
   &:hover,
@@ -190,8 +213,10 @@ ul {
 }
 
 .btn-primary {
-  background-color: $color-primary;
   border-color: $color-primary;
+
+  background-color: $color-primary;
+
   color: $white;
 
   &:hover,
@@ -203,8 +228,10 @@ ul {
 }
 
 .btn-success {
-  background-color: $color-success;
   border-color: $color-success;
+
+  background-color: $color-success;
+
   color: $white;
 
   &:hover,
@@ -216,8 +243,10 @@ ul {
 }
 
 .btn-info {
-  background-color: $color-info;
   border-color: $color-info;
+
+  background-color: $color-info;
+
   color: $white;
 
   &:hover,
@@ -242,8 +271,10 @@ ul {
 }
 
 .btn-danger {
-  background-color: $color-danger;
   border-color: $color-danger;
+
+  background-color: $color-danger;
+
   color: $white;
 
   &:hover,
@@ -255,9 +286,11 @@ ul {
 }
 
 .btn-white {
-  background-clip: padding-box;
-  background-color: $white;
   border-color: rgba($color-accent, 30%);
+
+  background-color: $white;
+  background-clip: padding-box;
+
   box-shadow: 0 -1px 1px $black-a10 inset;
 
   &.active {
@@ -306,11 +339,15 @@ ul {
 }
 
 .btn-compose {
-  background: $color-danger-light;
-  padding: 12px 0;
-  text-align: center;
   width: 100%;
+
+  padding: 12px 0;
+
+  background: $color-danger-light;
+
   color: $white;
+
+  text-align: center;
 
   &:hover {
     background: $color-danger-light;
@@ -323,32 +360,41 @@ ul {
 }
 
 .progress {
+  background: $color-bg-body;
+
   box-shadow: none;
-  background: $gray-procelain;
 }
 
 .alert-success {
-  color: $color-success-dark;
-  background-color: $color-success-lighter;
   border-color: $color-success-light;
+
+  background-color: $color-success-lighter;
+
+  color: $color-success-dark;
 }
 
 .alert-danger {
-  color: $color-danger-dark;
-  background-color: $color-danger-lighter;
   border-color: $color-danger-light;
+
+  background-color: $color-danger-lighter;
+
+  color: $color-danger-dark;
 }
 
 .alert-info {
-  color: $color-info-dark;
-  background-color: $color-info-lighter;
   border-color: $color-info-light;
+
+  background-color: $color-info-lighter;
+
+  color: $color-info-dark;
 }
 
 .alert-warning {
-  color: $color-warning-dark;
-  background-color: $color-warning-lighter;
   border-color: $color-warning-light;
+
+  background-color: $color-warning-lighter;
+
+  color: $color-warning-dark;
 }
 
 .table {
@@ -365,8 +411,8 @@ ul {
 }
 
 .form-horizontal .control-label {
-  font-weight: 300;
   font-size: 14px;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -412,7 +458,9 @@ ul {
 }
 
 .panel-default > .panel-heading {
-  background-color: $white;
   border-color: $gray-neutral-90;
+
+  background-color: $white;
+
   color: $gray-neutral-40;
 }

@@ -1,7 +1,9 @@
-.breadcrumb {
-  font-size: 18px;
+@import "../variables/colors";
 
+.breadcrumb {
   background: $white;
+
+  font-size: 18px;
 
   i {
     color: $color-main;
