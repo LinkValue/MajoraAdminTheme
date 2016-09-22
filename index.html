@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+    <!-- ### Metas ### -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MajoraAdminTheme demo template</title>
-    <link rel="shortcut icon" href="#" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- ### Stylesheets ### -->
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
 
+    <!-- ### Fonts ### -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
     <style type="text/css">
         @font-face {
             font-family: 'FontAwesome';
-            src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?v=4.4.0');
-            src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+            src: url('./lib/fonts/fontawesome-webfont.eot?v=4.4.0');
+            src: url('./lib/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),
+                url('./lib/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),
+                url('./lib/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),
+                url('./lib/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype')
             font-weight: normal;
             font-style: normal;
         }
     </style>
-
   </head>
-  <body class="">
+
+  <body>
     <main id="container">
+
+      <!-- ### Header ### -->
       <header class="header white-bg">
         <div class="sidebar-toggle-box">
           <i class="fa fa-bars tooltips navigation-toggle" data-placement="right" data-original-title="Toggle Navigation"></i>
         </div>
+
         <!-- logo -->
-        <a href="#" class="logo"><img src="#" alt="MajoraAdminTheme logo"></a>
+        <a href="#" class="logo">
+          <img src="#" alt="Theme logo">
+        </a>
         <!-- /logo -->
+
         <div class="top-nav ">
-          <!-- search & user info -->
+
+          <!-- ### Navbar ### -->
           <ul class="nav pull-right top-menu">
+            <!-- Search -->
             <li>
               <input type="text" class="form-control search" placeholder="Search">
             </li>
+            <!-- /Search -->
+
+            <!-- Langage selection -->
             <li class="dropdown language">
               <a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img src="#" alt="">
@@ -52,7 +67,9 @@
                 <li><a href="#"><img src="fr.png" alt=""> French</a></li>
               </ul>
             </li>
-            <!-- user login dropdown -->
+            <!-- /Langage selection -->
+
+            <!-- User dropdown -->
             <li class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img alt="" src="" width="29" height="29" >
@@ -64,22 +81,31 @@
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
                 <li><a href="#"><i class="fa fa-bell-o"></i> Notification</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+                <li><a href="#"><i class="fa fa-key"></i> Log Out</a></li>
               </ul>
             </li>
-            <!-- /user login dropdown -->
+            <!-- /User dropdown -->
+
           </ul>
-          <!-- /search & user info -->
+          <!-- ### /Navbar ### -->
+
         </div>
       </header>
+
+
+      <!-- ### Sidebar nav ### -->
       <aside id="navigation" class="nav-collapse">
         <ul class="sidebar-menu">
+          <!-- Menu element -->
           <li class="menu-item is-open">
             <a class="menu-link" href="index.html">
               <i class="menu-icon fa fa-dashboard"></i>
               <span class="menu-label">Dashboard</span>
             </a>
           </li>
+          <!-- /Menu element -->
+
+          <!-- Sub menu dropdown -->
           <li class="menu-item has-sub">
             <span class="menu-link">
               <a class="menu-label" href="#" >
@@ -99,12 +125,17 @@
               </li>
             </ul>
           </li>
+          <!-- /Sub menu dropdown -->
         </ul>
       </aside>
+      <!-- ### /Sidebar nav ### -->
+
+      <!-- ### Section main ### -->
       <section id="main-content">
+        <!-- ### Section wrapper ### -->
         <section class="wrapper">
 
-          <!-- breadcrumbs -->
+          <!-- ### Breadcrumbs ### -->
           <div class="row">
             <div class="col-lg-12">
               <ul class="breadcrumb">
@@ -120,9 +151,12 @@
               </ul>
             </div>
           </div>
+          <!-- ### /Breadcrumbs ### -->
 
-          <!-- panels -->
+          <!-- ### Row ### -->
           <div class="row">
+
+            <!-- ### Panel ### -->
             <div class="col-lg-6">
               <div class="panel">
                 <header class="panel-heading composed red">
@@ -139,6 +173,9 @@
                 </div>
               </div>
             </div>
+            <!-- ### /Panel ### -->
+
+            <!-- ### Panel ### -->
             <div class="col-lg-6">
               <div class="panel">
                 <header class="panel-heading composed red">
@@ -151,6 +188,7 @@
                   </span>
                 </header>
                 <div class="panel-signets">
+                  <!-- Right nav -->
                   <ul class="signets-list">
                     <li class="signet">
                       <a href="#">
@@ -171,14 +209,22 @@
                       </a>
                     </li>
                   </ul>
+                  <!-- /Right nav -->
                   <div class="panel-body">
                     <p>Panel col large 6</p>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- ### /Panel ### -->
+
           </div>
+          <!-- ### /Row ### -->
+
+          <!-- ### Row ### -->
           <div class="row">
+
+            <!-- ### Panel ### -->
             <div class="col-lg-6">
               <div class="panel">
                 <header class="panel-heading composed navy">
@@ -191,6 +237,7 @@
                   </a>
                 </header>
                 <div class="panel-tabs">
+                  <!-- Top nav -->
                   <ul class="tabs-list">
                     <li class="tab">
                       <a href="#">
@@ -211,12 +258,16 @@
                       </a>
                     </li>
                   </ul>
+                  <!-- /Top nav -->
                 </div>
                 <div class="panel-body">
                   <p>Panel col large 6</p>
                 </div>
               </div>
             </div>
+            <!-- ### /Panel ### -->
+
+            <!-- ### Panel ### -->
             <div class="col-sm-6">
               <div class="panel">
                 <header class="panel-heading navy">
@@ -226,6 +277,7 @@
                   <p>Panel col small 6</p>
                 </div>
                 <footer class="panel-footer panel-tabs">
+                  <!-- Bottom nav -->
                   <ul class="tabs-list">
                     <li class="tab active">
                       <a href="#">
@@ -246,16 +298,25 @@
                       </a>
                     </li>
                   </ul>
+                  <!-- /Bottom nav -->
                 </footer>
               </div>
             </div>
-          </div>
+            <!-- ### /Panel ### -->
 
+          </div>
+          <!-- ### /Row ### -->
+
+          <!-- ### Row ### -->
           <div class="row">
+
+            <!-- ### Panel ### -->
             <div class="col-lg-6">
-              <!--notification start-->
+
+              <!-- Notification content -->
               <section class="panel">
                 <div class="panel-body">
+                  <!-- Notifications -->
                   <div class="alert alert-success alert-block fade in">
                     <button data-dismiss="alert" class="close close-sm" type="button">
                       <i class="fa fa-times"></i>
@@ -266,40 +327,47 @@
                     </h4>
                     <p>Best check yo self, you're not looking too good...</p>
                   </div>
+
                   <div class="alert alert-block alert-danger fade in">
                     <button data-dismiss="alert" class="close close-sm" type="button">
                         <i class="fa fa-times"></i>
                     </button>
                     <strong>Oh snap!</strong> Change a few things up and try submitting again.
                   </div>
+
                   <div class="alert alert-success fade in">
                     <button data-dismiss="alert" class="close close-sm" type="button">
                         <i class="fa fa-times"></i>
                     </button>
                     <strong>Well done!</strong> You successfully read this important alert message.
                   </div>
+
                   <div class="alert alert-info fade in">
                     <button data-dismiss="alert" class="close close-sm" type="button">
                         <i class="fa fa-times"></i>
                     </button>
                     <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
                   </div>
+
                   <div class="alert alert-warning fade in">
                     <button data-dismiss="alert" class="close close-sm" type="button">
                         <i class="fa fa-times"></i>
                     </button>
                     <strong>Warning!</strong> Best check yo self, you're not looking too good.
                   </div>
+                  <!-- /Notifications -->
                 </div>
               </section>
-              <!--notification end-->
+              <!-- /Notifications content -->
 
-              <!--modal start-->
+              <!-- Modals content-->
               <section class="panel">
                 <header class="panel-heading">
                   Modal Dialogs
                 </header>
                 <div class="panel-body">
+
+                  <!-- Modals calls-->
                   <a class="btn btn-success" data-toggle="modal" href="#myModal">
                     Dialog
                   </a>
@@ -309,6 +377,8 @@
                   <a class="btn btn-danger" data-toggle="modal" href="#myModal3">
                     Alert !
                   </a>
+                  <!-- /Modals calls-->
+
                   <!-- Modal -->
                   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -327,7 +397,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- modal -->
+                  <!-- /Modal -->
+
                   <!-- Modal -->
                   <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -346,7 +417,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- modal -->
+                  <!-- /Modal -->
+
                   <!-- Modal -->
                   <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -364,16 +436,20 @@
                       </div>
                     </div>
                   </div>
-                  <!-- modal -->
+                  <!-- /Modal -->
                 </div>
               </section>
-              <!--modal start-->
+              <!-- /Modals content-->
             </div>
+            <!-- ### /Panel ### -->
+
+            <!-- ### Panel ### -->
             <div class="col-lg-6">
               <section class="panel">
                 <header class="panel-heading">
                   Default Buttons
                 </header>
+                <!-- Buttons -->
                 <div class="panel-body">
                   <button type="button" class="btn btn-default">Default</button>
                   <button type="button" class="btn btn-primary">Primary</button>
@@ -382,9 +458,10 @@
                   <button type="button" class="btn btn-warning">Warning</button>
                   <button type="button" class="btn btn-danger">Danger</button>
                 </div>
+                <!-- /Buttons -->
               </section>
 
-              <!--tooltips start-->
+              <!-- Tooltips -->
               <section class="panel">
                 <div class="panel-body">
                   <button title="" data-placement="top" data-toggle="tooltip" class="btn btn-default tooltips" type="button" data-original-title="Tooltip on top">Tooltip on top</button>
@@ -393,9 +470,9 @@
                   <button title="" data-placement="right" data-toggle="tooltip" class="btn btn-default tooltips" type="button" data-original-title="Tooltip on right"> right</button>
                 </div>
               </section>
-              <!--tooltips start-->
+              <!-- /Tooltips -->
 
-              <!--popover start-->
+              <!-- Popover -->
               <section class="panel">
                 <div class="panel-body">
                   <button data-original-title="Popovers in top" data-content="And here's some amazing content. It's very engaging. right?" data-placement="top" data-trigger="hover" class="btn btn-info popovers">Popover on Top</button>
@@ -404,9 +481,11 @@
                   <button data-original-title="Popovers in left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="left" data-trigger="hover" class="btn btn-info popovers">Left</button>
                 </div>
               </section>
-              <!--popover start-->
+              <!-- /Popover -->
 
+              <!-- Tabs -->
               <section class="panel">
+                <!-- Tabs nav -->
                 <header class="panel-heading navy">
                   <ul class="nav nav-tabs">
                     <li class="active">
@@ -423,6 +502,8 @@
                     </li>
                   </ul>
                 </header>
+                <!-- Tabs nav -->
+                <!-- Tabs content -->
                 <div class="panel-body">
                   <div class="tab-content">
                     <div id="home" class="tab-pane active">Home</div>
@@ -431,21 +512,31 @@
                     <div id="contact" class="tab-pane">Contact</div>
                   </div>
                 </div>
+                <!-- /Tabs content -->
               </section>
+              <!-- /Tabs -->
             </div>
+            <!-- ### /Panel ### -->
           </div>
+          <!-- ### /Row ### -->
+
         </section>
+        <!-- ### /Section wrapper ### -->
       </section>
+      <!-- ### /Section main ### -->
+
+      <!-- ### Footer ### -->
       <footer class="site-footer">
         <div class="text-center">
           2016 © LinkValue
         </div>
       </footer>
+      <!-- ### /Footer ### -->
     </main>
 
     <!-- Javascripts -->
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="./lib/js/jquery-2.2.3.min.js"></script>
+    <script src="./lib/js/bootstrap.min.js"></script>
     <script src="./js/common-scripts.js"></script>
   </body>
 </html>
