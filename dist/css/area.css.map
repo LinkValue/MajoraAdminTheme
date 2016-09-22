@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/_area.scss"],"names":[],"mappings":"AAAA,0BAEQ,qBAAsB,AACtB,UAAY,CACf","file":"area.css","sourcesContent":[".scheduling {\n    .form-control {\n        display: inline-block;\n        width: auto;\n    }\n}\n"],"sourceRoot":"/source/"}
