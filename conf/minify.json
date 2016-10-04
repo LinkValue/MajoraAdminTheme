@@ -1,0 +1,22 @@
+{
+  "use": "cssnano",
+  "cssnano": {
+    "convertValues": {
+      "length": false,
+      "angle": false
+    },
+    "discardComments": {
+      "removeAll": true
+    },
+    "discardDuplicates": true,
+    "discardEmpty": true,
+    "discardOverridden": true,
+    "mergeIdents": true,
+    "mergeLonghand": true,
+    "mergeRules": true,
+    "minifyFontValues": true,
+    "minifySelectors": true,
+    "normalizeUrl": true,
+    "uniqueSelectors": true
+  }
+}

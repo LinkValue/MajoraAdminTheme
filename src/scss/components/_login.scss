@@ -1,0 +1,111 @@
+@import "../variables/sizes";
+@import "../variables/urls";
+@import "../variables/colors";
+
+.login-body {
+  background-color: $color-bg-body;
+}
+
+.form-signin {
+  max-width: 330px;
+  margin: 100px auto 0;
+  border-radius: 5px;
+
+  background: $white;
+
+  .checkbox {
+    margin-bottom: 14px;
+
+    color: $gray-neutral-70;
+
+    font-family: $font-0, $font-1;
+    font-weight: 300;
+  }
+
+  .form-control {
+    position: relative;
+
+    height: auto;
+    padding: 10px;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin-bottom: $generic-spacing;
+
+    border: 1px solid $gray-neutral-90;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    box-shadow: none;
+  }
+
+  .btn-login {
+    margin-bottom: 20px;
+
+    background: $color-bg-main;
+    color: $white;
+
+    font-family: $font-0, $font-1;
+    font-weight: 300;
+
+    text-transform: uppercase;
+    box-shadow: 0 4px $color-main-dark;
+  }
+
+  p {
+    color: $gray-neutral-70;
+
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  a {
+    color: $color-primary;
+
+    &:hover {
+      color: $gray-neutral-70;
+    }
+  }
+
+  h2.form-signin-heading {
+    margin: 0;
+    padding: 20px $generic-spacing;
+
+    border-radius: 5px 5px 0 0;
+
+    background: $color-primary;
+    color: $white;
+
+    font-family: $font-0, $font-1;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.login-wrap {
+  padding: 20px;
+}
+
+.log-arrow-up {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+
+  width: 20px;
+  height: 11px;
+
+  background: $url-arrow-up no-repeat;
+}

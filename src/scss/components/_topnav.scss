@@ -1,0 +1,66 @@
+@import "../variables/colors";
+
+.top-nav {
+  float: right;
+  margin-top: 7px;
+
+  .username {
+    color: $gray-neutral-30;
+
+    font-size: 13px;
+  }
+
+  ul.top-menu > li {
+    margin-left: 10px;
+    float: left;
+
+    > a {
+      margin-right: 0;
+      padding: 6px;
+
+      border: 1px solid $color-neutral;
+      border-radius: 4px;
+
+      background: none;
+
+
+      &:hover {
+        // scss-lint:disable all
+        border: 1px solid $color-neutral ;
+        border-color: $color-neutral ;
+        border-radius: 4px;
+
+        color: $gray-neutral-20;
+
+        background: $color-neutral;
+
+        text-decoration: none;
+
+        .caret {
+          border-top-color: $black;
+          border-bottom-color: $black;
+        }
+      }
+
+      &:focus {
+        border: 1px solid $color-neutral;
+
+        background: $color-neutral;
+      }
+    }
+
+    .dropdown-menu.logout {
+      width: 268px !important;
+    }
+  }
+
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+
+  .nav .caret {
+    border-top-color: $color-accent;
+    border-bottom-color: $color-accent;
+  }
+}

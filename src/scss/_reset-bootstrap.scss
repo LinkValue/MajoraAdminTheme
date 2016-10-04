@@ -1,0 +1,522 @@
+// bootstrap button skin override
+@mixin btn-default {
+  border-color: $gray-neutral-50;
+
+  background-color: $gray-neutral-50;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $gray-neutral-70;
+
+    background-color: $gray-neutral-70;
+
+    color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+    border-color: $gray-neutral-80;
+
+    background-color: $gray-neutral-80;
+
+    color: $white;
+  }
+}
+
+@mixin btn-primary {
+  border-color: $color-primary;
+
+  background-color: $color-primary;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $color-primary-dark;
+
+    background-color: $color-primary-dark;
+
+    color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+    border-color: $color-primary-darker;
+
+    background-color: $color-primary-darker;
+
+    color: $white;
+  }
+}
+
+@mixin btn-success {
+  border-color: $color-success;
+
+  background-color: $color-success;
+
+  color: $white;
+
+  &:hover,
+  &:focus ,
+  &:active,
+  &.active {
+    border-color: $color-success-dark;
+
+    background-color: $color-success-dark;
+
+    color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+    border-color: $color-success-darker;
+
+    background-color: $color-success-darker;
+
+    color: $white;
+  }
+}
+
+@mixin btn-info {
+  border-color: $color-info;
+
+  background-color: $color-info;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $color-info-dark;
+
+    background-color: $color-info-dark;
+
+    color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+    border-color: $color-info-darker;
+
+    background-color: $color-info-darker;
+
+    color: $white;
+  }
+}
+
+@mixin btn-warning {
+  background-color: $color-warning;
+
+  border-color: $color-warning;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+  border-color: $color-warning-dark;
+
+  background-color: $color-warning-dark;
+
+  color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+  border-color: $color-warning-darker;
+
+  background-color: $color-warning-darker;
+
+  color: $white;
+  }
+}
+
+@mixin btn-danger {
+  border-color: $color-danger;
+
+  background-color: $color-danger;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $color-danger-dark;
+
+    background-color: $color-danger-dark;
+
+    color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+    border-color: $color-danger-dark;
+
+    background-color: $color-danger-dark;
+
+    color: $white;
+  }
+}
+
+@mixin dropmenu-link--hover {
+  text-decoration: none;
+
+  background-color: $color-accent-dark;
+
+  color: $white;
+}
+
+a {
+  color: $color-accent-light;
+
+  &:hover {
+    color: $color-accent-darker;
+  }
+}
+
+.panel {
+  border: 0;
+  box-shadow: none;
+}
+
+.panel-heading {
+  border: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $color-accent-darker;
+
+  font-family: $font-0, $font-1;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.label {
+  padding: 0.5em 0.8em;
+}
+
+.label-default {
+  background-color: $gray-neutral-70;
+}
+
+.label-primary {
+  background-color: $color-info-light;
+}
+
+.label-success {
+  background-color: $color-success-lighter;
+}
+
+.label-info {
+  background-color: $color-info-light;
+}
+
+.label-warning {
+  background-color: $color-warning-light;
+}
+
+.label-danger {
+  background-color: $color-danger-light;
+}
+
+.label-inverse {
+  background-color: $color-accent-dark;
+}
+
+.text-danger {
+  color: $color-danger-light;
+}
+
+.text-muted {
+  color: $gray-neutral-70;
+}
+
+.text-primary {
+  color: $color-primary-light;
+}
+
+.text-warning {
+  color: $color-warning-light;
+}
+
+.text-success {
+  color: $color-success-lighter;
+}
+
+.text-info {
+  color: $color-info-light;
+}
+
+.modal-content {
+  border: 0;
+
+  box-shadow: none;
+}
+
+.modal-header {
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+
+  background: $color-primary;
+
+  color: $white;
+
+  .close {
+    margin-top: 0;
+  }
+}
+
+.form-control {
+  border: 1px solid $color-neutral;
+
+  color: $gray-neutral-50;
+
+  box-shadow: none;
+
+  &:focus {
+    border: 1px solid $color-accent;
+    box-shadow: none;
+  }
+}
+
+.input-group {
+  margin-bottom: 5px;
+}
+
+input {
+  outline: none !important;
+}
+
+textarea {
+  outline: none !important;
+}
+
+select {
+  outline: none !important;
+}
+
+button {
+  outline: none !important;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.btn-default {
+  @include btn-default;
+}
+
+.btn-primary {
+  @include btn-primary;
+}
+
+.btn-success {
+  @include btn-success;
+}
+
+.btn-info {
+  @include btn-info;
+}
+
+.btn-warning {
+  @include btn-warning;
+}
+
+.btn-danger {
+  @include btn-danger;
+}
+
+.btn-white {
+  border-color: rgba($color-accent, 30%);
+
+  background-color: $white;
+
+  box-shadow: 0 -1px 1px $black-a10 inset;
+  background-clip: padding-box;
+
+  &.active {
+    box-shadow: none;
+  }
+}
+
+.btn-round {
+  border-radius: 30px;
+}
+
+.btn-shadow {
+  &.btn-default {
+    box-shadow: 0 4px $gray-neutral-40;
+  }
+
+  &.btn-primary {
+    box-shadow: 0 4px $color-primary-darker;
+  }
+
+  &.btn-success {
+    box-shadow: 0 4px $color-success-darker;
+  }
+
+  &.btn-info {
+    box-shadow: 0 4px $color-info-darker;
+  }
+
+  &.btn-warning {
+    box-shadow: 0 4px $color-warning-darker;
+  }
+
+  &.btn-danger {
+    box-shadow: 0 4px $color-danger-darker;
+  }
+}
+
+.btn {
+  &:active {
+    box-shadow: none;
+  }
+
+  &.active {
+    box-shadow: none;
+  }
+}
+
+.btn-compose {
+  width: 100%;
+
+  padding: 12px 0;
+
+  background: $color-danger-light;
+
+  color: $white;
+
+  text-align: center;
+
+  &:hover {
+    background: $color-danger-light;
+    color: $white;
+  }
+}
+
+.list-group-item-heading {
+  font-weight: 300;
+}
+
+.progress {
+  background: $color-bg-body;
+
+  box-shadow: none;
+}
+
+.alert-success {
+  border-color: $color-success-light;
+
+  background-color: $color-success-lighter;
+
+  color: $color-success-dark;
+}
+
+.alert-danger {
+  border-color: $color-danger-light;
+
+  background-color: $color-danger-lighter;
+
+  color: $color-danger-dark;
+}
+
+.alert-info {
+  border-color: $color-info-light;
+
+  background-color: $color-info-lighter;
+
+  color: $color-info-dark;
+}
+
+.alert-warning {
+  border-color: $color-warning-light;
+
+  background-color: $color-warning-lighter;
+
+  color: $color-warning-dark;
+}
+
+.table {
+  thead,
+  tbody,
+  tfoot {
+    > tr {
+      > td,
+      > th {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.form-horizontal .control-label {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.open .dropdown-toggle {
+  &.btn-default {
+    @include btn-default;
+  }
+
+  &.btn-primary {
+    @include btn-primary;
+  }
+
+  &.btn-success {
+    @include btn-success;
+  }
+
+  &.btn-info {
+    @include btn-info;
+  }
+
+  &.btn-warning {
+    @include btn-warning;
+  }
+
+  &.btn-danger {
+    @include btn-danger;
+  }
+}
+
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
+}
+
+.dropdown-menu > li > a {
+  &:hover,
+  &:focus {
+    @include dropmenu-link--hover;
+  }
+}
+
+.nav-tabs > li > a {
+  margin-right: 1px;
+}
+
+.panel-default > .panel-heading {
+  border-color: $gray-neutral-90;
+
+  background-color: $white;
+
+  color: $gray-neutral-40;
+}

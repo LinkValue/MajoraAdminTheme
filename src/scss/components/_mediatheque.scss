@@ -1,0 +1,73 @@
+@import "../variables/sizes";
+@import "../variables/colors";
+@import "../mixins/breakpoints";
+
+$figure-spacing--sides: 10px !default;
+$figure-spacing--bottom: $generic-spacing !default;
+$figure-size: calc(100% - #{$figure-spacing--sides} * 2);
+
+.mediatheque {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 -#{$figure-spacing--sides} -#{$figure-spacing--bottom};
+
+  .figure {
+    position: relative;
+
+    width: $figure-size;
+    height: 0;
+
+    margin: 0 $figure-spacing--sides $figure-spacing--bottom;
+    padding-bottom: $figure-size;
+
+    border-radius: 3px;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    box-shadow: 0 0 0 1px $gray-iron;
+    overflow: hidden;
+
+    @include breakpoint(phablet) {
+      $figure-size: calc(50% - #{$figure-spacing--sides} * 2);
+
+      width: $figure-size;
+      padding-bottom: $figure-size;
+    }
+
+    @include breakpoint(laptop) {
+      $figure-size: calc(33% - #{$figure-spacing--sides} * 2);
+
+      width: $figure-size;
+      padding-bottom: $figure-size;
+    }
+
+    @include breakpoint(desktop) {
+      $figure-size: calc(25% - #{$figure-spacing--sides} * 2);
+
+      width: $figure-size;
+      padding-bottom: $figure-size;
+    }
+  }
+
+  .actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 10px;
+
+    background: $white-a70;
+
+    color: $gray-neutral-10;
+  }
+}

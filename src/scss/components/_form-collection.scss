@@ -1,0 +1,19 @@
+@import "../variables/colors";
+
+ul.form-collection {
+  margin-top: 20px;
+
+  li {
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border: 1px solid $gray-neutral-90;
+
+    overflow-y: auto;
+
+    &.form-collection-add {
+      border: 0 solid transparent;
+      text-align: right;
+    }
+  }
+}

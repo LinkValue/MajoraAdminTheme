@@ -1,0 +1,64 @@
+@import "../variables/sizes";
+@import "../variables/colors";
+
+.navbar-inverse {
+  border-color: $color-accent-lighter;
+
+  background-color: $color-accent-lighter;
+
+  .navbar-nav {
+    > li {
+      > a,
+      > ul > li a:hover {
+        color: $white;
+      }
+
+      a:hover {
+        color: $color-accent-darker;
+      }
+    }
+
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $color-accent;
+      }
+    }
+
+    > .open > a {
+      &,
+      &:focus {
+        background-color: $color-accent;
+      }
+    }
+
+    > .dropdown > a .caret {
+      border-bottom-color: $white;
+      border-top-color: $white;
+    }
+
+    > .open .dropdown-menu > li > a {
+      color: $black;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .navbar-brand {
+    color: $white;
+  }
+}
+
+.nav-justified {
+  width: auto !important;
+
+  li {
+    &:last-child > a:hover,
+    &.active:last-child > a {
+      border-radius: 0 4px 0 0 !important;
+    }
+  }
+}

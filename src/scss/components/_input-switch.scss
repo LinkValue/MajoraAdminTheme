@@ -1,0 +1,96 @@
+@import "../variables/colors";
+
+$input-switch--size: 10px;
+$input-switch--padding: 2px;
+$input-switch--width: $input-switch--size * 2 + $input-switch--padding * 2;
+$input-switch--height: $input-switch--size + $input-switch--padding * 2;
+
+.input-switch {
+  display: inline-flex;
+
+  position: relative;
+
+  flex-direction: row;
+  align-items: center;
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: $input-switch--width;
+    height: 100%;
+
+    margin: 0;
+
+    vertical-align: middle;
+
+    visibility: hidden;
+  }
+}
+
+.input-switch--label {
+  order: 0;
+
+  margin: 0 5px;
+
+  .input-switch.reverse & {
+    order: 1;
+  }
+
+  input[type="checkbox"]:checked ~ & {
+    color: $color-info-darker;
+  }
+}
+
+.input-switch--toggle {
+  order: 1;
+
+  width: $input-switch--width;
+  height: $input-switch--height;
+
+  padding: $input-switch--padding;
+
+  transition: background-color 200ms;
+
+  border-radius: 50%/#{$input-switch--height};
+
+  background-color: currentColor;
+
+  cursor: pointer;
+
+  &::selection {
+    background: transparent;
+
+    color: inherit;
+  }
+
+  &::before {
+    display: block;
+
+    width: $input-switch--size;
+    height: $input-switch--size;
+
+    transform: translateX(100%);
+
+    transition: transform 200ms;
+
+    border-radius: 100%;
+
+    background: $white;
+
+    content: "";
+
+    input[type="checkbox"]:checked ~ & {
+      transform: translateX(0%);
+    }
+  }
+
+  .input-switch.reverse & {
+    order: 0;
+  }
+
+  input[type="checkbox"]:checked ~ & {
+    background: $color-info-darker;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../variables/colors";
+
+.breadcrumb {
+  background: $white;
+
+  font-size: 18px;
+
+  i {
+    color: $color-main;
+  }
+
+  a {
+    color: $color-main-light;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-main;
+    }
+  }
+}
