@@ -2,7 +2,8 @@ $breakpoints: (
   phablet: 37.5em,
   tablet: 50em,
   laptop: 64em,
-  desktop: 70em
+  desktop: 70em,
+  widescreen: 85em
 ) !default;
 
 @mixin breakpoint($breakpoint) {

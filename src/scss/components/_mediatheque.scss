@@ -31,21 +31,28 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
     overflow: hidden;
 
     @include breakpoint(phablet) {
-      $figure-size: calc(50% - #{$figure-spacing--sides} * 2);
+      $figure-size: calc(100% / 2 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
       padding-bottom: $figure-size;
     }
 
     @include breakpoint(laptop) {
-      $figure-size: calc(33% - #{$figure-spacing--sides} * 2);
+      $figure-size: calc(100% / 3 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
       padding-bottom: $figure-size;
     }
 
     @include breakpoint(desktop) {
-      $figure-size: calc(25% - #{$figure-spacing--sides} * 2);
+      $figure-size: calc(100% / 5 - #{$figure-spacing--sides} * 2);
+
+      width: $figure-size;
+      padding-bottom: $figure-size;
+    }
+
+    @include breakpoint(widescreen) {
+      $figure-size: calc(100% / 7 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
       padding-bottom: $figure-size;
