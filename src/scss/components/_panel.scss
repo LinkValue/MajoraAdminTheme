@@ -5,19 +5,19 @@
 @import "panel-tabs";
 @import "panel-signets";
 
-.panel {
+.card {
   display: flex;
   flex-direction: column;
   background-color: $gray-neutral-95;
 }
 
-.panel-sponsor {
+.card-sponsor {
   display: flex;
   flex-direction: column;
   background-color: $gray-neutral-95;
 }
 
-.panel-body {
+.card-block {
   flex: 1;
   background: $white;
 
@@ -26,7 +26,7 @@
   }
 }
 
-.panel-body-sponsor {
+.card-block-sponsor {
   flex: 1;
 
   &:last-child {
@@ -34,14 +34,14 @@
   }
 }
 
-.panel-heading {
-  @extend %panel-heading;
+.card-header {
+  @extend %card-header;
 }
 
-.panel-tabs {
-  @extend %panel-tabs;
+.card-tabs {
+  @extend %card-tabs;
 }
 
-.panel-signets {
-  @extend %panel-signets;
+.card-signets {
+  @extend %card-signets;
 }

@@ -183,18 +183,18 @@ a {
   }
 }
 
-.panel {
+.card {
   border: 0;
   box-shadow: none;
 }
 
-.panel-heading {
+.card-header {
   border: 0;
   font-size: 16px;
   font-weight: 300;
 }
 
-.panel-title {
+.card-title {
   margin-top: 0;
   margin-bottom: 0;
 
@@ -421,6 +421,14 @@ ul {
   box-shadow: none;
 }
 
+.alert {
+  padding: 1rem 1.25rem;
+}
+
+.alert p {
+  margin-bottom: 0;
+}
+
 .alert-success {
   border-color: $color-success-light;
 
@@ -502,7 +510,13 @@ ul {
   box-shadow: none;
 }
 
-.dropdown-menu > li > a {
+.dropdown-menu {
+  min-width: 11rem;
+  padding: 0.25rem 0;
+  line-height: initial;
+}
+
+.dropdown-menu > a {
   &:hover,
   &:focus {
     @include dropmenu-link--hover;
@@ -513,7 +527,7 @@ ul {
   margin-right: 1px;
 }
 
-.panel-default > .panel-heading {
+.card-default > .card-header {
   border-color: $gray-neutral-90;
 
   background-color: $white;

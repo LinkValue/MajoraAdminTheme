@@ -8,18 +8,18 @@ a:hover {
   color: #2a3641;
 }
 
-.panel {
+.card {
   border: 0;
   box-shadow: none;
 }
 
-.panel-heading {
+.card-header {
   border: 0;
   font-size: 16px;
   font-weight: 300;
 }
 
-.panel-title {
+.card-title {
   margin-top: 0;
   margin-bottom: 0;
   color: #2a3641;
@@ -312,6 +312,14 @@ ul {
   box-shadow: none;
 }
 
+.alert {
+  padding: 1rem 1.25rem;
+}
+
+.alert p {
+  margin-bottom: 0;
+}
+
 .alert-success {
   border-color: #96df49;
   background-color: #b9ea86;
@@ -463,7 +471,13 @@ ul {
   box-shadow: none;
 }
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown-menu {
+  min-width: 11rem;
+  padding: 0.25rem 0;
+  line-height: initial;
+}
+
+.dropdown-menu > a:hover, .dropdown-menu > a:focus {
   text-decoration: none;
   background-color: #4a5e73;
   color: white;
@@ -473,19 +487,19 @@ ul {
   margin-right: 1px;
 }
 
-.panel-default > .panel-heading {
+.card-default > .card-header {
   border-color: #e6e6e6;
   background-color: white;
   color: #666666;
 }
 
-body {
+body, html {
   margin: 0 !important;
   padding: 0 !important;
   background: #eef2f6;
   color: #666666;
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 a, a:hover, a:focus {
@@ -666,13 +680,13 @@ a.logo img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.language .dropdown-menu li a {
+.language .dropdown-menu a {
   padding: 10px;
   border-bottom: 1px solid #e6e6e6;
   font-size: 13px;
 }
 
-.language .dropdown-menu li:last-child a {
+.language .dropdown-menu a:last-child {
   border-bottom: none;
 }
 
@@ -926,7 +940,7 @@ ul.form-collection li.form-collection-add {
   border-radius: 0 4px 0 0 !important;
 }
 
-.panel-heading {
+.card-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -938,28 +952,28 @@ ul.form-collection li.form-collection-add {
   line-height: 50px;
 }
 
-.collapsible.panel-heading {
+.collapsible.card-header {
   display: block;
 }
 
-.tab-right.panel-heading .nav li:first-child.active > a {
+.tab-right.card-header .nav li:first-child.active > a {
   border-radius: 0;
 }
 
-.tab-right.panel-heading .nav li:last-child.active > a {
+.tab-right.card-header .nav li:last-child.active > a {
   border-radius: 0 4px 0 0;
 }
 
-.tab-right.panel-heading .nav-tabs > li > a {
+.tab-right.card-header .nav-tabs > li > a {
   margin-right: 0;
   margin-left: 1px;
 }
 
-.composed.panel-heading {
+.composed.card-header {
   padding: 0;
 }
 
-.composed.panel-heading h3 {
+.composed.card-header h3 {
   -ms-flex: 1;
       flex: 1;
   margin-top: 0;
@@ -969,7 +983,7 @@ ul.form-collection li.form-collection-add {
   font-weight: 300;
 }
 
-.composed.panel-heading .combo {
+.composed.card-header .combo {
   padding: 0 16px;
   background: rgba(0, 0, 0, 0.2);
   color: inherit;
@@ -977,96 +991,101 @@ ul.form-collection li.form-collection-add {
   text-align: center;
 }
 
-.composed.panel-heading .combo:first-child {
+.composed.card-header .combo:first-child {
   width: 50px;
   border-radius: 4px 0 0;
 }
 
-.composed.panel-heading .combo:last-child {
+.composed.card-header .combo:last-child {
   border-radius: 0 4px 0 0;
 }
 
-.composed.panel-heading .combo.text {
+.composed.card-header .combo.text {
   font-size: 12px;
 }
 
-.composed.panel-heading .combo.dropdown {
+.composed.card-header .combo.dropdown {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
 
-.composed.panel-heading .combo.dropdown .btn {
+.composed.card-header .combo.dropdown .btn {
   padding: 0 16px;
   border: 0;
   background: none;
   font: inherit;
 }
 
-.composed.panel-heading .combo + .combo {
+.composed.card-header .combo + .combo {
   margin-left: 1px;
 }
 
-.composed.panel-heading .combo .icon {
+.composed.card-header .combo .icon {
   font-size: 16px;
   vertical-align: middle;
 }
 
-.composed.panel-heading a.combo:hover, .composed.panel-heading .combo.dropdown:hover {
+.composed.card-header .combo button {
+  color: white;
+}
+
+.composed.card-header a.combo:hover, .composed.card-header .combo.dropdown:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.panel-heading .nav {
+.card-header .nav {
   margin: 0 -16px -1px;
   border: medium none;
   font-size: 13px;
 }
 
-.panel-heading .nav > li:first-child.active > a {
+.card-header .nav > li:first-child.active > a {
   border-radius: 4px 0 0;
 }
 
-.panel-heading .nav > li:first-child.active > a:hover {
+.card-header .nav > li:first-child.active > a:hover {
   border-radius: 4px 0 0;
 }
 
-.panel-heading .nav > li > a {
+.card-header .nav > li > a {
   border-width: 0;
   border-radius: 0;
   color: white;
+  line-height: 1.75rem;
 }
 
-.panel-heading .nav > li > a:hover {
+.card-header .nav > li > a:hover {
   background: white;
   color: #4a5e73;
 }
 
-.panel-heading .nav > li.active > a {
+.card-header .nav > li.active > a {
   border-width: 0;
   border-radius: 0;
   background: white;
   color: #4a5e73;
 }
 
-.panel-heading .nav > li.active > a:hover, .panel-heading .nav > li.active > a:focus {
+.card-header .nav > li.active > a:hover, .card-header .nav > li.active > a:focus {
   border-width: 0;
   border-radius: 0;
 }
 
-.panel-heading .actions a {
+.card-header .actions a {
   margin-left: 10px;
   color: #999999;
   font-size: 12px;
 }
 
-.panel-tabs {
+.card-tabs {
   display: inline-block;
   width: 100%;
   padding: 0;
   border: 0;
 }
 
-.panel-tabs .tabs-list {
+.card-tabs .tabs-list {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-direction: row;
@@ -1076,14 +1095,14 @@ ul.form-collection li.form-collection-add {
   padding: 0;
 }
 
-.panel-tabs .tabs-list .tab {
+.card-tabs .tabs-list .tab {
   display: -ms-flexbox;
   display: flex;
   -ms-flex: 1;
       flex: 1;
 }
 
-.panel-tabs .tabs-list .tab a {
+.card-tabs .tabs-list .tab a {
   display: block;
   width: 100%;
   height: 100%;
@@ -1093,55 +1112,55 @@ ul.form-collection li.form-collection-add {
   text-align: center;
 }
 
-.panel-tabs .tabs-list .tab a .icon {
+.card-tabs .tabs-list .tab a .icon {
   display: block;
   color: #cccccc;
   font-size: 16px;
 }
 
-.panel-tabs .tabs-list .tab a:hover {
+.card-tabs .tabs-list .tab a:hover {
   position: relative;
   background: white;
 }
 
-.panel-tabs .tabs-list .tab a:hover .icon {
+.card-tabs .tabs-list .tab a:hover .icon {
   color: #ee423f;
 }
 
-.panel-tabs .tabs-list .tab:last-child a {
+.card-tabs .tabs-list .tab:last-child a {
   border-right: none;
 }
 
-.panel-tabs .tabs-list .tab.active a {
+.card-tabs .tabs-list .tab.active a {
   position: relative;
   background: white;
 }
 
-.panel-tabs .tabs-list .tab.active a .icon {
+.card-tabs .tabs-list .tab.active a .icon {
   color: #ee423f;
 }
 
-.panel-footer.panel-tabs .tabs-list {
+.card-footer.card-tabs .tabs-list {
   border-radius: 0 0 4px 4px;
 }
 
-.panel-footer.panel-tabs .tabs-list .tab:first-child a {
+.card-footer.card-tabs .tabs-list .tab:first-child a {
   border-radius: 0 0 0 4px;
 }
 
-.panel-footer.panel-tabs .tabs-list .tab:last-child a {
+.card-footer.card-tabs .tabs-list .tab:last-child a {
   border-right: none;
   border-radius: 0 0 4px;
 }
 
-.panel-signets {
+.card-signets {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
 }
 
-.panel-signets .signets-list {
+.card-signets .signets-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1153,61 +1172,61 @@ ul.form-collection li.form-collection-add {
   padding: 0;
 }
 
-.panel-signets .signets-list .no-wrap {
+.card-signets .signets-list .no-wrap {
   white-space: nowrap;
 }
 
-.panel-signets .signets-list .icon {
+.card-signets .signets-list .icon {
   color: #cccccc;
   font-size: 16px;
   vertical-align: bottom;
 }
 
-.panel-signets .signets-list .signet > * {
+.card-signets .signets-list .signet > * {
   border-radius: 0 4px 4px 0;
 }
 
-.panel-signets .signets-list .signet.active > * {
+.card-signets .signets-list .signet.active > * {
   box-shadow: 2px 0 2px -2px rgba(0, 0, 0, 0.08), 0 1px 1px -1px rgba(0, 0, 0, 0.08), 0 -1px 1px -1px rgba(0, 0, 0, 0.08);
 }
 
-.panel-signets .signets-list .signet > *:hover .icon, .panel-signets .signets-list .active .icon {
+.card-signets .signets-list .signet > *:hover .icon, .card-signets .signets-list .active .icon {
   color: #ee423f;
 }
 
-.panel-signets .panel-body, .panel-signets .panel-body:last-child {
+.card-signets .card-block, .card-signets .card-block:last-child {
   -ms-flex-order: 0;
       order: 0;
   border-radius: 0 0 0 4px;
 }
 
-.reverse.panel-signets .signets-list {
+.reverse.card-signets .signets-list {
   -ms-flex-order: 0;
       order: 0;
 }
 
-.reverse.panel-signets .signets-list .signet > * {
+.reverse.card-signets .signets-list .signet > * {
   border-radius: 4px 0 0 4px;
 }
 
-.reverse.panel-signets .signets-list .signet.active > * {
+.reverse.card-signets .signets-list .signet.active > * {
   box-shadow: -2px 0 2px -2px rgba(0, 0, 0, 0.08), 0 1px 1px -1px rgba(0, 0, 0, 0.08), 0 -1px 1px -1px rgba(0, 0, 0, 0.08);
 }
 
-.reverse.panel-signets .panel-body {
+.reverse.card-signets .card-block {
   -ms-flex-order: 1;
       order: 1;
   border-radius: 0 0 4px;
 }
 
-.panel-signets .panel-body {
+.card-signets .card-block {
   border-width: 0;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.08);
   box-shadow: 2px 0 2px -2px rgba(0, 0, 0, 0.08);
 }
 
-.panel-signets .signet {
+.card-signets .signet {
   display: -ms-flexbox;
   display: flex;
   position: relative;
@@ -1216,11 +1235,11 @@ ul.form-collection li.form-collection-add {
   z-index: 0;
 }
 
-.panel-signets .signet:first-child {
+.card-signets .signet:first-child {
   margin-top: 2px;
 }
 
-.panel-signets .signet > * {
+.card-signets .signet > * {
   display: block;
   width: 100%;
   height: 100%;
@@ -1231,20 +1250,20 @@ ul.form-collection li.form-collection-add {
   cursor: pointer;
 }
 
-.panel-signets .signet > *:hover {
+.card-signets .signet > *:hover {
   background: white;
 }
 
-.panel-signets .signet.active {
+.card-signets .signet.active {
   z-index: 15;
 }
 
-.panel-signets .signet.active > * {
+.card-signets .signet.active > * {
   background: white;
   z-index: 15;
 }
 
-.panel {
+.card {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1252,7 +1271,7 @@ ul.form-collection li.form-collection-add {
   background-color: #f2f2f2;
 }
 
-.panel-sponsor {
+.card-sponsor {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1260,22 +1279,22 @@ ul.form-collection li.form-collection-add {
   background-color: #f2f2f2;
 }
 
-.panel-body {
+.card-block {
   -ms-flex: 1;
       flex: 1;
   background: white;
 }
 
-.panel-body:last-child {
+.card-block:last-child {
   border-radius: 0 0 4px 4px;
 }
 
-.panel-body-sponsor {
+.card-block-sponsor {
   -ms-flex: 1;
       flex: 1;
 }
 
-.panel-body-sponsor:last-child {
+.card-block-sponsor:last-child {
   border-radius: 0 0 4px 4px;
 }
 
@@ -1301,7 +1320,7 @@ ul.form-collection li.form-collection-add {
 }
 
 #main-content {
-  margin-left: 22rem;
+  margin-left: 17rem;
   transition: all 300ms ease-in-out;
   transition-property: margin;
 }
@@ -1349,7 +1368,7 @@ ul.form-collection li.form-collection-add {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 22rem;
+  width: 17rem;
   margin: 75px 0 0;
   padding: 0 1rem;
   transition: all 300ms ease-in-out;
@@ -1425,7 +1444,7 @@ ul.form-collection li.form-collection-add {
       align-items: center;
   width: 2.2rem;
   height: 2.2rem;
-  margin: 1.25em .5em 0 0;
+  margin: 0.75em .5em 0 0;
   transition: all 300ms ease-in-out;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
@@ -1583,14 +1602,14 @@ ul.form-collection li.form-collection-add {
   border-bottom: 8px solid transparent;
 }
 
-.timeline .timeline-item .timeline-desk .panel {
+.timeline .timeline-item .timeline-desk .card {
   position: relative;
   margin-bottom: 5px;
   margin-left: 25px;
   background: #e6e6e6;
 }
 
-.timeline .timeline-item .timeline-desk .panel .panel-body {
+.timeline .timeline-item .timeline-desk .card .card-block {
   margin-top: -3px;
 }
 
@@ -1616,7 +1635,7 @@ ul.form-collection li.form-collection-add {
   border-left: 8px solid #e6e6e6;
 }
 
-.timeline .timeline-item.alt .timeline-desk .panel {
+.timeline .timeline-item.alt .timeline-desk .card {
   margin-right: 25px;
   margin-left: 0;
 }
@@ -1675,6 +1694,10 @@ ul.form-collection li.form-collection-add {
 .top-nav .dropdown-menu {
   right: 0;
   left: auto;
+}
+
+.top-nav .nav li a {
+  display: block;
 }
 
 .top-nav .nav .caret {

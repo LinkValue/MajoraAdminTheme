@@ -59,6 +59,10 @@
     left: auto;
   }
 
+  .nav li a {
+    display: block;
+  }
+
   .nav .caret {
     border-top-color: $color-accent;
     border-bottom-color: $color-accent;

@@ -1,4 +1,4 @@
-%panel-heading {
+%card-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -90,6 +90,10 @@
         font-size: 16px;
         vertical-align: middle;
       }
+
+      button {
+        color: $white;
+      }
     }
 
     a.combo:hover,
@@ -117,6 +121,7 @@
       border-width: 0;
       border-radius: 0;
       color: $white;
+      line-height: 1.75rem;
 
       &:hover {
         background: $white;

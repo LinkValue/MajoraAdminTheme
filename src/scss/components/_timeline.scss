@@ -131,7 +131,7 @@
         border-bottom: 8px solid transparent;
       }
 
-      .panel {
+      .card {
         position: relative;
 
         margin-bottom: 5px;
@@ -139,7 +139,7 @@
 
         background: $gray-neutral-90;
 
-        .panel-body {
+        .card-block {
           margin-top: -3px;
         }
       }
@@ -177,7 +177,7 @@
           border-left: 8px solid $gray-neutral-90;
         }
 
-        .panel {
+        .card {
           margin-right: 25px;
           margin-left: 0;
         }

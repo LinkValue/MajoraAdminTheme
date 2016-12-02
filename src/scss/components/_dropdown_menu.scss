@@ -99,7 +99,7 @@
     border: 0;
     box-shadow: 0 2px 5px $black-a20;
 
-    li a {
+    a {
       padding: 10px;
 
       border-bottom: 1px solid $gray-neutral-90;
@@ -107,7 +107,7 @@
       font-size: 13px;
     }
 
-    li:last-child a {
+    a:last-child {
       border-bottom: none;
     }
   }
