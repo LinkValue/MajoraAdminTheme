@@ -5,7 +5,7 @@
 
   padding: 0 16px;
 
-  border-radius: 4px 4px 0 0;
+  border-radius: 0;
 
   line-height: 50px;
 
@@ -20,7 +20,7 @@
       }
 
       li:last-child.active > a {
-        border-radius: 0 4px 0 0;
+        border-radius: 0;
       }
     }
 
@@ -55,11 +55,11 @@
       &:first-child {
         width: 50px;
 
-        border-radius: 4px 0 0;
+        border-radius: 0;
       }
 
       &:last-child {
-        border-radius: 0 4px 0 0;
+        border-radius: 0;
       }
 
       &.text {
@@ -110,10 +110,10 @@
     font-size: 13px;
 
     > li:first-child.active > a {
-      border-radius: 4px 0 0;
+      border-radius: 0;
 
       &:hover {
-        border-radius: 4px 0 0;
+        border-radius: 0;
       }
     }
 

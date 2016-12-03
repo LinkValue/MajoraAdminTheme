@@ -19,7 +19,7 @@
       padding: 6px;
 
       border: 1px solid $color-neutral;
-      border-radius: 4px;
+      border-radius: 0;
 
       background: none;
 
@@ -28,7 +28,7 @@
         // scss-lint:disable all
         border: 1px solid $color-neutral ;
         border-color: $color-neutral ;
-        border-radius: 4px;
+        border-radius: 0;
 
         color: $gray-neutral-20;
 

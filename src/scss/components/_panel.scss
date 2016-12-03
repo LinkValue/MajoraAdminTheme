@@ -22,7 +22,7 @@
   background: $white;
 
   &:last-child {
-    border-radius: 0 0 4px 4px;
+    border-radius: 0;
   }
 }
 
@@ -30,7 +30,7 @@
   flex: 1;
 
   &:last-child {
-    border-radius: 0 0 4px 4px;
+    border-radius: 0;
   }
 }
 

@@ -21,7 +21,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
     margin: 0 $figure-spacing--sides $figure-spacing--bottom;
     padding-bottom: $figure-size;
 
-    border-radius: 3px;
+    border-radius: 0;
 
     background-repeat: no-repeat;
     background-position: 50% 50%;
