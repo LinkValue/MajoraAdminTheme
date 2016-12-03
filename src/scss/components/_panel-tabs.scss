@@ -15,9 +15,12 @@
     margin: 0;
     padding: 0;
 
+    border-bottom: 0;
+
     .tab {
       display: flex;
       flex: 1;
+      margin: 0;
 
       a {
         display: block;
@@ -26,7 +29,9 @@
         height: 100%;
 
         padding: $generic-spacing;
+        margin: 0;
 
+        border: none;
         border-right: 1px solid $gray-iron;
 
         color: $gray-neutral-40;
@@ -47,23 +52,25 @@
           background: $white;
 
           .icon {
-            color: $color-main-light;
+            color: $color-theme-primary;
+          }
+        }
+
+        &.active {
+          position: relative;
+
+          background: $white;
+
+          border-bottom: 0;
+
+          .icon {
+            color: $color-theme-primary;
           }
         }
       }
 
       &:last-child a {
         border-right: none;
-      }
-
-      &.active a {
-        position: relative;
-
-        background: $white;
-
-        .icon {
-          color: $color-main-light;
-        }
       }
     }
   }
@@ -73,6 +80,16 @@
       border-radius: 0 0 4px 4px;
 
       .tab {
+        a{
+          border-radius: 0;
+
+          border-bottom: 1px solid $gray-iron;
+
+          &.active {
+            border-top-color: transparent;
+          }
+        }
+
         &:first-child a {
           border-radius: 0 0 0 4px;
         }

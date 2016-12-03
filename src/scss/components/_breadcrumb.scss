@@ -6,16 +6,16 @@
   font-size: 18px;
 
   i {
-    color: $color-main;
+    color: $color-theme-primary;
   }
 
   a {
-    color: $color-main-light;
+    color: $color-theme-primary;
 
     &:hover,
     &:active,
     &:focus {
-      color: $color-main;
+      color: $color-theme-primary;
     }
   }
 }

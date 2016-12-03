@@ -1,8 +1,8 @@
 // bootstrap button skin override
 @mixin btn-default {
-  border-color: $gray-neutral-50;
+  border-color: $color-theme-primary;
 
-  background-color: $gray-neutral-50;
+  background-color: $color-theme-primary;
 
   color: $white;
 
@@ -10,9 +10,9 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $gray-neutral-70;
+    border-color: $color-theme-primary-dark;
 
-    background-color: $gray-neutral-70;
+    background-color: $color-theme-primary-dark;
 
     color: $white;
   }
@@ -170,7 +170,7 @@
 @mixin dropmenu-link--hover {
   text-decoration: none;
 
-  background-color: $color-accent-dark;
+  background-color: $color-theme-primary-dark;
 
   color: $white;
 }

@@ -14,6 +14,8 @@
     margin: 0;
     padding: 0;
 
+    border: 0;
+
     .no-wrap {
       white-space: nowrap;
     }
@@ -38,7 +40,7 @@
 
     .signet > *:hover .icon,
     .active .icon {
-      color: $color-main-light;
+      color: $color-theme-primary;
     }
   }
 
@@ -81,10 +83,14 @@
     display: flex;
 
     position: relative;
-    margin: 1px 0 0;
+    margin: 1px 0 0 0;
     padding: 0;
 
     z-index: 0;
+
+    +.signet{
+      margin-left: 0;
+    }
 
     &:first-child {
       margin-top: 2px;

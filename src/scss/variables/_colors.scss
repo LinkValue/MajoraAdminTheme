@@ -71,10 +71,17 @@ $white-a60: hsla(0, 0%, 100%, 0.6) !default;
 $white-a70: hsla(0, 0%, 100%, 0.7) !default;
 $white-a80: hsla(0, 0%, 100%, 0.8) !default;
 
+// Blue LV
+$blue-LV: hsl(199, 68%, 65%);
+$blue-LV-dark: hsl(203, 67%, 52%);
+
 // ***************** //
 // BASE THEME COLORS
 // ***************** //
 $color-neutral: $gray-procelain !default;
+
+$color-theme-primary: $blue-LV !default;
+$color-theme-primary-dark: $blue-LV-dark !default;
 
 $color-main-lighter: $color-sanguine-lighter !default;
 $color-main-light: $color-sanguine-light !default;
@@ -89,7 +96,7 @@ $color-accent-dark: $gray-navy-dark !default;
 $color-accent-darker: $gray-navy-darker !default;
 
 $color-bg-body: $gray-procelain !default;
-$color-bg-main: $color-sanguine-light !default;
+$color-bg-main: $blue-LV !default;
 $color-bg-alt: $gray-navy-lighter !default;
 
 $color-success-lighter: $color-lime-lighter !default;

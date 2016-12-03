@@ -153,8 +153,10 @@
           <!-- ### /Breadcrumbs ### -->
 
           <!-- ### Row ### -->
-          <div class="row">
-
+          <div class="row component-bloc">
+            <div class="col-lg-12">
+              <h2 class="component-title">Panels</h2>
+            </div>
             <!-- ### Panel ### -->
             <div class="col-lg-6">
               <div class="card">
@@ -212,41 +214,42 @@
                 </header>
                 <div class="card-signets">
                   <!-- Right nav -->
-                  <ul class="signets-list">
-                    <li class="signet">
-                      <a href="#">
+                  <ul class="signets-list nav nav-tabs">
+                    <li class="signet tab nav-item">
+                      <a data-toggle="tab" href="#graphical-3" class="nav-link">
                         <i class="icon fa fa-edit"></i>
                         <span class="no-wrap">Signet 1</span>
                       </a>
                     </li>
-                    <li class="signet active">
-                      <a href="#">
+                    <li class="signet active tab nav-item">
+                      <a data-toggle="tab" href="#tabular-3" class="nav-link">
                         <i class="icon fa fa-edit"></i>
                         <span class="no-wrap">Signet 2</span>
                       </a>
                     </li>
-                    <li class="signet">
-                      <a href="#">
+                    <li class="signet tab nav-item">
+                      <a data-toggle="tab" href="#listing-3" class="nav-link">
                         <i class="icon fa fa-edit"></i>
                         <span class="no-wrap">Signet 3</span>
                       </a>
                     </li>
                   </ul>
                   <!-- /Right nav -->
-                  <div class="card-block">
-                    <p>Panel col large 6</p>
+                  <div class="card-block tab-content">
+                    <div class="tab-pane active" id="graphical-3">
+                      <p>Panel col small 6 graphical</p>
+                    </div>
+                    <div class="tab-pane" id="tabular-3">
+                      <p>Panel col small 6 tabular</p>
+                    </div>
+                    <div class="tab-pane" id="listing-3">
+                      <p>Panel col small 6 listing</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- ### /Panel ### -->
-
-          </div>
-          <!-- ### /Row ### -->
-
-          <!-- ### Row ### -->
-          <div class="row">
-
             <!-- ### Panel ### -->
             <div class="col-lg-6">
               <div class="card">
@@ -261,21 +264,21 @@
                 </header>
                 <div class="card-tabs">
                   <!-- Top nav -->
-                  <ul class="tabs-list">
-                    <li class="tab">
-                      <a href="#">
+                  <ul class="tabs-list nav nav-tabs">
+                    <li class="tab nav-item">
+                      <a data-toggle="tab" href="#graphical" class="nav-link">
                         <i class="icon fa fa-bullseye"></i>
                         Graphical
                       </a>
                     </li>
-                    <li class="tab active">
-                      <a href="#">
+                    <li class="tab nav-item active">
+                      <a data-toggle="tab" href="#tabular" class="nav-link">
                         <i class="icon fa fa-th-large"></i>
                         Tabular
                       </a>
                     </li>
-                    <li class="tab">
-                      <a href="#">
+                    <li class="tab nav-item">
+                      <a data-toggle="tab" href="#listing" class="nav-link">
                         <i class="icon fa fa-align-justify"></i>
                         Listing
                       </a>
@@ -283,9 +286,17 @@
                   </ul>
                   <!-- /Top nav -->
                 </div>
-                <div class="card-block">
-                  <p>Panel col large 6</p>
-                </div>
+                <footer class="card-block tab-content">
+                  <div class="tab-pane active" id="graphical">
+                    <p>Panel col small 6 graphical</p>
+                  </div>
+                  <div class="tab-pane" id="tabular">
+                    <p>Panel col small 6 tabular</p>
+                  </div>
+                  <div class="tab-pane" id="listing">
+                    <p>Panel col small 6 listing</p>
+                  </div>
+                </footer>
               </div>
             </div>
             <!-- ### /Panel ### -->
@@ -296,26 +307,34 @@
                 <header class="card-header bg-alt">
                   Col-lg-6
                 </header>
-                <div class="card-block">
-                  <p>Panel col small 6</p>
+                <div class="card-block tab-content">
+                  <div class="tab-pane active" id="graphical-2">
+                    <p>Panel col small 6 graphical</p>
+                  </div>
+                  <div class="tab-pane" id="tabular-2">
+                    <p>Panel col small 6 tabular</p>
+                  </div>
+                  <div class="tab-pane" id="listing-2">
+                    <p>Panel col small 6 listing</p>
+                  </div>
                 </div>
                 <footer class="card-footer card-tabs">
                   <!-- Bottom nav -->
-                  <ul class="tabs-list">
-                    <li class="tab active">
-                      <a href="#">
+                  <ul class="tabs-list nav nav-tabs">
+                    <li class="tab nav-item active">
+                      <a data-toggle="tab" href="#graphical-2" class="nav-link">
                         <i class="icon fa fa-bullseye"></i>
                         Graphical
                       </a>
                     </li>
-                    <li class="tab">
-                      <a href="#">
+                    <li class="tab nav-item">
+                      <a data-toggle="tab" href="#tabular-2" class="nav-link">
                         <i class="icon fa fa-th-large"></i>
                         Tabular
                       </a>
                     </li>
-                    <li class="tab">
-                      <a href="#">
+                    <li class="tab nav-item">
+                      <a data-toggle="tab" href="#listing-2" class="nav-link">
                         <i class="icon fa fa-align-justify"></i>
                         Listing
                       </a>
@@ -327,6 +346,39 @@
             </div>
             <!-- ### /Panel ### -->
 
+            <!-- Tabs -->
+            <section class="card col-sm-6">
+              <!-- Tabs nav -->
+              <header class="card-header bg-alt">
+                <ul class="nav nav-tabs card-header-tabs float-xs-left">
+                  <li class="nav-item">
+                    <a data-toggle="tab" href="#home" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" href="#about" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" href="#profile" class="nav-link">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-toggle="tab" href="#contact" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </header>
+              <!-- Tabs nav -->
+
+              <!-- Tabs content -->
+              <div class="card-block">
+                <div class="tab-content">
+                  <div id="home" class="tab-pane active">Home</div>
+                  <div id="about" class="tab-pane">About</div>
+                  <div id="profile" class="tab-pane">Profile</div>
+                  <div id="contact" class="tab-pane">Contact</div>
+                </div>
+              </div>
+              <!-- /Tabs content -->
+            </section>
+            <!-- /Tabs -->
           </div>
           <!-- ### /Row ### -->
 
@@ -345,8 +397,7 @@
                       <i class="icon fa fa-times"></i>
                     </button>
                     <h4>
-                      <i class="icon fa fa-ok-sign"></i>
-                      Success!
+                      <i class="icon fa fa-ok-sign"></i>Success!
                     </h4>
                     <p>Best check yo self, you're not looking too good...</p>
                   </div>
@@ -506,39 +557,6 @@
               </section>
               <!-- /Popover -->
 
-              <!-- Tabs -->
-              <section class="card">
-                <!-- Tabs nav -->
-                <header class="card-header bg-alt">
-                  <ul class="nav nav-tabs card-header-tabs float-xs-left">
-                    <li class="nav-item">
-                      <a data-toggle="tab" href="#home" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a data-toggle="tab" href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a data-toggle="tab" href="#profile" class="nav-link">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                      <a data-toggle="tab" href="#contact" class="nav-link">Contact</a>
-                    </li>
-                  </ul>
-                </header>
-                <!-- Tabs nav -->
-
-                <!-- Tabs content -->
-                <div class="card-block">
-                  <div class="tab-content">
-                    <div id="home" class="tab-pane active">Home</div>
-                    <div id="about" class="tab-pane">About</div>
-                    <div id="profile" class="tab-pane">Profile</div>
-                    <div id="contact" class="tab-pane">Contact</div>
-                  </div>
-                </div>
-                <!-- /Tabs content -->
-              </section>
-              <!-- /Tabs -->
             </div>
             <!-- ### /Panel ### -->
           </div>
