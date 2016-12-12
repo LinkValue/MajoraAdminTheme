@@ -7,24 +7,9 @@
     <title>MajoraAdminTheme demo template</title>
 
     <!-- ### Stylesheets ### -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/majora-theme.css">
-
-    <!-- ### Fonts ### -->
-    <style type="text/css">
-        @font-face {
-            font-family: 'FontAwesome';
-            src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?v=4.4.0');
-            src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),
-                url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
-    </style>
   </head>
   <body>
     <main id="container">
@@ -99,7 +84,7 @@
           <!-- Menu element -->
           <li class="menu-item is-open">
             <a class="menu-link" href="index.html">
-              <i class="icon fa fa-dashboard"></i>
+              <i class="icon fa fa-dashboard "></i>
               <span class="menu-label">Dashboard</span>
             </a>
           </li>
@@ -126,6 +111,69 @@
             </ul>
           </li>
           <!-- /Sub menu dropdown -->
+
+            <!-- Menu element -->
+            <li class="menu-item">
+              <a class="menu-link inner-link" href="#panels">
+                <i class="icon fa fa-info-circle "></i>
+                <span class="menu-label">Panels</span>
+              </a>
+            </li>
+            <!-- /Menu element -->
+
+            <!-- Menu element -->
+            <li class="menu-item">
+              <a class="menu-link inner-link" href="#alerts">
+                <i class="icon fa fa-info-circle "></i>
+                <span class="menu-label">Alerts</span>
+              </a>
+            </li>
+            <!-- /Menu element -->
+
+            <!-- Menu element -->
+            <li class="menu-item">
+              <a class="menu-link inner-link" href="#buttons">
+                <i class="icon fa fa-info-circle "></i>
+                <span class="menu-label">Buttons</span>
+              </a>
+            </li>
+            <!-- /Menu element -->
+
+            <!-- Menu element -->
+            <li class="menu-item">
+              <a class="menu-link inner-link" href="#tags">
+                <i class="icon fa fa-info-circle "></i>
+                <span class="menu-label">Tags</span>
+              </a>
+            </li>
+            <!-- /Menu element -->
+
+            <!-- Menu element -->
+            <li class="menu-item">
+              <a class="menu-link inner-link" href="#modals">
+                <i class="icon fa fa-info-circle "></i>
+                <span class="menu-label">Modals</span>
+              </a>
+            </li>
+            <!-- /Menu element -->
+
+            <!-- Menu element -->
+            <li class="menu-item">
+              <a class="menu-link inner-link" href="#mediatheque">
+                <i class="icon fa fa-info-circle "></i>
+                <span class="menu-label">Mediatheque</span>
+              </a>
+            </li>
+            <!-- /Menu element -->
+
+            <!-- Menu element -->
+            <li class="menu-item">
+              <a class="menu-link inner-link" href="#tables">
+                <i class="icon fa fa-info-circle "></i>
+                <span class="menu-label">Tables</span>
+              </a>
+            </li>
+            <!-- /Menu element -->
         </ul>
       </aside>
       <!-- ### /Sidebar nav ### -->
@@ -139,215 +187,233 @@
           <!-- ### Breadcrumbs ### -->
           <div class="row">
             <div class="col-lg-12">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="#">
-                    <i class="fa fa-street-view"></i>
-                    Dashboard
-                  </a>
-                </li>
-                <li class="active breadcrumb-item">Sub</li>
-              </ul>
+              <div class="container-clipboard">
+                <ul class="breadcrumb" id="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#">
+                      <i class="fa fa-street-view"></i>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="active breadcrumb-item">Sub</li>
+                </ul>
+                <i class="icon icon-blue fa fa-clipboard" data-clipboard-target="#breadcrumb"></i>
+              </div>
             </div>
           </div>
           <!-- ### /Breadcrumbs ### -->
 
-          <!-- ### Row ### -->
+          <!-- ### Panel default ### -->
+          <div class="row component-bloc" id="panels">
+            <header class="component-title container-clipboard card-header">
+              Panel default
+              <i class="icon fa fa-clipboard" data-clipboard-target="#panel-default"></i>
+            </header>
+            <div class="card" id="panel-default">
+              <header class="card-header composed bg-main">
+                <a href class="combo">
+                  <i class="icon fa fa-bar-chart-o"></i>
+                </a>
+                <h3>Col-lg-12</h3>
+
+                <!-- Dropdown -->
+                <span class="combo dropdown text">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </span>
+                <!-- /Dropdown -->
+
+                <!-- Right label -->
+                <span class="combo text">
+                 Data text
+                </span>
+                <!-- /Right label -->
+              </header>
+
+              <!-- Content -->
+              <div class="card-block">
+                <p>Panel col large 12</p>
+              </div>
+              <!-- /Content -->
+            </div>
+          </div>
+          <!-- ### /Panel default ### -->
+
+          <!-- ### Panel signet ### -->
           <div class="row component-bloc">
-            <div class="col-lg-12">
-              <h2 class="component-title">Panels</h2>
-            </div>
-            <!-- ### Panel ### -->
-            <div class="col-lg-6">
-              <div class="card">
-                <header class="card-header composed bg-main">
-                  <a href class="combo">
-                    <i class="icon fa fa-bar-chart-o"></i>
-                  </a>
-                  <h3>Col-lg-6</h3>
-
-                  <!-- Dropdown -->
-                  <span class="combo dropdown text">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Dropdown
-                      <span class="caret"></span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                  </span>
-                  <!-- /Dropdown -->
-
-                  <!-- Right label -->
-                  <span class="combo text">
-                   Data text
-                  </span>
-                  <!-- /Right label -->
-
-                </header>
-
-                <!-- Content -->
-                <div class="card-block">
-                  <p>Panel col large 6</p>
-                </div>
-                <!-- /Content -->
-
-              </div>
-            </div>
-            <!-- ### /Panel ### -->
-
-            <!-- ### Panel ### -->
-            <div class="col-lg-6">
-              <div class="card">
-                <header class="card-header composed bg-main">
-                  <a href class="combo">
-                    <i class="icon fa fa-bar-chart-o"></i>
-                  </a>
-                  <h3>Col-lg-6</h3>
-                  <span class="combo text">
-                   Data text
-                  </span>
-                </header>
-                <div class="card-signets">
-                  <!-- Right nav -->
-                  <ul class="signets-list nav nav-tabs">
-                    <li class="signet tab nav-item">
-                      <a data-toggle="tab" href="#graphical-3" class="nav-link">
-                        <i class="icon fa fa-edit"></i>
-                        <span class="no-wrap">Signet 1</span>
-                      </a>
-                    </li>
-                    <li class="signet active tab nav-item">
-                      <a data-toggle="tab" href="#tabular-3" class="nav-link">
-                        <i class="icon fa fa-edit"></i>
-                        <span class="no-wrap">Signet 2</span>
-                      </a>
-                    </li>
-                    <li class="signet tab nav-item">
-                      <a data-toggle="tab" href="#listing-3" class="nav-link">
-                        <i class="icon fa fa-edit"></i>
-                        <span class="no-wrap">Signet 3</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- /Right nav -->
-                  <div class="card-block tab-content">
-                    <div class="tab-pane active" id="graphical-3">
-                      <p>Panel col small 6 graphical</p>
-                    </div>
-                    <div class="tab-pane" id="tabular-3">
-                      <p>Panel col small 6 tabular</p>
-                    </div>
-                    <div class="tab-pane" id="listing-3">
-                      <p>Panel col small 6 listing</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ### /Panel ### -->
-            <!-- ### Panel ### -->
-            <div class="col-lg-6">
-              <div class="card">
-                <header class="card-header composed bg-alt">
-                  <span class="combo">
-                    <i class="icon fa fa-bar-chart-o"></i>
-                  </span>
-                  <h3>Col-lg-6</h3>
-                  <a href class="combo text">
-                   Data text
-                  </a>
-                </header>
-                <div class="card-tabs">
-                  <!-- Top nav -->
-                  <ul class="tabs-list nav nav-tabs">
-                    <li class="tab nav-item">
-                      <a data-toggle="tab" href="#graphical" class="nav-link">
-                        <i class="icon fa fa-bullseye"></i>
-                        Graphical
-                      </a>
-                    </li>
-                    <li class="tab nav-item active">
-                      <a data-toggle="tab" href="#tabular" class="nav-link">
-                        <i class="icon fa fa-th-large"></i>
-                        Tabular
-                      </a>
-                    </li>
-                    <li class="tab nav-item">
-                      <a data-toggle="tab" href="#listing" class="nav-link">
-                        <i class="icon fa fa-align-justify"></i>
-                        Listing
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- /Top nav -->
-                </div>
-                <footer class="card-block tab-content">
-                  <div class="tab-pane active" id="graphical">
-                    <p>Panel col small 6 graphical</p>
-                  </div>
-                  <div class="tab-pane" id="tabular">
-                    <p>Panel col small 6 tabular</p>
-                  </div>
-                  <div class="tab-pane" id="listing">
-                    <p>Panel col small 6 listing</p>
-                  </div>
-                </footer>
-              </div>
-            </div>
-            <!-- ### /Panel ### -->
-
-            <!-- ### Panel ### -->
-            <div class="col-sm-6">
-              <div class="card">
-                <header class="card-header bg-alt">
-                  Col-lg-6
-                </header>
+            <header class="component-title container-clipboard card-header">
+              Panel signet
+              <i class="icon fa fa-clipboard" data-clipboard-target="#panel-signet"></i>
+            </header>
+            <div class="card" id="panel-signet">
+              <header class="card-header composed bg-main">
+                <a href class="combo">
+                  <i class="icon fa fa-bar-chart-o"></i>
+                </a>
+                <h3>Col-lg-12</h3>
+                <span class="combo text">
+                 Data text
+                </span>
+              </header>
+              <div class="card-signets">
+                <!-- Right nav -->
+                <ul class="signets-list nav nav-tabs">
+                  <li class="signet tab nav-item">
+                    <a data-toggle="tab" href="#graphical-3" class="nav-link">
+                      <i class="icon fa fa-edit"></i>
+                      <span class="no-wrap">Signet 1</span>
+                    </a>
+                  </li>
+                  <li class="signet active tab nav-item">
+                    <a data-toggle="tab" href="#tabular-3" class="nav-link">
+                      <i class="icon fa fa-edit"></i>
+                      <span class="no-wrap">Signet 2</span>
+                    </a>
+                  </li>
+                  <li class="signet tab nav-item">
+                    <a data-toggle="tab" href="#listing-3" class="nav-link">
+                      <i class="icon fa fa-edit"></i>
+                      <span class="no-wrap">Signet 3</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- /Right nav -->
                 <div class="card-block tab-content">
-                  <div class="tab-pane active" id="graphical-2">
-                    <p>Panel col small 6 graphical</p>
+                  <div class="tab-pane active" id="graphical-3">
+                    <p>Panel col small 12 graphical</p>
                   </div>
-                  <div class="tab-pane" id="tabular-2">
-                    <p>Panel col small 6 tabular</p>
+                  <div class="tab-pane" id="tabular-3">
+                    <p>Panel col small 12 tabular</p>
                   </div>
-                  <div class="tab-pane" id="listing-2">
-                    <p>Panel col small 6 listing</p>
+                  <div class="tab-pane" id="listing-3">
+                    <p>Panel col small 12 listing</p>
                   </div>
                 </div>
-                <footer class="card-footer card-tabs">
-                  <!-- Bottom nav -->
-                  <ul class="tabs-list nav nav-tabs">
-                    <li class="tab nav-item active">
-                      <a data-toggle="tab" href="#graphical-2" class="nav-link">
-                        <i class="icon fa fa-bullseye"></i>
-                        Graphical
-                      </a>
-                    </li>
-                    <li class="tab nav-item">
-                      <a data-toggle="tab" href="#tabular-2" class="nav-link">
-                        <i class="icon fa fa-th-large"></i>
-                        Tabular
-                      </a>
-                    </li>
-                    <li class="tab nav-item">
-                      <a data-toggle="tab" href="#listing-2" class="nav-link">
-                        <i class="icon fa fa-align-justify"></i>
-                        Listing
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- /Bottom nav -->
-                </footer>
               </div>
             </div>
-            <!-- ### /Panel ### -->
+          </div>
+          <!-- ### /Panel signet ### -->
 
-            <!-- Tabs -->
-            <section class="card col-sm-6">
+          <!-- ### Panel tabs ### -->
+          <div class="row component-bloc">
+            <header class="component-title container-clipboard card-header">
+              Panel tabs
+              <i class="icon fa fa-clipboard" data-clipboard-target="#panel-tabs"></i>
+            </header>
+            <div class="card" id="panel-tabs">
+              <header class="card-header composed bg-alt">
+                <span class="combo">
+                  <i class="icon fa fa-bar-chart-o"></i>
+                </span>
+                <h3>Col-lg-12</h3>
+                <a href class="combo text">
+                 Data text
+                </a>
+              </header>
+              <div class="card-tabs">
+                <!-- Top nav -->
+                <ul class="tabs-list nav nav-tabs">
+                  <li class="tab nav-item">
+                    <a data-toggle="tab" href="#graphical" class="nav-link">
+                      <i class="icon fa fa-bullseye"></i>
+                      Graphical
+                    </a>
+                  </li>
+                  <li class="tab nav-item active">
+                    <a data-toggle="tab" href="#tabular" class="nav-link">
+                      <i class="icon fa fa-th-large"></i>
+                      Tabular
+                    </a>
+                  </li>
+                  <li class="tab nav-item">
+                    <a data-toggle="tab" href="#listing" class="nav-link">
+                      <i class="icon fa fa-align-justify"></i>
+                      Listing
+                    </a>
+                  </li>
+                </ul>
+                <!-- /Top nav -->
+              </div>
+              <footer class="card-block tab-content">
+                <div class="tab-pane active" id="graphical">
+                  <p>Panel col small 12 graphical</p>
+                </div>
+                <div class="tab-pane" id="tabular">
+                  <p>Panel col small 12 tabular</p>
+                </div>
+                <div class="tab-pane" id="listing">
+                  <p>Panel col small 12 listing</p>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <!-- ### /Panel tabs ### -->
+
+          <!-- ### Panel tabs reverse ### -->
+          <div class="row component-bloc">
+            <header class="component-title container-clipboard card-header">
+              Panel tabs reverse
+              <i class="icon fa fa-clipboard" data-clipboard-target="#panel-tabs-reverse"></i>
+            </header>
+            <div class="card" id="panel-tabs-reverse">
+              <header class="card-header bg-alt">
+                Col-lg-12
+              </header>
+              <div class="card-block tab-content">
+                <div class="tab-pane active" id="graphical-2">
+                  <p>Panel col small 12 graphical</p>
+                </div>
+                <div class="tab-pane" id="tabular-2">
+                  <p>Panel col small 12 tabular</p>
+                </div>
+                <div class="tab-pane" id="listing-2">
+                  <p>Panel col small 12 listing</p>
+                </div>
+              </div>
+              <footer class="card-footer card-tabs">
+                <!-- Bottom nav -->
+                <ul class="tabs-list nav nav-tabs">
+                  <li class="tab nav-item active">
+                    <a data-toggle="tab" href="#graphical-2" class="nav-link">
+                      <i class="icon fa fa-bullseye"></i>
+                      Graphical
+                    </a>
+                  </li>
+                  <li class="tab nav-item">
+                    <a data-toggle="tab" href="#tabular-2" class="nav-link">
+                      <i class="icon fa fa-th-large"></i>
+                      Tabular
+                    </a>
+                  </li>
+                  <li class="tab nav-item">
+                    <a data-toggle="tab" href="#listing-2" class="nav-link">
+                      <i class="icon fa fa-align-justify"></i>
+                      Listing
+                    </a>
+                  </li>
+                </ul>
+                <!-- /Bottom nav -->
+              </footer>
+            </div>
+          </div>
+          <!-- ### /Panel tabs reverse ### -->
+
+          <!-- ### Panel nav tabs ### -->
+          <div class="row component-bloc">
+            <header class="component-title container-clipboard card-header">
+              Panel nav tabs
+              <i class="icon fa fa-clipboard" data-clipboard-target="#panel-nav-tabs"></i>
+            </header>
+            <div class="card" id="panel-nav-tabs">
               <!-- Tabs nav -->
               <header class="card-header bg-alt">
                 <ul class="nav nav-tabs card-header-tabs float-xs-left">
@@ -377,21 +443,21 @@
                 </div>
               </div>
               <!-- /Tabs content -->
-            </section>
-            <!-- /Tabs -->
+            </div>
           </div>
-          <!-- ### /Row ### -->
+          <!-- ### /Panel nav tabs ### -->
 
-          <!-- ### Row ### -->
-          <div class="row">
-
-            <!-- ### Panel ### -->
-            <div class="col-lg-6">
-
-              <!-- Notification content -->
-              <section class="card">
-                <div class="card-block">
-                  <!-- Notifications -->
+          <!-- ### Alerts ### -->
+          <div class="row component-bloc" id="alerts">
+            <!-- Notification content -->
+            <section class="card">
+              <header class="card-header bg-main container-clipboard">
+                Alerts
+                <i class="icon fa fa-clipboard" data-clipboard-target="#alert"></i>
+              </header>
+              <div class="card-block">
+                <!-- Notifications -->
+                <div id="alert">
                   <div class="alert alert-success alert-block fade in">
                     <button data-dismiss="alert" class="close close-sm" type="button">
                       <i class="icon fa fa-times"></i>
@@ -429,256 +495,341 @@
                     </button>
                     <strong>Warning!</strong> Best check yo self, you're not looking too good.
                   </div>
-                  <!-- /Notifications -->
                 </div>
-              </section>
-              <!-- /Notifications content -->
+                <!-- /Notifications -->
+              </div>
+            </section>
+            <!-- /Notifications content -->
+          </div>
+          <!-- ### /Alerts ### -->
 
-              <!-- Modals content-->
-              <section class="card">
-                <header class="card-header">
-                  Modal Dialogs
-                </header>
-                <div class="card-block">
-
-                  <!-- Modals calls-->
-                  <a class="btn btn-success" data-toggle="modal" href="#myModal">
-                    Dialog
-                  </a>
-                  <a class="btn btn-warning" data-toggle="modal" href="#myModal2">
-                    Confirm
-                  </a>
-                  <a class="btn btn-danger" data-toggle="modal" href="#myModal3">
-                    Alert !
-                  </a>
-                  <!-- /Modals calls-->
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                          <h4 class="modal-title">Modal Tittle</h4>
-                        </div>
-                        <div class="modal-body">
-                          Body goes here...
-                        </div>
-                        <div class="modal-footer">
-                          <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
-                          <button class="btn btn-success" type="button">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
+          <!-- ### Buttons ### -->
+          <div class="row component-bloc" id="buttons">
+            <section class="card">
+              <header class="card-header bg-main">
+                Default Buttons
+              </header>
+              <!-- Buttons -->
+              <div class="card-block container-clipboard">
+                <div class="container-clipboard">
+                  <div id="default-buttons">
+                    <button type="button" class="btn btn-default">Default</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
                   </div>
-                  <!-- /Modal -->
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                          <h4 class="modal-title">Modal Tittle</h4>
-                        </div>
-                        <div class="modal-body">
-                          Body goes here...
-                        </div>
-                        <div class="modal-footer">
-                          <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
-                          <button class="btn btn-warning" type="button"> Confirm</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /Modal -->
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                          <h4 class="modal-title">Modal Tittle</h4>
-                        </div>
-                        <div class="modal-body">
-                          Body goes here...
-                        </div>
-                        <div class="modal-footer">
-                          <button class="btn btn-danger" type="button"> Ok</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /Modal -->
+                  <i class="icon fa fa-clipboard" data-clipboard-target="#default-buttons"></i>
                 </div>
-              </section>
-              <!-- /Modals content-->
-            </div>
-            <!-- ### /Panel ### -->
-
-            <!-- ### Panel ### -->
-            <div class="col-lg-6">
-              <section class="card">
-                <header class="card-header">
-                  Default Buttons
-                </header>
-                <!-- Buttons -->
-                <div class="card-block">
-                  <button type="button" class="btn btn-default">Default</button>
-                  <button type="button" class="btn btn-primary">Primary</button>
-                  <button type="button" class="btn btn-success">Success</button>
-                  <button type="button" class="btn btn-info">Info</button>
-                  <button type="button" class="btn btn-warning">Warning</button>
-                  <button type="button" class="btn btn-danger">Danger</button>
+              </div>
+              <div class="card-block">
+                <div class="container-clipboard">
+                  <div class="btn-group" role="group" aria-label="Basic example" id="btn-group">
+                    <button type="button" class="btn btn-default">Left</button>
+                    <button type="button" class="btn btn-default">Middle</button>
+                    <button type="button" class="btn btn-default">Right</button>
+                  </div>
+                  <i class="icon fa fa-clipboard" data-clipboard-target="#btn-group"></i>
                 </div>
-                <!-- /Buttons -->
-              </section>
+              </div>
 
               <!-- Tooltips -->
-              <section class="card">
-                <div class="card-block">
-                  <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top">Tooltip on top</button>
-                  <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="left" data-original-title="Tooltip on left"> left</button>
-                  <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom"> bottom</button>
-                  <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="right" data-original-title="Tooltip on right"> right</button>
+              <div class="card-block container-clipboard">
+                <div class="container-clipboard">
+                  <div id="tooltips">
+                    <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="top" data-original-title="Tooltip on top">Tooltip on top</button>
+                    <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="left" data-original-title="Tooltip on left"> left</button>
+                    <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom"> bottom</button>
+                    <button class="btn btn-default tooltips" data-toggle="tooltip" data-placement="right" data-original-title="Tooltip on right"> right</button>
+                  </div>
+                  <i class="icon fa fa-clipboard" data-clipboard-target="#tooltips"></i>
                 </div>
-              </section>
+              </div>
               <!-- /Tooltips -->
 
               <!-- Popover -->
-              <section class="card">
-                <div class="card-block">
-                  <button class="btn btn-info popovers" data-toggle="popover" data-placement="top" data-original-title="Popovers in top" data-content="And here's some amazing content. It's very engaging. right?">Popover on Top</button>
-                  <button class="btn btn-info popovers" data-toggle="popover" data-placement="left" data-original-title="Popovers in left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
-                  <button class="btn btn-info popovers" data-toggle="popover" data-placement="bottom" data-original-title="Popovers in bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Bottom</button>
-                  <button class="btn btn-info popovers" data-toggle="popover" data-placement="bottom" data-original-title="Popovers in right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
+              <div class="card-block container-clipboard">
+                <div class="container-clipboard">
+                  <div id="popovers">
+                    <button class="btn btn-info popovers" data-toggle="popover" data-placement="top" data-original-title="Popovers in top" data-content="And here's some amazing content. It's very engaging. right?">Popover on Top</button>
+                    <button class="btn btn-info popovers" data-toggle="popover" data-placement="left" data-original-title="Popovers in left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
+                    <button class="btn btn-info popovers" data-toggle="popover" data-placement="bottom" data-original-title="Popovers in bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Bottom</button>
+                    <button class="btn btn-info popovers" data-toggle="popover" data-placement="bottom" data-original-title="Popovers in right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
+                  </div>
+                  <i class="icon fa fa-clipboard" data-clipboard-target="#popovers"></i>
                 </div>
-              </section>
+              </div>
               <!-- /Popover -->
-
-            </div>
-            <!-- ### /Panel ### -->
+            </section>
           </div>
-          <!-- ### /Row ### -->
+          <!-- ### /Buttons ### -->
 
-          <!-- ### Row ### -->
-          <div class="row">
+          <!-- ### Tags ### -->
+          <div class="row component-bloc" id="tags">
+            <section class="card">
+              <header class="card-header bg-main">
+                Tags
+              </header>
+              <!-- Buttons -->
+              <div class="card-block container-clipboard">
+                <div class="container-clipboard">
+                  <div id="tag">
+                    <span class="tag tag-default">Default</span>
+                    <span class="tag tag-primary">Primary</span>
+                    <span class="tag tag-success">Success</span>
+                    <span class="tag tag-info">Info</span>
+                    <span class="tag tag-warning">Warning</span>
+                    <span class="tag tag-danger">Danger</span>
+                  </div>
+                  <i class="icon fa fa-clipboard" data-clipboard-target="#tag"></i>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- ### /Tags ### -->
 
-            <!-- ### Panel ### -->
-            <div class="col-lg-12">
-              <section class="card">
-                <header class="card-header bg-main">
-                  Mediatheque
-                </header>
+          <!-- ### Modals ### -->
+          <div class="row component-bloc" id="modals">
+            <!-- Modals content-->
+            <section class="card">
+              <header class="card-header bg-main container-clipboard">
+                Modal Dialogs
+                <i class="icon fa fa-clipboard" data-clipboard-target="#alert"></i>
+              </header>
+              <div class="card-block" id="modals-dialogs">
 
-                <!-- Panel body -->
-                <div class="card-block">
-                  <div class="mediatheque">
+                <!-- Modals calls-->
+                <a class="btn btn-success" data-toggle="modal" href="#myModal">
+                  Dialog
+                </a>
+                <a class="btn btn-warning" data-toggle="modal" href="#myModal2">
+                  Confirm
+                </a>
+                <a class="btn btn-danger" data-toggle="modal" href="#myModal3">
+                  Alert !
+                </a>
+                <!-- /Modals calls-->
 
-                    <!-- Image box -->
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <!-- Buttons -->
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Modal Tittle</h4>
                       </div>
-                      <!-- /Buttons -->
-                      <!-- Caption -->
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, temporibus.</div>
-                      <!-- /Caption -->
-                    </div>
-                    <!-- /Image box -->
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                      <div class="modal-body">
+                        Body goes here...
                       </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem!</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                      <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                        <button class="btn btn-success" type="button">Save changes</button>
                       </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, modi.</div>
                     </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, natus.</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, pariatur.</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, neque?</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, unde.</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, doloremque.</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, explicabo?</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, magni!</div>
-                    </div>
-
-                    <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
-                      <div class="actions">
-                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
-                      </div>
-                      <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, necessitatibus.</div>
-                    </div>
-
                   </div>
                 </div>
-                <!-- Panel body -->
-              </section>
-            </div>
-            <!-- ### /Panel ### -->
-          </div>
-          <!-- ### /Row ### -->
+                <!-- /Modal -->
 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Modal Tittle</h4>
+                      </div>
+                      <div class="modal-body">
+                        Body goes here...
+                      </div>
+                      <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                        <button class="btn btn-warning" type="button"> Confirm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Modal Tittle</h4>
+                      </div>
+                      <div class="modal-body">
+                        Body goes here...
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-danger" type="button"> Ok</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Modal -->
+              </div>
+            </section>
+            <!-- /Modals content-->
+          </div>
+          <!-- ### /Modals ### -->
+
+          <!-- ### Mediatheque ### -->
+          <div class="row component-bloc" id="mediatheque">
+            <section class="card">
+              <header class="card-header bg-main container-clipboard">
+                Mediatheque
+                <i class="icon fa fa-clipboard" data-clipboard-target="#mediatheque-container"></i>
+              </header>
+
+              <!-- Panel body -->
+              <div class="card-block">
+                <div class="mediatheque" id="mediatheque-container">
+
+                  <!-- Image box -->
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <!-- Buttons -->
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <!-- /Buttons -->
+                    <!-- Caption -->
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, temporibus.</div>
+                    <!-- /Caption -->
+                  </div>
+                  <!-- /Image box -->
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rem!</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, modi.</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, natus.</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, pariatur.</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, neque?</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, unde.</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, doloremque.</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, explicabo?</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, magni!</div>
+                  </div>
+
+                  <div class="figure" style="background-image: url(https://unsplash.it/200/300)">
+                    <div class="actions">
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, necessitatibus.</div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Panel body -->
+            </section>
+          </div>
+          <!-- ### /Mediatheque ### -->
+
+          <!-- ### Tables ### -->
+          <div class="row component-bloc" id="tables">
+            <section class="card">
+              <header class="card-header bg-main container-clipboard">
+                Tables
+                <i class="icon fa fa-clipboard" data-clipboard-target="#table"></i>
+              </header>
+              <div class="card-block">
+                <table class="table" id="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+          <!-- ### /Tables ### -->
         </section>
         <!-- ### /Section wrapper ### -->
       </section>
@@ -695,9 +846,10 @@
     </main>
 
     <!-- Javascripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/tether.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
     <script src="./src/js/common-scripts.js"></script>
   </body>
 </html>

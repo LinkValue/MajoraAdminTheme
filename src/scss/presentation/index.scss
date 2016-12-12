@@ -6,3 +6,32 @@
     margin-bottom: 1rem;
   }
 }
+
+.container-clipboard{
+  position: relative;
+
+  .fa-clipboard {
+    top: 50%;
+    right: 10px;
+    position: absolute;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    .clip-done {
+      top: 50%;
+      right: calc(100% + 5px);
+      position: absolute;
+
+      padding: 5px;
+
+      transform: translateY(-50%);
+
+      background-color: $color-theme-primary;
+      color: $white;
+    }
+
+    &.icon-blue {color: $color-theme-primary;}
+  }
+}

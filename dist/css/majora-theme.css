@@ -28,6 +28,30 @@ a:hover {
   font-weight: 400;
 }
 
+.tag-default {
+  background-color: #69bce2;
+}
+
+.tag-primary {
+  background-color: #0ba298;
+}
+
+.tag-success {
+  background-color: #7dd025;
+}
+
+.tag-info {
+  background-color: #6cb4e5;
+}
+
+.tag-warning {
+  background-color: #feae25;
+}
+
+.tag-danger {
+  background-color: #d23a37;
+}
+
 .label {
   padding: 0.5em 0.8em;
 }
@@ -93,23 +117,14 @@ a:hover {
 .modal-header {
   border-bottom: 0;
   border-radius: 0;
-  background: #0ba298;
+  background: #69bce2;
   color: white;
 }
 
 .modal-header .close {
   margin-top: 0;
-}
-
-.form-control {
-  border: 1px solid #eef2f6;
-  color: gray;
-  box-shadow: none;
-}
-
-.form-control:focus {
-  border: 1px solid #566e86;
-  box-shadow: none;
+  opacity: 1;
+  color: white;
 }
 
 .input-group {
@@ -513,6 +528,32 @@ ul {
 
 .component-bloc .component-title {
   margin-bottom: 1rem;
+}
+
+.container-clipboard {
+  position: relative;
+}
+
+.container-clipboard .fa-clipboard {
+  top: 50%;
+  right: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.container-clipboard .fa-clipboard .clip-done {
+  top: 50%;
+  right: calc(100% + 5px);
+  position: absolute;
+  padding: 5px;
+  transform: translateY(-50%);
+  background-color: #69bce2;
+  color: white;
+}
+
+.container-clipboard .fa-clipboard.icon-blue {
+  color: #69bce2;
 }
 
 body, html {

@@ -217,6 +217,30 @@ a {
   font-weight: 400;
 }
 
+.tag-default {
+  background-color: $color-theme-primary;
+}
+
+.tag-primary {
+  background-color: $color-primary;
+}
+
+.tag-success {
+  background-color: $color-success;
+}
+
+.tag-info {
+  background-color: $color-info;
+}
+
+.tag-warning {
+  background-color: $color-warning;
+}
+
+.tag-danger {
+  background-color: $color-danger;
+}
+
 .label {
   padding: 0.5em 0.8em;
 }
@@ -284,25 +308,16 @@ a {
   border-bottom: 0;
   border-radius: 0;
 
-  background: $color-primary;
+  background: $color-theme-primary;
 
   color: $white;
 
   .close {
     margin-top: 0;
-  }
-}
 
-.form-control {
-  border: 1px solid $color-neutral;
+    opacity: 1;
 
-  color: $gray-neutral-50;
-
-  box-shadow: none;
-
-  &:focus {
-    border: 1px solid $color-accent;
-    box-shadow: none;
+    color: $white;
   }
 }
 
@@ -437,7 +452,7 @@ ul {
 .alert {
   padding: 1rem 1.25rem;
 
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 .alert p {
