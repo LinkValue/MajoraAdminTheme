@@ -1,0 +1,178 @@
+@import "../variables/colors";
+
+.form-header {
+  background-color: $white;
+  color: $color-theme-primary-dark;
+
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  position: relative;
+
+  margin-bottom: 2.5rem;
+
+  .form-control {
+    padding: 1.25rem 0;
+  }
+
+  label {
+    left: 0;
+    bottom: 50%;
+    position: absolute;
+
+    margin-bottom: 0;
+
+    transform: translateY(50%);
+    transition: all ease 0.3s;
+  }
+
+  .field-error {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    display: none;
+
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+
+    color: $color-danger;
+
+    text-align: right;
+  }
+
+  &.textarea-group {
+    label {
+      bottom: 100%;
+      transform: translateY(200%);
+    }
+
+    .textarea-length {
+      text-align: right;
+    }
+  }
+
+  &.field-valid,
+  &.field-filled,
+  &.field-focused {
+    .form-control {
+      border-color: $color-theme-primary;
+    }
+
+    label {
+      bottom: 100%;
+
+      transform: translateY(50%);
+
+      font-size: 0.8rem;
+
+      color: $color-theme-primary-dark;
+    }
+
+    .textarea-length {
+      color: $color-theme-primary-dark;
+    }
+
+    &.textarea-group {
+      label {
+        transform: translateY(0%);
+      }
+    }
+  }
+
+  &.field-has-error {
+    .form-control {
+      border-color: $color-danger;
+    }
+
+    .field-error {display: block;}
+  }
+}
+
+.form-centered {
+  width: calc(100% - (55px * 2));
+
+  margin: 0 auto;
+
+  position: relative;
+  .card {
+    box-shadow: 0 6px 6px $black-a10;
+    .form-header {
+      padding: 2rem 5rem 1.5rem;
+    }
+
+    .card-block {
+      position: relative;
+
+      padding: 2rem 5rem 1.5rem;
+
+      transition: background-color ease 0.2s;
+
+      &:before {
+        content: '';
+
+        width: 0;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        background-color: $color-theme-primary;
+
+        transition: width ease 0.2s;
+      }
+    }
+
+    &:hover {
+      .card-block {
+        background-color: $gray-neutral-95;
+
+        &:before {
+          width: 5px;
+        }
+      }
+      .form-controller {
+        left: 100%;
+
+        opacity: 1;
+        visibility: initial;
+      }
+    }
+  }
+
+  .form-controller {
+    position: absolute;
+    left: calc(100% - 25px);
+    top: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all ease 0.3s;
+
+    .icons-wrapper {
+      padding: 1px;
+      margin-left: 5px;
+      background-color: $color-theme-primary;
+    }
+
+    .fa {
+      display: block;
+
+      padding: 0.25rem;
+      margin: 1rem;
+
+      color: $color-theme-primary;
+      background-color: $white;
+
+      border-radius: 100%;
+
+      text-align: center;
+
+      cursor: pointer;
+    }
+  }
+}

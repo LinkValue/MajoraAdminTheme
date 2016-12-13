@@ -321,6 +321,32 @@ a {
   }
 }
 
+.form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid $gray-neutral-60;
+
+  color: $gray-neutral-60;
+  background-color: transparent;
+
+  box-shadow: none;
+
+  &:focus {
+    color: $gray-neutral-60;
+    background-color: transparent;
+
+    border-color: $color-theme-primary;
+  }
+
+  & + label {
+    color: $gray-neutral-60;
+  }
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: initial;
+}
+
 .input-group {
   margin-bottom: 5px;
 }

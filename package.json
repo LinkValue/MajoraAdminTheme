@@ -11,7 +11,7 @@
     "copy": "npm run copyCSS | npm run copyJS | npm run copyFont",
     "copyCSS": "cp ./node_modules/bootstrap/dist/css/bootstrap.{min.css,css} ./dist/css | cp ./node_modules/font-awesome/css/font-awesome.{min.css,css} ./dist/css/",
     "copyFont": "cp ./node_modules/font-awesome/fonts/fontawesome* ./dist/fonts",
-    "copyJS": "cp ./node_modules/bootstrap/dist/js/bootstrap.{min.js,js} ./dist/js | cp ./node_modules/jquery/dist/jquery.{min.js,js} ./dist/js | cp ./node_modules/tether/dist/js/tether.{min.js,js} ./dist/js",
+    "copyJS": "cp ./node_modules/bootstrap/dist/js/bootstrap.{min.js,js} ./dist/js | cp ./node_modules/jquery/dist/jquery.{min.js,js} ./dist/js | cp ./node_modules/tether/dist/js/tether.{min.js,js} ./dist/js | cp ./node_modules/autosize/dist/autosize.{min.js,js} ./dist/js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/LinkValue/MajoraAdminTheme#readme",
   "devDependencies": {
+    "autosize": "^3.0.20",
     "bootstrap": "^4.0.0-alpha.5",
     "browser-sync": "^2.12.5",
     "cssnano": "^3.7.1",

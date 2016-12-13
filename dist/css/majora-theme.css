@@ -127,6 +127,29 @@ a:hover {
   color: white;
 }
 
+.form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #999999;
+  color: #999999;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  color: #999999;
+  background-color: transparent;
+  border-color: #69bce2;
+}
+
+.form-control + label {
+  color: #999999;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: initial;
+}
+
 .input-group {
   margin-bottom: 5px;
 }
@@ -527,7 +550,9 @@ ul {
 }
 
 .component-bloc .component-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  color: #69bce2;
+  background-color: white;
 }
 
 .container-clipboard {
@@ -768,6 +793,149 @@ ul.form-collection li {
 ul.form-collection li.form-collection-add {
   border: 0 solid transparent;
   text-align: right;
+}
+
+.form-header {
+  background-color: white;
+  color: #3398d7;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.form-group .form-control {
+  padding: 1.25rem 0;
+}
+
+.form-group label {
+  left: 0;
+  bottom: 50%;
+  position: absolute;
+  margin-bottom: 0;
+  transform: translateY(50%);
+  transition: all ease 0.3s;
+}
+
+.form-group .field-error {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  color: #d23a37;
+  text-align: right;
+}
+
+.form-group.textarea-group label {
+  bottom: 100%;
+  transform: translateY(200%);
+}
+
+.form-group.textarea-group .textarea-length {
+  text-align: right;
+}
+
+.form-group.field-valid .form-control, .form-group.field-filled .form-control, .form-group.field-focused .form-control {
+  border-color: #69bce2;
+}
+
+.form-group.field-valid label, .form-group.field-filled label, .form-group.field-focused label {
+  bottom: 100%;
+  transform: translateY(50%);
+  font-size: 0.8rem;
+  color: #3398d7;
+}
+
+.form-group.field-valid .textarea-length, .form-group.field-filled .textarea-length, .form-group.field-focused .textarea-length {
+  color: #3398d7;
+}
+
+.form-group.field-valid.textarea-group label, .form-group.field-filled.textarea-group label, .form-group.field-focused.textarea-group label {
+  transform: translateY(0%);
+}
+
+.form-group.field-has-error .form-control {
+  border-color: #d23a37;
+}
+
+.form-group.field-has-error .field-error {
+  display: block;
+}
+
+.form-centered {
+  width: calc(100% - (55px * 2));
+  margin: 0 auto;
+  position: relative;
+}
+
+.form-centered .card {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-centered .card .form-header {
+  padding: 2rem 5rem 1.5rem;
+}
+
+.form-centered .card .card-block {
+  position: relative;
+  padding: 2rem 5rem 1.5rem;
+  transition: background-color ease 0.2s;
+}
+
+.form-centered .card .card-block:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #69bce2;
+  transition: width ease 0.2s;
+}
+
+.form-centered .card:hover .card-block {
+  background-color: #f2f2f2;
+}
+
+.form-centered .card:hover .card-block:before {
+  width: 5px;
+}
+
+.form-centered .card:hover .form-controller {
+  left: 100%;
+  opacity: 1;
+  visibility: initial;
+}
+
+.form-centered .form-controller {
+  position: absolute;
+  left: calc(100% - 25px);
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.3s;
+}
+
+.form-centered .form-controller .icons-wrapper {
+  padding: 1px;
+  margin-left: 5px;
+  background-color: #69bce2;
+}
+
+.form-centered .form-controller .fa {
+  display: block;
+  padding: 0.25rem;
+  margin: 1rem;
+  color: #69bce2;
+  background-color: white;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
 }
 
 .full-width .nav li.dropdown a:hover,
@@ -1726,6 +1894,28 @@ ul.form-collection li.form-collection-add {
 .timeline .time-icon::before {
   margin-top: 5px;
   font-size: 16px;
+}
+
+.table thead tr {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.table .fa {
+  padding: 0.2rem 0.5rem;
+  color: white;
+  border-radius: 10px;
+}
+
+.table .fa-check {
+  background-color: rgba(125, 208, 37, 0.6);
+}
+
+.table .fa-close {
+  background-color: rgba(210, 58, 55, 0.6);
 }
 
 .top-nav {

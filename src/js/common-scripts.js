@@ -36,6 +36,7 @@
       $(this).closest('.menu-item').addClass('is-open');
     });
 
+    // Clipboard
     $(".fa-clipboard").click(function(){
       var $this = $(this);
       var clipboard = new Clipboard('.fa-clipboard', {

@@ -3,7 +3,10 @@
 .component-bloc {
   margin: 2rem 0;
   .component-title {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+
+    color: $color-theme-primary;
+    background-color: $white;
   }
 }
 
