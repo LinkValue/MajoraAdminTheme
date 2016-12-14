@@ -23,8 +23,11 @@ var forms = {
 
       input.attr('id', name + '-' + blocksLength);
 
+      $(this).val('');
       $(this).find('label').attr('for', name + '-' + blocksLength);
     });
+
+    autosize(clone.find('.form-textarea'));
 
     last.after(clone);
   },

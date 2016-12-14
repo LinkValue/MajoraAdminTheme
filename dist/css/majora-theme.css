@@ -811,7 +811,7 @@ ul.form-collection li.form-collection-add {
   padding: 1.25rem 0;
 }
 
-.form-group label {
+.form-input label {
   left: 0;
   bottom: 50%;
   position: absolute;
@@ -820,7 +820,7 @@ ul.form-collection li.form-collection-add {
   transition: all ease 0.3s;
 }
 
-.form-group .field-error {
+.form-input .field-error {
   position: absolute;
   top: 100%;
   right: 0;
@@ -831,39 +831,39 @@ ul.form-collection li.form-collection-add {
   text-align: right;
 }
 
-.form-group.textarea-group label {
+.form-input.textarea-group label {
   bottom: 100%;
   transform: translateY(200%);
 }
 
-.form-group.textarea-group .textarea-length {
+.form-input.textarea-group .textarea-length {
   text-align: right;
 }
 
-.form-group.field-valid .form-control, .form-group.field-filled .form-control, .form-group.field-focused .form-control {
+.form-input.field-valid .form-control, .form-input.field-filled .form-control, .form-input.field-focused .form-control {
   border-color: #69bce2;
 }
 
-.form-group.field-valid label, .form-group.field-filled label, .form-group.field-focused label {
+.form-input.field-valid label, .form-input.field-filled label, .form-input.field-focused label {
   bottom: 100%;
   transform: translateY(50%);
   font-size: 0.8rem;
   color: #3398d7;
 }
 
-.form-group.field-valid .textarea-length, .form-group.field-filled .textarea-length, .form-group.field-focused .textarea-length {
+.form-input.field-valid .textarea-length, .form-input.field-filled .textarea-length, .form-input.field-focused .textarea-length {
   color: #3398d7;
 }
 
-.form-group.field-valid.textarea-group label, .form-group.field-filled.textarea-group label, .form-group.field-focused.textarea-group label {
+.form-input.field-valid.textarea-group label, .form-input.field-filled.textarea-group label, .form-input.field-focused.textarea-group label {
   transform: translateY(0%);
 }
 
-.form-group.field-has-error .form-control {
+.form-input.field-has-error .form-control {
   border-color: #d23a37;
 }
 
-.form-group.field-has-error .field-error {
+.form-input.field-has-error .field-error {
   display: block;
 }
 
