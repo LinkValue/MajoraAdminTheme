@@ -1,0 +1,18 @@
+@function color-variant($color, $variant) {
+  @if $variant == 'lighter' {
+    @return lighten($color, 20%);
+  }
+  @if $variant == 'light' {
+    @return lighten($color, 10%);
+  }
+  @if $variant == 'dark' {
+    @return darken($color, 10%);
+  }
+  @if $variant == 'darker' {
+    @return darken($color, 20%);
+  }
+  @else {
+    @error 'You can only choose between lighter, light, dark and darker';
+    @return $color;
+  }
+}
