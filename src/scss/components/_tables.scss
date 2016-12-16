@@ -8,24 +8,32 @@
   }
 
   tbody {
-    tr:nth-child(2n){
+    tr {
+      background-color: $white;
+    }
+
+    tr:nth-child(2n) {
       background-color: $gray-neutral-95;
     }
   }
 
   .fa {
-    padding: 0.2rem 0.5rem;
+    width: 2rem;
+
+    padding: .2rem .5rem;
+
+    border-radius: 0;
 
     color: $white;
 
-    border-radius: 10px;
+    text-align: center;
   }
 
   .fa-check {
-    background-color: transparentize($color-success, 0.4);
+    background-color: transparentize($color-success, .4);
   }
 
   .fa-close {
-    background-color: transparentize($color-danger, 0.4);
+    background-color: transparentize($color-danger, .4);
   }
 }

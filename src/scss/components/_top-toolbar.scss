@@ -1,0 +1,90 @@
+@import "../variables/colors";
+
+.top-toolbar {
+  display: flex;
+
+  background-color: $white;
+
+  justify-content: space-between;
+
+  min-height: 65px;
+
+  .btn-group {
+    display: flex;
+  }
+
+  .tabs-list {
+    display: flex;
+
+    max-width: 50%;
+
+    border-bottom: 0;
+
+    align-items: shrink;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .tab {
+      display: flex;
+
+      min-width: 0;
+
+      margin: 0;
+
+      flex: 1 1 0px;
+      align-items: center;
+
+      .nav-link {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 1rem;
+
+        border: none;
+
+        border-radius: 0;
+
+        background-color: $gray-neutral-90;
+
+        color: $gray-neutral-40;
+
+        .title {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+
+        .infos {
+          font-size: .9rem;
+        }
+
+        &.active {
+          background-color: $gray-neutral-80;
+        }
+      }
+
+      span {
+        display: block;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+      }
+
+      &.tab-title {
+        background-color: $color-theme-primary;
+
+        span {
+          padding: 1rem;
+
+          color: $white;
+
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

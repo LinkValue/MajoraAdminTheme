@@ -1,12 +1,12 @@
 // bootstrap button skin override
 @mixin btn-default {
+  border-radius: 0;
+
   border-color: $color-theme-primary;
 
   background-color: $color-theme-primary;
 
   color: $white;
-
-  border-radius: 0;
 
   &:hover,
   &:focus,
@@ -30,13 +30,13 @@
 }
 
 @mixin btn-primary {
+  border-radius: 0;
+
   border-color: $color-primary;
 
   background-color: $color-primary;
 
   color: $white;
-
-  border-radius: 0;
 
   &:hover,
   &:focus,
@@ -60,16 +60,16 @@
 }
 
 @mixin btn-success {
+  border-radius: 0;
+
   border-color: $color-success;
 
   background-color: $color-success;
 
   color: $white;
 
-  border-radius: 0;
-
   &:hover,
-  &:focus ,
+  &:focus,
   &:active,
   &.active {
     border-color: $color-success-dark;
@@ -90,13 +90,13 @@
 }
 
 @mixin btn-info {
+  border-radius: 0;
+
   border-color: $color-info;
 
   background-color: $color-info;
 
   color: $white;
-
-  border-radius: 0;
 
   &:hover,
   &:focus,
@@ -120,44 +120,44 @@
 }
 
 @mixin btn-warning {
-  background-color: $color-warning;
+  border-radius: 0;
 
   border-color: $color-warning;
 
-  color: $white;
+  background-color: $color-warning;
 
-  border-radius: 0;
+  color: $white;
 
   &:hover,
   &:focus,
   &:active,
   &.active {
-  border-color: $color-warning-dark;
+    border-color: $color-warning-dark;
 
-  background-color: $color-warning-dark;
+    background-color: $color-warning-dark;
 
-  color: $white;
+    color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-  border-color: $color-warning-darker;
+    border-color: $color-warning-darker;
 
-  background-color: $color-warning-darker;
+    background-color: $color-warning-darker;
 
-  color: $white;
+    color: $white;
   }
 }
 
 @mixin btn-danger {
+  border-radius: 0;
+
   border-color: $color-danger;
 
   background-color: $color-danger;
 
   color: $white;
 
-  border-radius: 0;
-
   &:hover,
   &:focus,
   &:active,
@@ -179,12 +179,72 @@
   }
 }
 
-@mixin dropmenu-link--hover {
-  text-decoration: none;
+@mixin btn-darker {
+  border-radius: 0;
 
+  border-color: $gray-neutral-30;
+
+  background-color: $gray-neutral-30;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $gray-neutral-20;
+
+    background-color: $gray-neutral-20;
+
+    color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+    border-color: $gray-neutral-20;
+
+    background-color: $gray-neutral-20;
+
+    color: $white;
+  }
+}
+
+@mixin btn-dark {
+  border-radius: 0;
+
+  border-color: $gray-neutral-40;
+
+  background-color: $gray-neutral-40;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $gray-neutral-30;
+
+    background-color: $gray-neutral-30;
+
+    color: $white;
+  }
+
+  &:active:focus,
+  &.active:focus {
+    border-color: $gray-neutral-30;
+
+    background-color: $gray-neutral-30;
+
+    color: $white;
+  }
+}
+
+@mixin dropmenu-link--hover {
   background-color: $color-theme-primary-dark;
 
   color: $white;
+
+  text-decoration: none;
 }
 
 a {
@@ -197,13 +257,19 @@ a {
 
 .card {
   border: 0;
+
   box-shadow: none;
 }
 
 .card-header {
   border: 0;
+
   font-size: 16px;
   font-weight: 300;
+
+  &:first-child {
+    border-radius: 0;
+  }
 }
 
 .card-title {
@@ -215,6 +281,10 @@ a {
   font-family: $font-0, $font-1;
   font-size: 14px;
   font-weight: 400;
+}
+
+.tag {
+  border-radius: 0;
 }
 
 .tag-default {
@@ -242,7 +312,7 @@ a {
 }
 
 .label {
-  padding: 0.5em 0.8em;
+  padding: .5em .8em;
 }
 
 .label-default {
@@ -299,6 +369,7 @@ a {
 
 .modal-content {
   border: 0;
+
   border-radius: 0;
 
   box-shadow: none;
@@ -306,6 +377,7 @@ a {
 
 .modal-header {
   border-bottom: 0;
+
   border-radius: 0;
 
   background: $color-theme-primary;
@@ -315,36 +387,35 @@ a {
   .close {
     margin-top: 0;
 
-    opacity: 1;
-
     color: $white;
+
+    opacity: 1;
+  }
+}
+
+
+.form-group {
+  label {
+    padding: 1rem;
   }
 }
 
 .form-control {
-  border: none;
+  padding: 1rem;
+
+  border: 0;
+
   border-radius: 0;
-  border-bottom: 2px solid $gray-neutral-60;
+
+  background-color: $gray-neutral-95;
 
   color: $gray-neutral-60;
-  background-color: transparent;
 
   box-shadow: none;
 
   &:focus {
-    color: $gray-neutral-60;
-    background-color: transparent;
-
-    border-color: $color-theme-primary;
+    background-color: $gray-neutral-95;
   }
-
-  & + label {
-    color: $gray-neutral-60;
-  }
-}
-
-select.form-control:not([size]):not([multiple]) {
-  height: initial;
 }
 
 .input-group {
@@ -395,12 +466,21 @@ ul {
   @include btn-danger;
 }
 
+.btn-dark {
+  @include btn-dark;
+}
+
+.btn-darker {
+  @include btn-darker;
+}
+
 .btn-white {
   border-color: rgba($color-accent, 30%);
 
   background-color: $white;
 
   box-shadow: 0 -1px 1px $black-a10 inset;
+
   background-clip: padding-box;
 
   &.active {
@@ -461,6 +541,7 @@ ul {
 
   &:hover {
     background: $color-danger-light;
+
     color: $white;
   }
 }
@@ -533,6 +614,7 @@ ul {
 .form-horizontal .control-label {
   font-size: 14px;
   font-weight: 300;
+
   text-align: left;
 }
 
@@ -568,7 +650,9 @@ ul {
 
 .dropdown-menu {
   min-width: 11rem;
-  padding: 0.25rem 0;
+
+  padding: .25rem 0;
+
   line-height: initial;
 }
 

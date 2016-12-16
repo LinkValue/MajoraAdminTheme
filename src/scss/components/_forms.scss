@@ -1,180 +1,61 @@
 @import "../variables/colors";
 
-.form-header {
-  background-color: $white;
-  color: $color-theme-primary-dark;
+.form {
+  .form-title {
+    padding: 1rem;
 
-  font-weight: bold;
-  font-size: 1.8rem;
-}
+    background-color: $color-theme-primary;
 
-.form-group {
-  position: relative;
+    color: $white;
 
-  margin-bottom: 2.5rem;
-
-  .form-control {
-    padding: 1.25rem 0;
-  }
-}
-
-.form-input {
-  label {
-    left: 0;
-    bottom: 50%;
-    position: absolute;
-
-    margin-bottom: 0;
-
-    transform: translateY(50%);
-    transition: all ease 0.3s;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
   }
 
-  .field-error {
-    position: absolute;
-    top: 100%;
-    right: 0;
+  .field-wrapper {
+    padding: 2rem;
+    padding-right: 0;
 
-    display: none;
+    background-color: $white;
 
-    margin-top: 0.3rem;
-    margin-bottom: 0;
-
-    color: $color-danger;
-
-    text-align: right;
-  }
-
-  &.textarea-group {
-    label {
-      bottom: 100%;
-      transform: translateY(200%);
-    }
-
-    .textarea-length {
-      text-align: right;
+    img {
+      width: 100%;
+      max-width: 100%;
     }
   }
 
-  &.field-valid,
-  &.field-filled,
-  &.field-focused {
-    .form-control {
-      border-color: $color-theme-primary;
-    }
+  .row {
+    display: flex;
+
+    width: 100%;
+
+    margin-right: 0;
+    margin-bottom: .5rem;
+    margin-left: 0;
+
+    flex-direction: row;
 
     label {
-      bottom: 100%;
+      margin: 0;
 
-      transform: translateY(50%);
+      background-color: $gray-neutral-40;
 
-      font-size: 0.8rem;
+      color: $white;
 
-      color: $color-theme-primary-dark;
+      flex: calc(100% / 6);
     }
 
-    .textarea-length {
-      color: $color-theme-primary-dark;
-    }
-
-    &.textarea-group {
+    &.is-valid {
       label {
-        transform: translateY(0%);
-      }
-    }
-  }
-
-  &.field-has-error {
-    .form-control {
-      border-color: $color-danger;
-    }
-
-    .field-error {display: block;}
-  }
-}
-
-.form-centered {
-  width: calc(100% - (55px * 2));
-
-  margin: 0 auto;
-
-  position: relative;
-  .card {
-    box-shadow: 0 6px 6px $black-a10;
-    .form-header {
-      padding: 2rem 5rem 1.5rem;
-    }
-
-    .card-block {
-      position: relative;
-
-      padding: 2rem 5rem 1.5rem;
-
-      transition: background-color ease 0.2s;
-
-      &:before {
-        content: '';
-
-        width: 0;
-        height: 100%;
-
-        top: 0;
-        left: 0;
-        position: absolute;
-
-        background-color: $color-theme-primary;
-
-        transition: width ease 0.2s;
+        background-color: $color-success;
       }
     }
 
-    &:hover {
-      .card-block {
-        background-color: $gray-neutral-95;
-
-        &:before {
-          width: 5px;
-        }
+    &.has-error {
+      label {
+        background-color: $color-danger;
       }
-      .form-controller {
-        left: 100%;
-
-        opacity: 1;
-        visibility: initial;
-      }
-    }
-  }
-
-  .form-controller {
-    position: absolute;
-    left: calc(100% - 25px);
-    top: 0;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: all ease 0.3s;
-
-    .icons-wrapper {
-      padding: 1px;
-      margin-left: 5px;
-      background-color: $color-theme-primary;
-    }
-
-    .fa {
-      display: block;
-
-      padding: 0.25rem;
-      margin: 1rem;
-
-      color: $color-theme-primary;
-      background-color: $white;
-
-      border-radius: 100%;
-
-      text-align: center;
-
-      cursor: pointer;
     }
   }
 }
