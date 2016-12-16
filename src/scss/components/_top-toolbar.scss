@@ -1,16 +1,36 @@
 @import "../variables/colors";
 
+$toolbar-elmnt-padding: 1rem;
+
 .top-toolbar {
   display: flex;
+
+  height: 65px;
 
   background-color: $white;
 
   justify-content: space-between;
 
-  min-height: 65px;
-
   .btn-group {
     display: flex;
+  }
+
+  .toolbar-title {
+    display: flex;
+
+    padding: $toolbar-elmnt-padding;
+
+    background-color: $color-theme-primary;
+
+    color: $white;
+
+    font-weight: bold;
+
+    align-items: center;
+  }
+
+  .full-width {
+    width: 100%;
   }
 
   .tabs-list {
@@ -39,7 +59,7 @@
 
         margin: 0;
 
-        padding: 1rem;
+        padding: $toolbar-elmnt-padding;
 
         border: none;
 
@@ -71,7 +91,7 @@
         background-color: $primary-color;
 
         span {
-          padding: 1rem;
+          padding: $toolbar-elmnt-padding;
 
           color: $white;
 
