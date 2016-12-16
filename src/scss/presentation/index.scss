@@ -1,40 +1,58 @@
 @import "../variables/colors";
 
 .component-bloc {
-  margin: 2rem 0;
+  margin: 0;
+  margin-bottom: 2rem;
+
   .component-title {
     margin-bottom: 0;
 
-    color: $color-theme-primary;
+    padding: 0 1rem;
+
     background-color: $white;
+
+    color: $color-theme-primary;
+
+    font-size: 1.2rem;
+
+    line-height: 50px;
+
+    &.bg-main {
+      background-color: $color-theme-primary;
+
+      color: $white;
+    }
   }
 }
 
-.container-clipboard{
+.container-clipboard {
   position: relative;
 
   .fa-clipboard {
+    position: absolute;
     top: 50%;
     right: 10px;
-    position: absolute;
 
     transform: translateY(-50%);
 
     cursor: pointer;
 
     .clip-done {
+      position: absolute;
       top: 50%;
       right: calc(100% + 5px);
-      position: absolute;
 
       padding: 5px;
 
       transform: translateY(-50%);
 
       background-color: $color-theme-primary;
+
       color: $white;
     }
 
-    &.icon-blue {color: $color-theme-primary;}
+    &.icon-blue {
+      color: $color-theme-primary;
+    }
   }
 }

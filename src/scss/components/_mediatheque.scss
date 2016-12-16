@@ -1,24 +1,26 @@
 @import "../variables/sizes";
 @import "../variables/colors";
 @import "../mixins/breakpoints";
-
-$figure-spacing--sides: 10px !default;
+$figure-spacing--sides: 15px !default;
 $figure-spacing--bottom: $generic-spacing !default;
 $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
 
 .mediatheque {
   display: flex;
-  flex-wrap: wrap;
 
-  margin: 0 -#{$figure-spacing--sides} -#{$figure-spacing--bottom};
+  margin: 0;
+
+  flex-wrap: wrap;
 
   .figure {
     position: relative;
 
     width: $figure-size;
+
     height: 0;
 
-    margin: 0 $figure-spacing--sides $figure-spacing--bottom;
+    margin: $figure-spacing--bottom $figure-spacing--sides;
+
     padding-bottom: $figure-size;
 
     border-radius: 0;
@@ -27,35 +29,46 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
     background-position: 50% 50%;
     background-size: cover;
 
-    box-shadow: 0 0 0 1px $gray-iron;
     overflow: hidden;
 
     @include breakpoint(phablet) {
       $figure-size: calc(100% / 2 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
+
       padding-bottom: $figure-size;
     }
-
     @include breakpoint(laptop) {
       $figure-size: calc(100% / 3 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
+
       padding-bottom: $figure-size;
     }
-
     @include breakpoint(desktop) {
-      $figure-size: calc(100% / 5 - #{$figure-spacing--sides} * 2);
+      $figure-size: calc(100% / 4 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
+
+      padding-bottom: $figure-size;
+    }
+    @include breakpoint(widescreen) {
+      $figure-size: calc(100% / 6 - #{$figure-spacing--sides} * 2);
+
+      width: $figure-size;
+
       padding-bottom: $figure-size;
     }
 
-    @include breakpoint(widescreen) {
-      $figure-size: calc(100% / 7 - #{$figure-spacing--sides} * 2);
-
-      width: $figure-size;
-      padding-bottom: $figure-size;
+    &:hover {
+      .actions {
+        opacity: 1;
+        visibility: visible;
+      }
+      .caption {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
@@ -63,6 +76,23 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
     position: absolute;
     top: 10px;
     right: 10px;
+
+    transition: all .3s ease;
+
+    opacity: 0;
+    visibility: hidden;
+
+    .btn {
+      padding: .50rem;
+    }
+
+    .fa {
+      width: 1.5rem;
+
+      height: 1.5rem;
+
+      font-size: 1.5rem;
+    }
   }
 
   .caption {
@@ -73,8 +103,13 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
 
     padding: 10px;
 
-    background: $white-a70;
+    transition: all .3s ease;
 
-    color: $gray-neutral-10;
+    color: $white;
+
+    font-weight: bold;
+
+    opacity: 0;
+    visibility: hidden;
   }
 }
