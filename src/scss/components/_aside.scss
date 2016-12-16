@@ -21,6 +21,20 @@
     position: relative;
 
     margin-bottom: 1rem;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      background-color: $black-a20;
+
+      content: "";
+    }
   }
 
   img {
@@ -35,6 +49,8 @@
     width: 100%;
 
     padding: 0 1rem;
+
+    z-index: 1;
 
     justify-content: space-between;
 
@@ -57,5 +73,6 @@
     color: $white;
 
     cursor: pointer;
+    z-index: 1;
   }
 }

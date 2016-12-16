@@ -1,17 +1,11 @@
 #MajoraAdminTheme
 ===
 
-Simple Bootstrap 3 admin theme, helps to provide a clean admin interface.
+Simple Bootstrap 4 admin theme, helps to provide a clean admin interface.
 
 ##Necessary code
 
 The dist folder contains the compiled .css file which is a concatenated and minified version of all the scss files inside src/scss.
-
-##Import in a project
-
-To import this theme in any projet, just install it as a dependencies by running `npm i MajoraAdminTheme -S`.
-
-You can then import the necessary stylesheet located inside `./node_modules/MajoraAdminTheme/dist/css/majora-theme.min.css`
 
 ##Basic components
 

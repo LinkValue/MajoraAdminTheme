@@ -60,12 +60,35 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
       padding-bottom: $figure-size;
     }
 
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      transition: all ease .3s;
+
+      background-color: $black-a20;
+
+      content: "";
+      opacity: 0;
+      visibility: hidden;
+    }
+
     &:hover {
       .actions {
         opacity: 1;
         visibility: visible;
       }
       .caption {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:after {
         opacity: 1;
         visibility: visible;
       }
@@ -81,6 +104,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
 
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
 
     .btn {
       padding: .50rem;
@@ -111,5 +135,6 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
 
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
   }
 }
