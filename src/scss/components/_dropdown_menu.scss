@@ -13,7 +13,6 @@
   border: 0;
 
   border-radius: 0;
-  box-shadow: 0 2px 5px $black-a20;
 
   .link {
     display: inline-block;
@@ -21,14 +20,12 @@
     width: 100%;
     padding: $generic-spacing 10px;
 
-    border-bottom: 1px solid $gray-neutral-90;
 
     font-size: 12px;
     list-style: none;
 
     &:hover {
-      background-color: $color-bg-body;
-      color: $gray-neutral-20;
+      background-color: $white;
     }
   }
 
@@ -52,7 +49,6 @@
 
     border-bottom: 0;
 
-    color: $color-accent;
     text-align: center;
 
     .icon {
@@ -65,7 +61,7 @@
     background: none;
 
     .icon {
-      color: $color-info-lighter;
+      color: color-variant($primary-color, lighter);
     }
   }
 
@@ -74,7 +70,7 @@
 
     border-radius: 0;
 
-    background: $color-success-dark;
+    background: color-variant($sucess-color, dark);
 
     &,
     &:hover {
@@ -97,12 +93,9 @@
   .dropdown-menu {
     top: 46px;
     border: 0;
-    box-shadow: 0 2px 5px $black-a20;
 
     a {
       padding: 10px;
-
-      border-bottom: 1px solid $gray-neutral-90;
 
       font-size: 13px;
     }

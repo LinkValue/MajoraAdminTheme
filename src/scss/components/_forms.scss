@@ -4,7 +4,7 @@
   .form-title {
     padding: 1rem;
 
-    background-color: $color-theme-primary;
+    background-color: $primary-color;
 
     color: $white;
 
@@ -39,7 +39,7 @@
     label {
       margin: 0;
 
-      background-color: $gray-neutral-40;
+      background-color: color-variant($secondary-color, light);
 
       color: $white;
 
@@ -48,13 +48,13 @@
 
     &.is-valid {
       label {
-        background-color: $color-success;
+        background-color: $sucess-color;
       }
     }
 
     &.has-error {
       label {
-        background-color: $color-danger;
+        background-color: $alert-color;
       }
     }
   }

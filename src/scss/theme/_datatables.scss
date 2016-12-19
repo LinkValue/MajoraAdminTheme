@@ -47,7 +47,6 @@ table.dataTable {
         right: 10px;
         font: normal normal normal .9em/1.5 FontAwesome;
         text-rendering: auto;
-        color: $gray-neutral-70;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -71,7 +70,7 @@ table.dataTable {
 
     .sorting_asc::after,
     .sorting_desc::before {
-      color: $color-main-light;
+      color: $alert-color-light;
     }
   }
 }

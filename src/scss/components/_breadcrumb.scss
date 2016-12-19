@@ -8,16 +8,16 @@
   border-radius: 0;
 
   i {
-    color: $color-theme-primary;
+    color: $primary-color;
   }
 
   a {
-    color: $color-theme-primary;
+    color: $primary-color;
 
     &:hover,
     &:active,
     &:focus {
-      color: $color-theme-primary;
+      color: $primary-color;
     }
   }
 }

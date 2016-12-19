@@ -21,7 +21,6 @@
     }
 
     .icon {
-      color: $gray-neutral-80;
 
       font-size: 16px;
 
@@ -32,15 +31,10 @@
       border-radius: 0;
     }
 
-    .signet.active > * {
-      box-shadow: 2px 0 2px -2px $signet-shadow,
-            0 1px 1px -1px $signet-shadow,
-            0 -1px 1px -1px $signet-shadow;
-    }
 
     .signet > *:hover .icon,
     .active .icon {
-      color: $color-theme-primary;
+      color: $primary-color;
     }
   }
 
@@ -58,11 +52,7 @@
         border-radius: 0;
       }
 
-      &.active > * {
-        box-shadow: -2px 0 2px -2px $signet-shadow,
-              0 1px 1px -1px $signet-shadow,
-              0 -1px 1px -1px $signet-shadow;
-      }
+
     }
   }
 
@@ -74,9 +64,7 @@
   .card-block {
     border-width: 0;
     border-style: solid;
-    border-color: $signet-shadow;
-
-    box-shadow: 2px 0 2px -2px $signet-shadow;
+    border-color: color-variant($secondary-color, light);
   }
 
   .signet {
@@ -105,7 +93,6 @@
 
       border: 0;
       background: transparent;
-      color: $gray-neutral-40;
 
       cursor: pointer;
 

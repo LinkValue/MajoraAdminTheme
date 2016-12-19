@@ -54,7 +54,7 @@ $nav-transition: all 300ms ease-in-out !default;
 
   height: 100%;
 
-  background: $color-accent-darker;
+  background: $secondary-color;
 }
 
 .sidebar-menu {
@@ -85,7 +85,7 @@ $nav-transition: all 300ms ease-in-out !default;
     &:hover,
     &:focus,
     &.is-open {
-      background: $color-theme-primary;
+      background: $primary-color;
 
       .icon {
         color: $white;
@@ -129,7 +129,7 @@ $nav-transition: all 300ms ease-in-out !default;
 
     padding: $nav-item-padding--fix 0;
 
-    color: $color-accent-light;
+    color: color-variant($secondary-color, lighter);
   }
 
   .icon {
@@ -152,7 +152,7 @@ $nav-transition: all 300ms ease-in-out !default;
 
     border-radius: 50%;
 
-    background: $white-a10;
+    background: color-variant($secondary-color, light);
 
     font-size: 10px;
     text-align: center;
@@ -197,7 +197,7 @@ $nav-transition: all 300ms ease-in-out !default;
       color: $white;
 
       &:hover {
-        color: $color-main-lighter;
+        color: color-variant($alert-color, lighter);
       }
     }
   }

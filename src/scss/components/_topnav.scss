@@ -5,7 +5,7 @@
   margin-top: 7px;
 
   .username {
-    color: $gray-neutral-30;
+    color: color-variant($secondary-color, lighter);
 
     font-size: 13px;
   }
@@ -18,7 +18,6 @@
       margin-right: 0;
       padding: 6px;
 
-      border: 1px solid $color-neutral;
       border-radius: 0;
 
       background: none;
@@ -26,13 +25,10 @@
 
       &:hover {
         // scss-lint:disable all
-        border: 1px solid $color-neutral ;
-        border-color: $color-neutral ;
         border-radius: 0;
 
-        color: $gray-neutral-20;
+        color: color-variant($secondary-color, light);
 
-        background: $color-neutral;
 
         text-decoration: none;
 
@@ -42,11 +38,7 @@
         }
       }
 
-      &:focus {
-        border: 1px solid $color-neutral;
 
-        background: $color-neutral;
-      }
     }
 
     .dropdown-menu.logout {
@@ -63,8 +55,5 @@
     display: block;
   }
 
-  .nav .caret {
-    border-top-color: $color-accent;
-    border-bottom-color: $color-accent;
-  }
+
 }

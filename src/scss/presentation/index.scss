@@ -11,14 +11,14 @@
 
     background-color: $white;
 
-    color: $color-theme-primary;
+    color: $primary-color;
 
     font-size: 1.2rem;
 
     line-height: 50px;
 
     &.bg-main {
-      background-color: $color-theme-primary;
+      background-color: $primary-color;
 
       color: $white;
     }
@@ -46,13 +46,13 @@
 
       transform: translateY(-50%);
 
-      background-color: $color-theme-primary;
+      background-color: $primary-color;
 
       color: $white;
     }
 
     &.icon-blue {
-      color: $color-theme-primary;
+      color: $primary-color;
     }
   }
 }

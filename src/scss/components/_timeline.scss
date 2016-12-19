@@ -31,7 +31,6 @@
     width: $line-width;
     margin-left: -($line-width / 2);
 
-    background-color: $gray-neutral-80;
 
     content: "";
 
@@ -58,33 +57,31 @@
         border: 3px solid $white;
         border-radius: 50%;
 
-        background: $gray-neutral-80;
 
-        box-shadow: 0 0 1px 3px $gray-neutral-80;
 
         &.red {
-          background: $color-main;
-          box-shadow: 0 0 1px 3px $color-main;
+          background: $alert-color;
+          box-shadow: 0 0 1px 3px $alert-color;
         }
 
         &.green {
-          background: $color-success;
-          box-shadow: 0 0 1px 3px $color-success;
+          background: $sucess-color;
+          box-shadow: 0 0 1px 3px $sucess-color;
         }
 
         &.blue {
-          background: $color-info-lighter;
-          box-shadow: 0 0 1px 3px $color-info-lighter;
+          background: color-variant($primary-color, lighter);
+          box-shadow: 0 0 1px 3px color-variant($primary-color, lighter);
         }
 
         &.purple {
-          background: $color-info;
-          box-shadow: 0 0 1px 3px $color-info;
+          background: $info-color;
+          box-shadow: 0 0 1px 3px $info-color;
         }
 
         &.light-green {
-          background: $color-success-lighter;
-          box-shadow: 0 0 1px 3px $color-success-lighter;
+          background: color-variant($sucess-color, lighter);
+          box-shadow: 0 0 1px 3px color-variant($sucess-color, lighter);
         }
       }
 
@@ -127,7 +124,6 @@
         height: 0;
 
         border-top: 8px solid transparent;
-        border-right: 8px solid $gray-neutral-90;
         border-bottom: 8px solid transparent;
       }
 
@@ -137,7 +133,6 @@
         margin-bottom: 5px;
         margin-left: 25px;
 
-        background: $gray-neutral-90;
 
         .card-block {
           margin-top: -3px;
@@ -174,7 +169,6 @@
           left: auto;
 
           border-right: 0 solid transparent;
-          border-left: 8px solid $gray-neutral-90;
         }
 
         .card {

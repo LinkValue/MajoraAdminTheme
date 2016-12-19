@@ -1,11 +1,12 @@
-$primary-color: #3ca3dc !default;
-$secondary-color: #222830 !default;
-$sucess-color: #697061 !default;
-$warning-color: #F59B00 !default;
-$alert-color: #EE423F !default;
+$primary-color: #5aa4d2 !default;
+$secondary-color: #2c2b2b !default;
+$sucess-color: #77be2b !default;
+$warning-color: #d6b51d !default;
+$alert-color: #cc0000 !default;
+$info-color: #0aa292 !default;
 
 $white : #FFF;
-$black: #000; 
+$black: #000;
 
 /*
 $color-teal-lighter: hsl(176, 58%, 61%) !default;
@@ -94,14 +95,14 @@ $blue-LV-dark: hsl(203, 67%, 52%);
 
 $color-neutral: $gray-procelain !default;
 
-$color-theme-primary: $blue-LV !default;
-$color-theme-primary-dark: $blue-LV-dark !default;
+$primary-color: $blue-LV !default;
+$primary-color-dark: $blue-LV-dark !default;
 
-$color-main-lighter: $color-sanguine-lighter !default;
-$color-main-light: $color-sanguine-light !default;
-$color-main: $color-sanguine !default;
-$color-main-dark: $color-sanguine-dark !default;
-$color-main-darker: $color-sanguine-darker !default;
+$alert-color-lighter: $color-sanguine-lighter !default;
+$alert-color-light: $color-sanguine-light !default;
+$alert-color: $color-sanguine !default;
+$alert-color-dark: $color-sanguine-dark !default;
+$alert-color-darker: $color-sanguine-darker !default;
 
 $color-accent-lighter: $gray-navy-lighter !default;
 $color-accent-light: $gray-navy-light !default;
@@ -109,27 +110,27 @@ $color-accent: $gray-navy !default;
 $color-accent-dark: $gray-navy-dark !default;
 $color-accent-darker: $gray-navy-darker !default;
 
-$color-bg-body: $gray-procelain !default;
-$color-bg-main: $blue-LV !default;
+$white: $gray-procelain !default;
+$primary-color: $blue-LV !default;
 $color-bg-alt: $gray-navy-lighter !default;
 
-$color-success-lighter: $color-lime-lighter !default;
-$color-success-light: $color-lime-light !default;
-$color-success: $color-lime !default;
-$color-success-dark: $color-lime-dark !default;
-$color-success-darker: $color-lime-darker !default;
+color-variant($sucess-color, lighter): $color-lime-lighter !default;
+color-variant($sucess-color, light): $color-lime-light !default;
+$sucess-color: $color-lime !default;
+color-variant($sucess-color, dark): $color-lime-dark !default;
+color-variant($sucess-color, darker): $color-lime-darker !default;
 
-$color-primary-lighter: $color-teal-lighter !default;
-$color-primary-light: $color-teal-light !default;
+color-variant($primary-color, lighter): $color-teal-lighter !default;
+color-variant($primary-color, light): $color-teal-light !default;
 $color-primary: $color-teal !default;
-$color-primary-dark: $color-teal-dark !default;
-$color-primary-darker: $color-teal-darker !default;
+color-variant($primary-color, dark): $color-teal-dark !default;
+color-variant($primary-color, darker): $color-teal-darker !default;
 
-$color-info-lighter: $color-sky-lighter !default;
-$color-info-light: $color-sky-light !default;
+color-variant($primary-color, lighter): $color-sky-lighter !default;
+color-variant($primary-color, light): $color-sky-light !default;
 $color-info: $color-sky !default;
-$color-info-dark: $color-sky-dark !default;
-$color-info-darker: $color-sky-darker !default;
+color-variant($primary-color, dark): $color-sky-dark !default;
+color-variant($primary-color, darker): $color-sky-darker !default;
 
 $color-warning-lighter: $color-clay-lighter !default;
 $color-warning-light: $color-clay-light !default;
@@ -137,9 +138,9 @@ $color-warning: $color-clay !default;
 $color-warning-dark: $color-clay-dark !default;
 $color-warning-darker: $color-clay-darker !default;
 
-$color-danger-lighter: $color-sanguine-lighter !default;
-$color-danger-light: $color-sanguine-light !default;
-$color-danger: $color-sanguine !default;
-$color-danger-dark: $color-sanguine-dark !default;
-$color-danger-darker: $color-sanguine-darker !default;
+color-variant($alert-color, lighter): $color-sanguine-lighter !default;
+color-variant($alert-color, light): $color-sanguine-light !default;
+$alert-color: $color-sanguine !default;
+color-variant($alert-color, dark): $color-sanguine-dark !default;
+color-variant($alert-color, darker): $color-sanguine-darker !default;
 */

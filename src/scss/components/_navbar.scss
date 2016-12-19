@@ -2,9 +2,8 @@
 @import "../variables/colors";
 
 .navbar-inverse {
-  border-color: $color-accent-lighter;
 
-  background-color: $color-accent-lighter;
+  background: color-variant($secondary-color, lighter);
 
   .navbar-nav {
     > li {
@@ -14,7 +13,7 @@
       }
 
       a:hover {
-        color: $color-accent-darker;
+        color: $secondary-color;
       }
     }
 
@@ -22,14 +21,14 @@
       &,
       &:hover,
       &:focus {
-        background-color: $color-accent;
+        background-color: color-variant($secondary-color, light);
       }
     }
 
     > .open > a {
       &,
       &:focus {
-        background-color: $color-accent;
+        background-color: color-variant($secondary-color, light);
       }
     }
 

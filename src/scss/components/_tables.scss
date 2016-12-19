@@ -1,19 +1,11 @@
 @import "../variables/colors";
 
 .table {
-  thead {
-    tr {
-      background-color: $gray-neutral-95;
-    }
-  }
+
 
   tbody {
     tr {
       background-color: $white;
-    }
-
-    tr:nth-child(2n) {
-      background-color: $gray-neutral-95;
     }
   }
 
@@ -30,10 +22,10 @@
   }
 
   .fa-check {
-    background-color: transparentize($color-success, .4);
+    background-color: transparentize($sucess-color, .4);
   }
 
   .fa-close {
-    background-color: transparentize($color-danger, .4);
+    background-color: transparentize($alert-color, .4);
   }
 }

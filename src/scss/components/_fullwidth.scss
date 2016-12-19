@@ -3,7 +3,7 @@
 %fullwidth-nav-link {
   transition: all 0.3s ease 0s;
 
-  background-color: $color-bg-main;
+  background-color: $primary-color;
   color: $white;
 
   text-decoration: none;
@@ -16,7 +16,7 @@
     // scss-lint:disable all
     &.extended.logout > li > a:hover {
       background: none !important;
-      color: $color-primary-lighter !important;
+      color: color-variant($primary-color, lighter) !important;
     }
     // scss-lint:enable
 

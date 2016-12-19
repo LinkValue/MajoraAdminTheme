@@ -2,9 +2,9 @@
 @mixin btn-default {
   border-radius: 0;
 
-  border-color: $color-theme-primary;
+  border-color: $primary-color;
 
-  background-color: $color-theme-primary;
+  background-color: $primary-color;
 
   color: $white;
 
@@ -12,18 +12,15 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $color-theme-primary-dark;
+    border-color: color-variant($primary-color, dark);
 
-    background-color: $color-theme-primary-dark;
+    background-color: color-variant($primary-color, dark);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $gray-neutral-80;
-
-    background-color: $gray-neutral-80;
 
     color: $white;
   }
@@ -32,9 +29,9 @@
 @mixin btn-primary {
   border-radius: 0;
 
-  border-color: $color-primary;
+  border-color: $primary-color;
 
-  background-color: $color-primary;
+  background-color: $primary-color;
 
   color: $white;
 
@@ -42,18 +39,18 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $color-primary-dark;
+    border-color: color-variant($primary-color, dark);
 
-    background-color: $color-primary-dark;
+    background-color: color-variant($primary-color, dark);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $color-primary-darker;
+    border-color: color-variant($primary-color, dark);
 
-    background-color: $color-primary-darker;
+    background-color: color-variant($primary-color, dark);
 
     color: $white;
   }
@@ -62,9 +59,9 @@
 @mixin btn-success {
   border-radius: 0;
 
-  border-color: $color-success;
+  border-color: $sucess-color;
 
-  background-color: $color-success;
+  background-color: $sucess-color;
 
   color: $white;
 
@@ -72,18 +69,18 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $color-success-dark;
+    border-color: color-variant($sucess-color, dark);
 
-    background-color: $color-success-dark;
+    background-color: color-variant($sucess-color, dark);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $color-success-darker;
+    border-color: color-variant($sucess-color, darker);
 
-    background-color: $color-success-darker;
+    background-color: color-variant($sucess-color, darker);
 
     color: $white;
   }
@@ -92,9 +89,9 @@
 @mixin btn-info {
   border-radius: 0;
 
-  border-color: $color-info;
+  border-color: $info-color;
 
-  background-color: $color-info;
+  background-color: $info-color;
 
   color: $white;
 
@@ -102,18 +99,18 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $color-info-dark;
+    border-color: color-variant($primary-color, dark);
 
-    background-color: $color-info-dark;
+    background-color: color-variant($primary-color, dark);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $color-info-darker;
+    border-color: color-variant($primary-color, darker);
 
-    background-color: $color-info-darker;
+    background-color: color-variant($primary-color, darker);
 
     color: $white;
   }
@@ -122,9 +119,9 @@
 @mixin btn-warning {
   border-radius: 0;
 
-  border-color: $color-warning;
+  border-color: $warning-color;
 
-  background-color: $color-warning;
+  background-color: $warning-color;
 
   color: $white;
 
@@ -132,18 +129,18 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $color-warning-dark;
+    border-color: color-variant($warning-color, dark);
 
-    background-color: $color-warning-dark;
+    background-color: color-variant($warning-color, dark);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $color-warning-darker;
+    border-color: color-variant($warning-color, darker);
 
-    background-color: $color-warning-darker;
+    background-color: color-variant($warning-color, darker);
 
     color: $white;
   }
@@ -152,9 +149,9 @@
 @mixin btn-danger {
   border-radius: 0;
 
-  border-color: $color-danger;
+  border-color: $alert-color;
 
-  background-color: $color-danger;
+  background-color: $alert-color;
 
   color: $white;
 
@@ -162,18 +159,18 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $color-danger-dark;
+    border-color: color-variant($alert-color, dark);
 
-    background-color: $color-danger-dark;
+    background-color: color-variant($alert-color, dark);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $color-danger-dark;
+    border-color: color-variant($alert-color, dark);
 
-    background-color: $color-danger-dark;
+    background-color: color-variant($alert-color, dark);
 
     color: $white;
   }
@@ -182,9 +179,9 @@
 @mixin btn-darker {
   border-radius: 0;
 
-  border-color: $gray-neutral-30;
+  border-color: color-variant($secondary-color, lighter);
 
-  background-color: $gray-neutral-30;
+  background-color: color-variant($secondary-color, lighter);
 
   color: $white;
 
@@ -192,18 +189,18 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $gray-neutral-20;
+    border-color: color-variant($secondary-color, light);
 
-    background-color: $gray-neutral-20;
+    background-color: color-variant($secondary-color, light);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $gray-neutral-20;
+    border-color: color-variant($secondary-color, light);
 
-    background-color: $gray-neutral-20;
+    background-color: color-variant($secondary-color, light);
 
     color: $white;
   }
@@ -212,9 +209,9 @@
 @mixin btn-dark {
   border-radius: 0;
 
-  border-color: $gray-neutral-40;
+  border-color: color-variant($secondary-color, light);
 
-  background-color: $gray-neutral-40;
+  background-color: color-variant($secondary-color, light);
 
   color: $white;
 
@@ -222,25 +219,25 @@
   &:focus,
   &:active,
   &.active {
-    border-color: $gray-neutral-30;
+    border-color: color-variant($secondary-color, lighter);
 
-    background-color: $gray-neutral-30;
+    background-color: color-variant($secondary-color, lighter);
 
     color: $white;
   }
 
   &:active:focus,
   &.active:focus {
-    border-color: $gray-neutral-30;
+    border-color: color-variant($secondary-color, lighter);
 
-    background-color: $gray-neutral-30;
+    background-color: color-variant($secondary-color, lighter);
 
     color: $white;
   }
 }
 
 @mixin dropmenu-link--hover {
-  background-color: $color-theme-primary-dark;
+  background-color: color-variant($primary-color, dark);
 
   color: $white;
 
@@ -248,10 +245,10 @@
 }
 
 a {
-  color: $color-accent-light;
+  color: color-variant($secondary-color, light);
 
   &:hover {
-    color: $color-accent-darker;
+    color: $secondary-color;
   }
 }
 
@@ -276,7 +273,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 
-  color: $color-accent-darker;
+  color: color-variant($secondary-color, light);
 
   font-family: $font-0, $font-1;
   font-size: 14px;
@@ -288,27 +285,27 @@ a {
 }
 
 .tag-default {
-  background-color: $color-theme-primary;
+  background-color: $primary-color;
 }
 
 .tag-primary {
-  background-color: $color-primary;
+  background-color: $primary-color;
 }
 
 .tag-success {
-  background-color: $color-success;
+  background-color: $sucess-color;
 }
 
 .tag-info {
-  background-color: $color-info;
+  background-color: $info-color;
 }
 
 .tag-warning {
-  background-color: $color-warning;
+  background-color: $warning-color;
 }
 
 .tag-danger {
-  background-color: $color-danger;
+  background-color: $alert-color;
 }
 
 .label {
@@ -316,55 +313,55 @@ a {
 }
 
 .label-default {
-  background-color: $gray-neutral-70;
+  background-color: color-variant($secondary-color, lighter);
 }
 
 .label-primary {
-  background-color: $color-info-light;
+  background-color: color-variant($primary-color, light);
 }
 
 .label-success {
-  background-color: $color-success-lighter;
+  background-color: color-variant($sucess-color, lighter);
 }
 
 .label-info {
-  background-color: $color-info-light;
+  background-color: color-variant($primary-color, light);
 }
 
 .label-warning {
-  background-color: $color-warning-light;
+  background-color: color-variant($warning-color, light);
 }
 
 .label-danger {
-  background-color: $color-danger-light;
+  background-color: color-variant($alert-color, light);
 }
 
 .label-inverse {
-  background-color: $color-accent-dark;
+  background-color: color-variant($secondary-color, lighter);
 }
 
 .text-danger {
-  color: $color-danger-light;
+  color: color-variant($alert-color, light);
 }
 
 .text-muted {
-  color: $gray-neutral-70;
+  color: color-variant($secondary-color, lighter);
 }
 
 .text-primary {
-  color: $color-primary-light;
+  color: color-variant($primary-color, light);
 }
 
 .text-warning {
-  color: $color-warning-light;
+  color: color-variant($warning-color, light);
 }
 
 .text-success {
-  color: $color-success-lighter;
+  color: color-variant($sucess-color, lighter);
 }
 
 .text-info {
-  color: $color-info-light;
+  color: color-variant($primary-color, light);
 }
 
 .modal-content {
@@ -380,7 +377,7 @@ a {
 
   border-radius: 0;
 
-  background: $color-theme-primary;
+  background: $primary-color;
 
   color: $white;
 
@@ -407,15 +404,8 @@ a {
 
   border-radius: 0;
 
-  background-color: $gray-neutral-95;
-
-  color: $gray-neutral-60;
-
   box-shadow: none;
 
-  &:focus {
-    background-color: $gray-neutral-95;
-  }
 }
 
 .input-group {
@@ -475,11 +465,10 @@ ul {
 }
 
 .btn-white {
-  border-color: rgba($color-accent, 30%);
+  border-color: rgba(color-variant($secondary-color, light), 30%);
 
   background-color: $white;
 
-  box-shadow: 0 -1px 1px $black-a10 inset;
 
   background-clip: padding-box;
 
@@ -494,27 +483,27 @@ ul {
 
 .btn-shadow {
   &.btn-default {
-    box-shadow: 0 4px $gray-neutral-40;
+    box-shadow: 0 4px color-variant($secondary-color, light);
   }
 
   &.btn-primary {
-    box-shadow: 0 4px $color-primary-darker;
+    box-shadow: 0 4px color-variant($primary-color, dark);
   }
 
   &.btn-success {
-    box-shadow: 0 4px $color-success-darker;
+    box-shadow: 0 4px color-variant($sucess-color, darker);
   }
 
   &.btn-info {
-    box-shadow: 0 4px $color-info-darker;
+    box-shadow: 0 4px color-variant($primary-color, darker);
   }
 
   &.btn-warning {
-    box-shadow: 0 4px $color-warning-darker;
+    box-shadow: 0 4px color-variant($warning-color, light);
   }
 
   &.btn-danger {
-    box-shadow: 0 4px $color-danger-darker;
+    box-shadow: 0 4px color-variant($alert-color, darker);
   }
 }
 
@@ -533,14 +522,14 @@ ul {
 
   padding: 12px 0;
 
-  background: $color-danger-light;
+  background: color-variant($alert-color, light);
 
   color: $white;
 
   text-align: center;
 
   &:hover {
-    background: $color-danger-light;
+    background: color-variant($alert-color, light);
 
     color: $white;
   }
@@ -551,7 +540,7 @@ ul {
 }
 
 .progress {
-  background: $color-bg-body;
+  background: $white;
 
   box-shadow: none;
 }
@@ -567,35 +556,35 @@ ul {
 }
 
 .alert-success {
-  border-color: $color-success-light;
+  border-color: color-variant($sucess-color, light);
 
-  background-color: $color-success-lighter;
+  background-color: color-variant($sucess-color, lighter);
 
-  color: $color-success-dark;
+  color: color-variant($sucess-color, dark);
 }
 
 .alert-danger {
-  border-color: $color-danger-light;
+  border-color: color-variant($alert-color, light);
 
-  background-color: $color-danger-lighter;
+  background-color: color-variant($alert-color, lighter);
 
-  color: $color-danger-dark;
+  color: color-variant($alert-color, dark);
 }
 
 .alert-info {
-  border-color: $color-info-light;
+  border-color: color-variant($primary-color, light);
 
-  background-color: $color-info-lighter;
+  background-color: color-variant($primary-color, lighter);
 
-  color: $color-info-dark;
+  color: color-variant($primary-color, dark);
 }
 
 .alert-warning {
-  border-color: $color-warning-light;
+  border-color: color-variant($warning-color, light);
 
-  background-color: $color-warning-lighter;
+  background-color: color-variant($warning-color, lighter);
 
-  color: $color-warning-dark;
+  color: color-variant($warning-color, dark);
 }
 
 .table {
@@ -665,12 +654,4 @@ ul {
 
 .nav-tabs > li > a {
   margin-right: 1px;
-}
-
-.card-default > .card-header {
-  border-color: $gray-neutral-90;
-
-  background-color: $white;
-
-  color: $gray-neutral-40;
 }

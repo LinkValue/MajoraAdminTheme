@@ -3,7 +3,7 @@
 @import "../variables/colors";
 
 .login-body {
-  background-color: $color-bg-body;
+  background-color: $white;
 }
 
 .form-signin {
@@ -16,7 +16,6 @@
   .checkbox {
     margin-bottom: 14px;
 
-    color: $gray-neutral-70;
 
     font-family: $font-0, $font-1;
     font-weight: 300;
@@ -41,7 +40,6 @@
   input[type="password"] {
     margin-bottom: $generic-spacing;
 
-    border: 1px solid $gray-neutral-90;
     border-radius: 5px;
 
     font-size: 12px;
@@ -52,18 +50,18 @@
   .btn-login {
     margin-bottom: 20px;
 
-    background: $color-bg-main;
+    background: $primary-color;
     color: $white;
 
     font-family: $font-0, $font-1;
     font-weight: 300;
 
     text-transform: uppercase;
-    box-shadow: 0 4px $color-main-dark;
+    box-shadow: 0 4px color-variant($alert-color, dark);
   }
 
   p {
-    color: $gray-neutral-70;
+    color: color-variant($secondary-color, lighter);
 
     font-size: 16px;
     font-weight: 300;
@@ -71,10 +69,10 @@
   }
 
   a {
-    color: $color-primary;
+    color: $primary-color;
 
     &:hover {
-      color: $gray-neutral-70;
+      color: color-variant($secondary-color, lighter);
     }
   }
 
@@ -84,7 +82,7 @@
 
     border-radius: 5px 5px 0 0;
 
-    background: $color-primary;
+    background: $primary-color;
     color: $white;
 
     font-family: $font-0, $font-1;

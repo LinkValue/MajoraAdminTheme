@@ -1,12 +1,11 @@
 @import "../variables/colors";
 
 ::selection {
-  background: $black-a20;
+  background: color-variant($secondary-color, light);
   color: $white;
 }
 
 .header {
-  border-bottom: 1px solid $color-neutral;
 
   background: $white;
 }
@@ -30,15 +29,12 @@
     margin-bottom: 10px;
   }
 
-  .page-header {
-    border-bottom: 1px solid $gray-neutral-80;
-  }
 
   a {
-    color: $gray-neutral-40;
+    color: color-variant($secondary-color, light);
 
     &:hover {
-      color: $color-accent-dark;
+      color: color-variant($secondary-color, dark);
     }
   }
 
@@ -50,13 +46,13 @@
 }
 
 .bg-main {
-  background: $color-bg-main;
+  background: $primary-color;
 
   color: $white;
 }
 
 .bg-alt {
-  background: $color-theme-primary-dark;
+  background: color-variant($primary-color, dark);
 
   color: $white;
 }

@@ -45,9 +45,6 @@
 
         border-radius: 0;
 
-        background-color: $gray-neutral-90;
-
-        color: $gray-neutral-40;
 
         .title {
           font-size: 1rem;
@@ -58,9 +55,6 @@
           font-size: .9rem;
         }
 
-        &.active {
-          background-color: $gray-neutral-80;
-        }
       }
 
       span {
@@ -74,7 +68,7 @@
       }
 
       &.tab-title {
-        background-color: $color-theme-primary;
+        background-color: $primary-color;
 
         span {
           padding: 1rem;
