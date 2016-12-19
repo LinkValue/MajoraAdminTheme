@@ -1,139 +1,3 @@
-/*
-$color-teal-lighter: hsl(176, 58%, 61%) !default;
-$color-teal-light: hsl(176, 58%, 55%) !default;
-$color-teal: hsl(176, 87%, 34%) !default;
-$color-teal-dark: hsl(176, 98%, 25%) !default;
-$color-teal-darker: hsl(176, 100%, 20%) !default;
-
-$color-lime-lighter: hsl(89, 70%, 72%) !default;
-$color-lime-light: hsl(89, 70%, 58%) !default;
-$color-lime: hsl(89, 70%, 48%) !default;
-$color-lime-dark: hsl(89, 70%, 41%) !default;
-$color-lime-darker: hsl(89, 70%, 35%) !default;
-
-$color-sky-lighter: hsl(204, 70%, 83%) !default;
-$color-sky-light: hsl(204, 70%, 75%) !default;
-$color-sky: hsl(204, 70%, 66%) !default;
-$color-sky-dark: hsl(204, 70%, 58%) !default;
-$color-sky-darker: hsl(204, 70%, 53%) !default;
-
-$color-clay-lighter: hsl(38, 98%, 71%) !default;
-$color-clay-light: hsl(38, 98%, 63%) !default;
-$color-clay: hsl(38, 99%, 57%) !default;
-$color-clay-dark: hsl(38, 100%, 48%) !default;
-$color-clay-darker: hsl(38, 100%, 38%) !default;
-
-$color-sanguine-lighter: hsl(1, 84%, 67%) !default;
-$color-sanguine-light: hsl(1, 84%, 59%) !default;
-$color-sanguine: hsl(1, 63%, 52%) !default;
-$color-sanguine-dark: hsl(1, 81%, 36%) !default;
-$color-sanguine-darker: hsl(1, 84%, 28%) !default;
-
-
-// gray
-$gray-procelain: hsl(210, 33%, 95%) !default;
-
-$gray-navy-lighter: hsl(210, 22%, 64%) !default;
-$gray-navy-light: hsl(210, 22%, 51%) !default;
-$gray-navy: hsl(210, 22%, 43%) !default;
-$gray-navy-dark: hsl(210, 22%, 37%) !default;
-$gray-navy-darker: hsl(210, 22%, 21%) !default;
-
-$gray-iron: hsl(210, 6%, 82%) !default;
-$gray-default: hsl(210, 6%, 39%) !default;
-
-$gray-neutral-95: hsl(0, 0%, 95%) !default;
-$gray-neutral-90: hsl(0, 0%, 90%) !default;
-$gray-neutral-80: hsl(0, 0%, 80%) !default;
-$gray-neutral-70: hsl(0, 0%, 70%) !default;
-$gray-neutral-60: hsl(0, 0%, 60%) !default;
-$gray-neutral-50: hsl(0, 0%, 50%) !default;
-$gray-neutral-40: hsl(0, 0%, 40%) !default;
-$gray-neutral-30: hsl(0, 0%, 30%) !default;
-$gray-neutral-20: hsl(0, 0%, 20%) !default;
-$gray-neutral-10: hsl(0, 0%, 10%) !default;
-
-// black
-$black: hsl(0, 0%, 0%) !default;
-$black-a10: hsla(0, 0%, 0%, 0.1) !default;
-$black-a20: hsla(0, 0%, 0%, 0.2) !default;
-$black-a30: hsla(0, 0%, 0%, 0.3) !default;
-$black-a40: hsla(0, 0%, 0%, 0.4) !default;
-$black-a50: hsla(0, 0%, 0%, 0.5) !default;
-
-// white
-$white: hsl(0, 0%, 100%) !default;
-$white-a10: hsla(0, 0%, 100%, 0.1) !default;
-$white-a20: hsla(0, 0%, 100%, 0.2) !default;
-$white-a30: hsla(0, 0%, 100%, 0.3) !default;
-$white-a40: hsla(0, 0%, 100%, 0.4) !default;
-$white-a50: hsla(0, 0%, 100%, 0.5) !default;
-$white-a60: hsla(0, 0%, 100%, 0.6) !default;
-$white-a70: hsla(0, 0%, 100%, 0.7) !default;
-$white-a80: hsla(0, 0%, 100%, 0.8) !default;
-
-// Blue LV
-$blue-LV: hsl(199, 68%, 65%);
-$blue-LV-dark: hsl(203, 67%, 52%);
-
-// ***************** //
-// BASE THEME COLORS
-// ***************** //
-
-
-
-
-$color-neutral: $gray-procelain !default;
-
-$primary-color: $blue-LV !default;
-$primary-color-dark: $blue-LV-dark !default;
-
-$alert-color-lighter: $color-sanguine-lighter !default;
-$alert-color-light: $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-$alert-color-dark: $color-sanguine-dark !default;
-$alert-color-darker: $color-sanguine-darker !default;
-
-$color-accent-lighter: $gray-navy-lighter !default;
-$color-accent-light: $gray-navy-light !default;
-$color-accent: $gray-navy !default;
-$color-accent-dark: $gray-navy-dark !default;
-$color-accent-darker: $gray-navy-darker !default;
-
-$white: $gray-procelain !default;
-$primary-color: $blue-LV !default;
-$color-bg-alt: $gray-navy-lighter !default;
-
-color-variant($sucess-color, lighter): $color-lime-lighter !default;
-color-variant($sucess-color, light): $color-lime-light !default;
-$sucess-color: $color-lime !default;
-color-variant($sucess-color, dark): $color-lime-dark !default;
-color-variant($sucess-color, darker): $color-lime-darker !default;
-
-color-variant($primary-color, lighter): $color-teal-lighter !default;
-color-variant($primary-color, light): $color-teal-light !default;
-$color-primary: $color-teal !default;
-color-variant($primary-color, dark): $color-teal-dark !default;
-color-variant($primary-color, darker): $color-teal-darker !default;
-
-color-variant($primary-color, lighter): $color-sky-lighter !default;
-color-variant($primary-color, light): $color-sky-light !default;
-$color-info: $color-sky !default;
-color-variant($primary-color, dark): $color-sky-dark !default;
-color-variant($primary-color, darker): $color-sky-darker !default;
-
-$color-warning-lighter: $color-clay-lighter !default;
-$color-warning-light: $color-clay-light !default;
-$color-warning: $color-clay !default;
-$color-warning-dark: $color-clay-dark !default;
-$color-warning-darker: $color-clay-darker !default;
-
-color-variant($alert-color, lighter): $color-sanguine-lighter !default;
-color-variant($alert-color, light): $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-color-variant($alert-color, dark): $color-sanguine-dark !default;
-color-variant($alert-color, darker): $color-sanguine-darker !default;
-*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
 a {
@@ -704,142 +568,6 @@ ul {
   margin-right: 1px;
 }
 
-/*
-$color-teal-lighter: hsl(176, 58%, 61%) !default;
-$color-teal-light: hsl(176, 58%, 55%) !default;
-$color-teal: hsl(176, 87%, 34%) !default;
-$color-teal-dark: hsl(176, 98%, 25%) !default;
-$color-teal-darker: hsl(176, 100%, 20%) !default;
-
-$color-lime-lighter: hsl(89, 70%, 72%) !default;
-$color-lime-light: hsl(89, 70%, 58%) !default;
-$color-lime: hsl(89, 70%, 48%) !default;
-$color-lime-dark: hsl(89, 70%, 41%) !default;
-$color-lime-darker: hsl(89, 70%, 35%) !default;
-
-$color-sky-lighter: hsl(204, 70%, 83%) !default;
-$color-sky-light: hsl(204, 70%, 75%) !default;
-$color-sky: hsl(204, 70%, 66%) !default;
-$color-sky-dark: hsl(204, 70%, 58%) !default;
-$color-sky-darker: hsl(204, 70%, 53%) !default;
-
-$color-clay-lighter: hsl(38, 98%, 71%) !default;
-$color-clay-light: hsl(38, 98%, 63%) !default;
-$color-clay: hsl(38, 99%, 57%) !default;
-$color-clay-dark: hsl(38, 100%, 48%) !default;
-$color-clay-darker: hsl(38, 100%, 38%) !default;
-
-$color-sanguine-lighter: hsl(1, 84%, 67%) !default;
-$color-sanguine-light: hsl(1, 84%, 59%) !default;
-$color-sanguine: hsl(1, 63%, 52%) !default;
-$color-sanguine-dark: hsl(1, 81%, 36%) !default;
-$color-sanguine-darker: hsl(1, 84%, 28%) !default;
-
-
-// gray
-$gray-procelain: hsl(210, 33%, 95%) !default;
-
-$gray-navy-lighter: hsl(210, 22%, 64%) !default;
-$gray-navy-light: hsl(210, 22%, 51%) !default;
-$gray-navy: hsl(210, 22%, 43%) !default;
-$gray-navy-dark: hsl(210, 22%, 37%) !default;
-$gray-navy-darker: hsl(210, 22%, 21%) !default;
-
-$gray-iron: hsl(210, 6%, 82%) !default;
-$gray-default: hsl(210, 6%, 39%) !default;
-
-$gray-neutral-95: hsl(0, 0%, 95%) !default;
-$gray-neutral-90: hsl(0, 0%, 90%) !default;
-$gray-neutral-80: hsl(0, 0%, 80%) !default;
-$gray-neutral-70: hsl(0, 0%, 70%) !default;
-$gray-neutral-60: hsl(0, 0%, 60%) !default;
-$gray-neutral-50: hsl(0, 0%, 50%) !default;
-$gray-neutral-40: hsl(0, 0%, 40%) !default;
-$gray-neutral-30: hsl(0, 0%, 30%) !default;
-$gray-neutral-20: hsl(0, 0%, 20%) !default;
-$gray-neutral-10: hsl(0, 0%, 10%) !default;
-
-// black
-$black: hsl(0, 0%, 0%) !default;
-$black-a10: hsla(0, 0%, 0%, 0.1) !default;
-$black-a20: hsla(0, 0%, 0%, 0.2) !default;
-$black-a30: hsla(0, 0%, 0%, 0.3) !default;
-$black-a40: hsla(0, 0%, 0%, 0.4) !default;
-$black-a50: hsla(0, 0%, 0%, 0.5) !default;
-
-// white
-$white: hsl(0, 0%, 100%) !default;
-$white-a10: hsla(0, 0%, 100%, 0.1) !default;
-$white-a20: hsla(0, 0%, 100%, 0.2) !default;
-$white-a30: hsla(0, 0%, 100%, 0.3) !default;
-$white-a40: hsla(0, 0%, 100%, 0.4) !default;
-$white-a50: hsla(0, 0%, 100%, 0.5) !default;
-$white-a60: hsla(0, 0%, 100%, 0.6) !default;
-$white-a70: hsla(0, 0%, 100%, 0.7) !default;
-$white-a80: hsla(0, 0%, 100%, 0.8) !default;
-
-// Blue LV
-$blue-LV: hsl(199, 68%, 65%);
-$blue-LV-dark: hsl(203, 67%, 52%);
-
-// ***************** //
-// BASE THEME COLORS
-// ***************** //
-
-
-
-
-$color-neutral: $gray-procelain !default;
-
-$primary-color: $blue-LV !default;
-$primary-color-dark: $blue-LV-dark !default;
-
-$alert-color-lighter: $color-sanguine-lighter !default;
-$alert-color-light: $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-$alert-color-dark: $color-sanguine-dark !default;
-$alert-color-darker: $color-sanguine-darker !default;
-
-$color-accent-lighter: $gray-navy-lighter !default;
-$color-accent-light: $gray-navy-light !default;
-$color-accent: $gray-navy !default;
-$color-accent-dark: $gray-navy-dark !default;
-$color-accent-darker: $gray-navy-darker !default;
-
-$white: $gray-procelain !default;
-$primary-color: $blue-LV !default;
-$color-bg-alt: $gray-navy-lighter !default;
-
-color-variant($sucess-color, lighter): $color-lime-lighter !default;
-color-variant($sucess-color, light): $color-lime-light !default;
-$sucess-color: $color-lime !default;
-color-variant($sucess-color, dark): $color-lime-dark !default;
-color-variant($sucess-color, darker): $color-lime-darker !default;
-
-color-variant($primary-color, lighter): $color-teal-lighter !default;
-color-variant($primary-color, light): $color-teal-light !default;
-$color-primary: $color-teal !default;
-color-variant($primary-color, dark): $color-teal-dark !default;
-color-variant($primary-color, darker): $color-teal-darker !default;
-
-color-variant($primary-color, lighter): $color-sky-lighter !default;
-color-variant($primary-color, light): $color-sky-light !default;
-$color-info: $color-sky !default;
-color-variant($primary-color, dark): $color-sky-dark !default;
-color-variant($primary-color, darker): $color-sky-darker !default;
-
-$color-warning-lighter: $color-clay-lighter !default;
-$color-warning-light: $color-clay-light !default;
-$color-warning: $color-clay !default;
-$color-warning-dark: $color-clay-dark !default;
-$color-warning-darker: $color-clay-darker !default;
-
-color-variant($alert-color, lighter): $color-sanguine-lighter !default;
-color-variant($alert-color, light): $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-color-variant($alert-color, dark): $color-sanguine-dark !default;
-color-variant($alert-color, darker): $color-sanguine-darker !default;
-*/
 .component-bloc {
   margin: 0;
   margin-bottom: 2rem;
@@ -885,142 +613,6 @@ color-variant($alert-color, darker): $color-sanguine-darker !default;
   color: #5aa4d2;
 }
 
-/*
-$color-teal-lighter: hsl(176, 58%, 61%) !default;
-$color-teal-light: hsl(176, 58%, 55%) !default;
-$color-teal: hsl(176, 87%, 34%) !default;
-$color-teal-dark: hsl(176, 98%, 25%) !default;
-$color-teal-darker: hsl(176, 100%, 20%) !default;
-
-$color-lime-lighter: hsl(89, 70%, 72%) !default;
-$color-lime-light: hsl(89, 70%, 58%) !default;
-$color-lime: hsl(89, 70%, 48%) !default;
-$color-lime-dark: hsl(89, 70%, 41%) !default;
-$color-lime-darker: hsl(89, 70%, 35%) !default;
-
-$color-sky-lighter: hsl(204, 70%, 83%) !default;
-$color-sky-light: hsl(204, 70%, 75%) !default;
-$color-sky: hsl(204, 70%, 66%) !default;
-$color-sky-dark: hsl(204, 70%, 58%) !default;
-$color-sky-darker: hsl(204, 70%, 53%) !default;
-
-$color-clay-lighter: hsl(38, 98%, 71%) !default;
-$color-clay-light: hsl(38, 98%, 63%) !default;
-$color-clay: hsl(38, 99%, 57%) !default;
-$color-clay-dark: hsl(38, 100%, 48%) !default;
-$color-clay-darker: hsl(38, 100%, 38%) !default;
-
-$color-sanguine-lighter: hsl(1, 84%, 67%) !default;
-$color-sanguine-light: hsl(1, 84%, 59%) !default;
-$color-sanguine: hsl(1, 63%, 52%) !default;
-$color-sanguine-dark: hsl(1, 81%, 36%) !default;
-$color-sanguine-darker: hsl(1, 84%, 28%) !default;
-
-
-// gray
-$gray-procelain: hsl(210, 33%, 95%) !default;
-
-$gray-navy-lighter: hsl(210, 22%, 64%) !default;
-$gray-navy-light: hsl(210, 22%, 51%) !default;
-$gray-navy: hsl(210, 22%, 43%) !default;
-$gray-navy-dark: hsl(210, 22%, 37%) !default;
-$gray-navy-darker: hsl(210, 22%, 21%) !default;
-
-$gray-iron: hsl(210, 6%, 82%) !default;
-$gray-default: hsl(210, 6%, 39%) !default;
-
-$gray-neutral-95: hsl(0, 0%, 95%) !default;
-$gray-neutral-90: hsl(0, 0%, 90%) !default;
-$gray-neutral-80: hsl(0, 0%, 80%) !default;
-$gray-neutral-70: hsl(0, 0%, 70%) !default;
-$gray-neutral-60: hsl(0, 0%, 60%) !default;
-$gray-neutral-50: hsl(0, 0%, 50%) !default;
-$gray-neutral-40: hsl(0, 0%, 40%) !default;
-$gray-neutral-30: hsl(0, 0%, 30%) !default;
-$gray-neutral-20: hsl(0, 0%, 20%) !default;
-$gray-neutral-10: hsl(0, 0%, 10%) !default;
-
-// black
-$black: hsl(0, 0%, 0%) !default;
-$black-a10: hsla(0, 0%, 0%, 0.1) !default;
-$black-a20: hsla(0, 0%, 0%, 0.2) !default;
-$black-a30: hsla(0, 0%, 0%, 0.3) !default;
-$black-a40: hsla(0, 0%, 0%, 0.4) !default;
-$black-a50: hsla(0, 0%, 0%, 0.5) !default;
-
-// white
-$white: hsl(0, 0%, 100%) !default;
-$white-a10: hsla(0, 0%, 100%, 0.1) !default;
-$white-a20: hsla(0, 0%, 100%, 0.2) !default;
-$white-a30: hsla(0, 0%, 100%, 0.3) !default;
-$white-a40: hsla(0, 0%, 100%, 0.4) !default;
-$white-a50: hsla(0, 0%, 100%, 0.5) !default;
-$white-a60: hsla(0, 0%, 100%, 0.6) !default;
-$white-a70: hsla(0, 0%, 100%, 0.7) !default;
-$white-a80: hsla(0, 0%, 100%, 0.8) !default;
-
-// Blue LV
-$blue-LV: hsl(199, 68%, 65%);
-$blue-LV-dark: hsl(203, 67%, 52%);
-
-// ***************** //
-// BASE THEME COLORS
-// ***************** //
-
-
-
-
-$color-neutral: $gray-procelain !default;
-
-$primary-color: $blue-LV !default;
-$primary-color-dark: $blue-LV-dark !default;
-
-$alert-color-lighter: $color-sanguine-lighter !default;
-$alert-color-light: $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-$alert-color-dark: $color-sanguine-dark !default;
-$alert-color-darker: $color-sanguine-darker !default;
-
-$color-accent-lighter: $gray-navy-lighter !default;
-$color-accent-light: $gray-navy-light !default;
-$color-accent: $gray-navy !default;
-$color-accent-dark: $gray-navy-dark !default;
-$color-accent-darker: $gray-navy-darker !default;
-
-$white: $gray-procelain !default;
-$primary-color: $blue-LV !default;
-$color-bg-alt: $gray-navy-lighter !default;
-
-color-variant($sucess-color, lighter): $color-lime-lighter !default;
-color-variant($sucess-color, light): $color-lime-light !default;
-$sucess-color: $color-lime !default;
-color-variant($sucess-color, dark): $color-lime-dark !default;
-color-variant($sucess-color, darker): $color-lime-darker !default;
-
-color-variant($primary-color, lighter): $color-teal-lighter !default;
-color-variant($primary-color, light): $color-teal-light !default;
-$color-primary: $color-teal !default;
-color-variant($primary-color, dark): $color-teal-dark !default;
-color-variant($primary-color, darker): $color-teal-darker !default;
-
-color-variant($primary-color, lighter): $color-sky-lighter !default;
-color-variant($primary-color, light): $color-sky-light !default;
-$color-info: $color-sky !default;
-color-variant($primary-color, dark): $color-sky-dark !default;
-color-variant($primary-color, darker): $color-sky-darker !default;
-
-$color-warning-lighter: $color-clay-lighter !default;
-$color-warning-light: $color-clay-light !default;
-$color-warning: $color-clay !default;
-$color-warning-dark: $color-clay-dark !default;
-$color-warning-darker: $color-clay-darker !default;
-
-color-variant($alert-color, lighter): $color-sanguine-lighter !default;
-color-variant($alert-color, light): $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-color-variant($alert-color, dark): $color-sanguine-dark !default;
-color-variant($alert-color, darker): $color-sanguine-darker !default;
-*/
 body, html {
   margin: 0 !important;
   padding: 0 !important;
@@ -1042,142 +634,6 @@ ul li {
   font-weight: bold;
 }
 
-/*
-$color-teal-lighter: hsl(176, 58%, 61%) !default;
-$color-teal-light: hsl(176, 58%, 55%) !default;
-$color-teal: hsl(176, 87%, 34%) !default;
-$color-teal-dark: hsl(176, 98%, 25%) !default;
-$color-teal-darker: hsl(176, 100%, 20%) !default;
-
-$color-lime-lighter: hsl(89, 70%, 72%) !default;
-$color-lime-light: hsl(89, 70%, 58%) !default;
-$color-lime: hsl(89, 70%, 48%) !default;
-$color-lime-dark: hsl(89, 70%, 41%) !default;
-$color-lime-darker: hsl(89, 70%, 35%) !default;
-
-$color-sky-lighter: hsl(204, 70%, 83%) !default;
-$color-sky-light: hsl(204, 70%, 75%) !default;
-$color-sky: hsl(204, 70%, 66%) !default;
-$color-sky-dark: hsl(204, 70%, 58%) !default;
-$color-sky-darker: hsl(204, 70%, 53%) !default;
-
-$color-clay-lighter: hsl(38, 98%, 71%) !default;
-$color-clay-light: hsl(38, 98%, 63%) !default;
-$color-clay: hsl(38, 99%, 57%) !default;
-$color-clay-dark: hsl(38, 100%, 48%) !default;
-$color-clay-darker: hsl(38, 100%, 38%) !default;
-
-$color-sanguine-lighter: hsl(1, 84%, 67%) !default;
-$color-sanguine-light: hsl(1, 84%, 59%) !default;
-$color-sanguine: hsl(1, 63%, 52%) !default;
-$color-sanguine-dark: hsl(1, 81%, 36%) !default;
-$color-sanguine-darker: hsl(1, 84%, 28%) !default;
-
-
-// gray
-$gray-procelain: hsl(210, 33%, 95%) !default;
-
-$gray-navy-lighter: hsl(210, 22%, 64%) !default;
-$gray-navy-light: hsl(210, 22%, 51%) !default;
-$gray-navy: hsl(210, 22%, 43%) !default;
-$gray-navy-dark: hsl(210, 22%, 37%) !default;
-$gray-navy-darker: hsl(210, 22%, 21%) !default;
-
-$gray-iron: hsl(210, 6%, 82%) !default;
-$gray-default: hsl(210, 6%, 39%) !default;
-
-$gray-neutral-95: hsl(0, 0%, 95%) !default;
-$gray-neutral-90: hsl(0, 0%, 90%) !default;
-$gray-neutral-80: hsl(0, 0%, 80%) !default;
-$gray-neutral-70: hsl(0, 0%, 70%) !default;
-$gray-neutral-60: hsl(0, 0%, 60%) !default;
-$gray-neutral-50: hsl(0, 0%, 50%) !default;
-$gray-neutral-40: hsl(0, 0%, 40%) !default;
-$gray-neutral-30: hsl(0, 0%, 30%) !default;
-$gray-neutral-20: hsl(0, 0%, 20%) !default;
-$gray-neutral-10: hsl(0, 0%, 10%) !default;
-
-// black
-$black: hsl(0, 0%, 0%) !default;
-$black-a10: hsla(0, 0%, 0%, 0.1) !default;
-$black-a20: hsla(0, 0%, 0%, 0.2) !default;
-$black-a30: hsla(0, 0%, 0%, 0.3) !default;
-$black-a40: hsla(0, 0%, 0%, 0.4) !default;
-$black-a50: hsla(0, 0%, 0%, 0.5) !default;
-
-// white
-$white: hsl(0, 0%, 100%) !default;
-$white-a10: hsla(0, 0%, 100%, 0.1) !default;
-$white-a20: hsla(0, 0%, 100%, 0.2) !default;
-$white-a30: hsla(0, 0%, 100%, 0.3) !default;
-$white-a40: hsla(0, 0%, 100%, 0.4) !default;
-$white-a50: hsla(0, 0%, 100%, 0.5) !default;
-$white-a60: hsla(0, 0%, 100%, 0.6) !default;
-$white-a70: hsla(0, 0%, 100%, 0.7) !default;
-$white-a80: hsla(0, 0%, 100%, 0.8) !default;
-
-// Blue LV
-$blue-LV: hsl(199, 68%, 65%);
-$blue-LV-dark: hsl(203, 67%, 52%);
-
-// ***************** //
-// BASE THEME COLORS
-// ***************** //
-
-
-
-
-$color-neutral: $gray-procelain !default;
-
-$primary-color: $blue-LV !default;
-$primary-color-dark: $blue-LV-dark !default;
-
-$alert-color-lighter: $color-sanguine-lighter !default;
-$alert-color-light: $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-$alert-color-dark: $color-sanguine-dark !default;
-$alert-color-darker: $color-sanguine-darker !default;
-
-$color-accent-lighter: $gray-navy-lighter !default;
-$color-accent-light: $gray-navy-light !default;
-$color-accent: $gray-navy !default;
-$color-accent-dark: $gray-navy-dark !default;
-$color-accent-darker: $gray-navy-darker !default;
-
-$white: $gray-procelain !default;
-$primary-color: $blue-LV !default;
-$color-bg-alt: $gray-navy-lighter !default;
-
-color-variant($sucess-color, lighter): $color-lime-lighter !default;
-color-variant($sucess-color, light): $color-lime-light !default;
-$sucess-color: $color-lime !default;
-color-variant($sucess-color, dark): $color-lime-dark !default;
-color-variant($sucess-color, darker): $color-lime-darker !default;
-
-color-variant($primary-color, lighter): $color-teal-lighter !default;
-color-variant($primary-color, light): $color-teal-light !default;
-$color-primary: $color-teal !default;
-color-variant($primary-color, dark): $color-teal-dark !default;
-color-variant($primary-color, darker): $color-teal-darker !default;
-
-color-variant($primary-color, lighter): $color-sky-lighter !default;
-color-variant($primary-color, light): $color-sky-light !default;
-$color-info: $color-sky !default;
-color-variant($primary-color, dark): $color-sky-dark !default;
-color-variant($primary-color, darker): $color-sky-darker !default;
-
-$color-warning-lighter: $color-clay-lighter !default;
-$color-warning-light: $color-clay-light !default;
-$color-warning: $color-clay !default;
-$color-warning-dark: $color-clay-dark !default;
-$color-warning-darker: $color-clay-darker !default;
-
-color-variant($alert-color, lighter): $color-sanguine-lighter !default;
-color-variant($alert-color, light): $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-color-variant($alert-color, dark): $color-sanguine-dark !default;
-color-variant($alert-color, darker): $color-sanguine-darker !default;
-*/
 #container {
   width: 100%;
   height: 100%;
@@ -1239,146 +695,1358 @@ a.logo img {
   width: 100%;
 }
 
-/*
-$color-teal-lighter: hsl(176, 58%, 61%) !default;
-$color-teal-light: hsl(176, 58%, 55%) !default;
-$color-teal: hsl(176, 87%, 34%) !default;
-$color-teal-dark: hsl(176, 98%, 25%) !default;
-$color-teal-darker: hsl(176, 100%, 20%) !default;
+.breadcrumb {
+  background: #FFF;
+  font-size: 18px;
+  border-radius: 0;
+}
 
-$color-lime-lighter: hsl(89, 70%, 72%) !default;
-$color-lime-light: hsl(89, 70%, 58%) !default;
-$color-lime: hsl(89, 70%, 48%) !default;
-$color-lime-dark: hsl(89, 70%, 41%) !default;
-$color-lime-darker: hsl(89, 70%, 35%) !default;
+.breadcrumb i {
+  color: #5aa4d2;
+}
 
-$color-sky-lighter: hsl(204, 70%, 83%) !default;
-$color-sky-light: hsl(204, 70%, 75%) !default;
-$color-sky: hsl(204, 70%, 66%) !default;
-$color-sky-dark: hsl(204, 70%, 58%) !default;
-$color-sky-darker: hsl(204, 70%, 53%) !default;
+.breadcrumb a {
+  color: #5aa4d2;
+}
 
-$color-clay-lighter: hsl(38, 98%, 71%) !default;
-$color-clay-light: hsl(38, 98%, 63%) !default;
-$color-clay: hsl(38, 99%, 57%) !default;
-$color-clay-dark: hsl(38, 100%, 48%) !default;
-$color-clay-darker: hsl(38, 100%, 38%) !default;
+.breadcrumb a:hover, .breadcrumb a:active, .breadcrumb a:focus {
+  color: #5aa4d2;
+}
 
-$color-sanguine-lighter: hsl(1, 84%, 67%) !default;
-$color-sanguine-light: hsl(1, 84%, 59%) !default;
-$color-sanguine: hsl(1, 63%, 52%) !default;
-$color-sanguine-dark: hsl(1, 81%, 36%) !default;
-$color-sanguine-darker: hsl(1, 84%, 28%) !default;
+.dropdown-menu.extended {
+  top: 42px;
+  width: 235px;
+  min-width: 160px;
+  max-width: 300px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
 
+.dropdown-menu.extended .link {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 12px;
+  list-style: none;
+}
 
-// gray
-$gray-procelain: hsl(210, 33%, 95%) !default;
+.dropdown-menu.extended .link:hover {
+  background-color: #FFF;
+}
 
-$gray-navy-lighter: hsl(210, 22%, 64%) !default;
-$gray-navy-light: hsl(210, 22%, 51%) !default;
-$gray-navy: hsl(210, 22%, 43%) !default;
-$gray-navy-dark: hsl(210, 22%, 37%) !default;
-$gray-navy-darker: hsl(210, 22%, 21%) !default;
+.dropdown-menu.extended .progress {
+  height: 10px;
+  margin-bottom: 0;
+}
 
-$gray-iron: hsl(210, 6%, 82%) !default;
-$gray-default: hsl(210, 6%, 39%) !default;
+.dropdown-menu.logout {
+  top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 
-$gray-neutral-95: hsl(0, 0%, 95%) !default;
-$gray-neutral-90: hsl(0, 0%, 90%) !default;
-$gray-neutral-80: hsl(0, 0%, 80%) !default;
-$gray-neutral-70: hsl(0, 0%, 70%) !default;
-$gray-neutral-60: hsl(0, 0%, 60%) !default;
-$gray-neutral-50: hsl(0, 0%, 50%) !default;
-$gray-neutral-40: hsl(0, 0%, 40%) !default;
-$gray-neutral-30: hsl(0, 0%, 30%) !default;
-$gray-neutral-20: hsl(0, 0%, 20%) !default;
-$gray-neutral-10: hsl(0, 0%, 10%) !default;
+.dropdown.open .dropdown-menu.logout {
+  display: -ms-flexbox;
+  display: flex;
+}
 
-// black
-$black: hsl(0, 0%, 0%) !default;
-$black-a10: hsla(0, 0%, 0%, 0.1) !default;
-$black-a20: hsla(0, 0%, 0%, 0.2) !default;
-$black-a30: hsla(0, 0%, 0%, 0.3) !default;
-$black-a40: hsla(0, 0%, 0%, 0.4) !default;
-$black-a50: hsla(0, 0%, 0%, 0.5) !default;
+.dropdown-menu.logout .link {
+  width: 33.33333%;
+  border-bottom: 0;
+  text-align: center;
+}
 
-// white
-$white: hsl(0, 0%, 100%) !default;
-$white-a10: hsla(0, 0%, 100%, 0.1) !default;
-$white-a20: hsla(0, 0%, 100%, 0.2) !default;
-$white-a30: hsla(0, 0%, 100%, 0.3) !default;
-$white-a40: hsla(0, 0%, 100%, 0.4) !default;
-$white-a50: hsla(0, 0%, 100%, 0.5) !default;
-$white-a60: hsla(0, 0%, 100%, 0.6) !default;
-$white-a70: hsla(0, 0%, 100%, 0.7) !default;
-$white-a80: hsla(0, 0%, 100%, 0.8) !default;
+.dropdown-menu.logout .link .icon {
+  display: block;
+  font-size: 17px;
+}
 
-// Blue LV
-$blue-LV: hsl(199, 68%, 65%);
-$blue-LV-dark: hsl(203, 67%, 52%);
+.dropdown-menu.logout .link:hover {
+  background: none;
+}
 
-// ***************** //
-// BASE THEME COLORS
-// ***************** //
+.dropdown-menu.logout .link:hover .icon {
+  color: #aad0e8;
+}
 
+.dropdown-menu.logout .link:last-child {
+  width: 100%;
+  border-radius: 0;
+  background: #5d9422;
+}
 
+.dropdown-menu.logout .link:last-child, .dropdown-menu.logout .link:last-child:hover {
+  border-bottom: 0;
+  color: #FFF;
+  text-transform: uppercase;
+}
 
+.dropdown-menu.logout .link:last-child .icon {
+  color: inherit;
+}
 
-$color-neutral: $gray-procelain !default;
+.language {
+  margin-top: 4px;
+}
 
-$primary-color: $blue-LV !default;
-$primary-color-dark: $blue-LV-dark !default;
+.language .dropdown-menu {
+  top: 46px;
+  border: 0;
+}
 
-$alert-color-lighter: $color-sanguine-lighter !default;
-$alert-color-light: $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-$alert-color-dark: $color-sanguine-dark !default;
-$alert-color-darker: $color-sanguine-darker !default;
+.language .dropdown-menu a {
+  padding: 10px;
+  font-size: 13px;
+}
 
-$color-accent-lighter: $gray-navy-lighter !default;
-$color-accent-light: $gray-navy-light !default;
-$color-accent: $gray-navy !default;
-$color-accent-dark: $gray-navy-dark !default;
-$color-accent-darker: $gray-navy-darker !default;
+.language .dropdown-menu a:last-child {
+  border-bottom: none;
+}
 
-$white: $gray-procelain !default;
-$primary-color: $blue-LV !default;
-$color-bg-alt: $gray-navy-lighter !default;
+ul.form-collection {
+  margin-top: 20px;
+}
 
-color-variant($sucess-color, lighter): $color-lime-lighter !default;
-color-variant($sucess-color, light): $color-lime-light !default;
-$sucess-color: $color-lime !default;
-color-variant($sucess-color, dark): $color-lime-dark !default;
-color-variant($sucess-color, darker): $color-lime-darker !default;
+ul.form-collection li {
+  margin-bottom: 20px;
+  padding: 10px;
+  overflow-y: auto;
+}
 
-color-variant($primary-color, lighter): $color-teal-lighter !default;
-color-variant($primary-color, light): $color-teal-light !default;
-$color-primary: $color-teal !default;
-color-variant($primary-color, dark): $color-teal-dark !default;
-color-variant($primary-color, darker): $color-teal-darker !default;
+ul.form-collection li.form-collection-add {
+  border: 0 solid transparent;
+  text-align: right;
+}
 
-color-variant($primary-color, lighter): $color-sky-lighter !default;
-color-variant($primary-color, light): $color-sky-light !default;
-$color-info: $color-sky !default;
-color-variant($primary-color, dark): $color-sky-dark !default;
-color-variant($primary-color, darker): $color-sky-darker !default;
+.form .form-title {
+  padding: 1rem;
+  background-color: #5aa4d2;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: bold;
+}
 
-$color-warning-lighter: $color-clay-lighter !default;
-$color-warning-light: $color-clay-light !default;
-$color-warning: $color-clay !default;
-$color-warning-dark: $color-clay-dark !default;
-$color-warning-darker: $color-clay-darker !default;
+.form .field-wrapper {
+  padding: 2rem;
+  padding-right: 0;
+  background-color: #FFF;
+}
 
-color-variant($alert-color, lighter): $color-sanguine-lighter !default;
-color-variant($alert-color, light): $color-sanguine-light !default;
-$alert-color: $color-sanguine !default;
-color-variant($alert-color, dark): $color-sanguine-dark !default;
-color-variant($alert-color, darker): $color-sanguine-darker !default;
-*/
+.form .field-wrapper img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form .row {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: .5rem;
+  margin-left: 0;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.form .row label {
+  margin: 0;
+  background-color: #464444;
+  color: #FFF;
+  -ms-flex: calc(100% / 6);
+      flex: calc(100% / 6);
+}
+
+.form .row.is-valid label {
+  background-color: #77be2b;
+}
+
+.form .row.has-error label {
+  background-color: #cc0000;
+}
+
+.full-width .nav li.dropdown a:hover,
+.full-width .nav li.dropdown.open a:focus, .full-width .nav li.active a, .full-width .nav > li > a:hover, .full-width .nav .open > a, .full-width .nav .open > a:hover, .full-width .nav .open > a:focus {
+  transition: all 0.3s ease 0s;
+  background-color: #5aa4d2;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.full-width .dropdown-menu {
+  box-shadow: none;
+}
+
+.full-width .dropdown-menu.extended.logout > li > a:hover {
+  background: none !important;
+  color: #aad0e8 !important;
+}
+
+.full-width .dropdown-menu > li > a {
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.full-width #main-content {
+  margin-left: 0;
+}
+
+.full-width .navbar-header {
+  width: 100%;
+}
+
+.login-body {
+  background-color: #FFF;
+}
+
+.form-signin {
+  max-width: 330px;
+  margin: 100px auto 0;
+  border-radius: 5px;
+  background: #FFF;
+}
+
+.form-signin .checkbox {
+  margin-bottom: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: none;
+}
+
+.form-signin .btn-login {
+  margin-bottom: 20px;
+  background: #5aa4d2;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  box-shadow: 0 4px #990000;
+}
+
+.form-signin p {
+  color: #605d5d;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.form-signin a {
+  color: #5aa4d2;
+}
+
+.form-signin a:hover {
+  color: #605d5d;
+}
+
+.form-signin h2.form-signin-heading {
+  margin: 0;
+  padding: 20px 15px;
+  border-radius: 5px 5px 0 0;
+  background: #5aa4d2;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login-wrap {
+  padding: 20px;
+}
+
+.log-arrow-up {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 20px;
+  height: 11px;
+  background: url(../img/arrow-up.png) no-repeat;
+}
+
+.mediatheque {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mediatheque .figure {
+  position: relative;
+  width: calc(100% - 15px * 2);
+  height: 0;
+  margin: 15px 15px;
+  padding-bottom: calc(100% - 15px * 2);
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media (min-width: 37.5em) {
+  .mediatheque .figure {
+    width: calc(100% / 2 - 15px * 2);
+    padding-bottom: calc(100% / 2 - 15px * 2);
+  }
+}
+
+@media (min-width: 64em) {
+  .mediatheque .figure {
+    width: calc(100% / 3 - 15px * 2);
+    padding-bottom: calc(100% / 3 - 15px * 2);
+  }
+}
+
+@media (min-width: 70em) {
+  .mediatheque .figure {
+    width: calc(100% / 4 - 15px * 2);
+    padding-bottom: calc(100% / 4 - 15px * 2);
+  }
+}
+
+@media (min-width: 85em) {
+  .mediatheque .figure {
+    width: calc(100% / 6 - 15px * 2);
+    padding-bottom: calc(100% / 6 - 15px * 2);
+  }
+}
+
+.mediatheque .figure:hover .actions {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mediatheque .figure:hover .caption {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mediatheque .actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all .3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mediatheque .actions .btn {
+  padding: .50rem;
+}
+
+.mediatheque .actions .fa {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.mediatheque .caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  transition: all .3s ease;
+  color: #FFF;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navbar-inverse {
+  background: #605d5d;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > ul > li a:hover {
+  color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > li a:hover {
+  color: #2c2b2b;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #464444;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #464444;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-bottom-color: #FFF;
+  border-top-color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a {
+  color: #000;
+}
+
+.navbar-inverse .navbar-nav > .open .dropdown-menu > li > a:hover {
+  color: #FFF;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFF;
+}
+
+.nav-justified {
+  width: auto !important;
+}
+
+.nav-justified li:last-child > a:hover,
+.nav-justified li.active:last-child > a {
+  border-radius: 0 4px 0 0 !important;
+}
+
+.card-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 16px;
+  border-radius: 0;
+  line-height: 50px;
+}
+
+.collapsible.card-header {
+  display: block;
+}
+
+.tab-right.card-header .nav li:first-child.active > a {
+  border-radius: 0;
+}
+
+.tab-right.card-header .nav li:last-child.active > a {
+  border-radius: 0;
+}
+
+.tab-right.card-header .nav-tabs > li > a {
+  margin-right: 0;
+  margin-left: 1px;
+}
+
+.composed.card-header {
+  padding: 0;
+  border-radius: 0;
+}
+
+.composed.card-header h3 {
+  -ms-flex: 1;
+      flex: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.composed.card-header .combo {
+  padding: 0 16px;
+  background: #464444;
+  color: inherit;
+  line-height: inherit;
+  text-align: center;
+}
+
+.composed.card-header .combo:first-child {
+  width: 50px;
+  border-radius: 0;
+}
+
+.composed.card-header .combo:last-child {
+  border-radius: 0;
+}
+
+.composed.card-header .combo.text {
+  font-size: 12px;
+}
+
+.composed.card-header .combo.dropdown {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.composed.card-header .combo.dropdown .btn {
+  padding: 0 16px;
+  border: 0;
+  background: none;
+  font: inherit;
+}
+
+.composed.card-header .combo + .combo {
+  margin-left: 1px;
+}
+
+.composed.card-header .combo .icon {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.composed.card-header .combo button {
+  color: #FFF;
+}
+
+.composed.card-header a.combo:hover, .composed.card-header .combo.dropdown:hover {
+  background: #2c2b2b;
+}
+
+.card-header .nav {
+  margin: 0 -16px -1px;
+  border: medium none;
+  font-size: 13px;
+}
+
+.card-header .nav > li:first-child.active > a {
+  border-radius: 0;
+}
+
+.card-header .nav > li:first-child.active > a:hover {
+  border-radius: 0;
+}
+
+.card-header .nav > li > a {
+  border-width: 0;
+  border-radius: 0;
+  color: #FFF;
+  line-height: 1.75rem;
+}
+
+.card-header .nav > li > a:hover {
+  background: #FFF;
+  color: #464444;
+}
+
+.card-header .nav > li.active > a {
+  border-width: 0;
+  border-radius: 0;
+  background: #FFF;
+  color: #464444;
+}
+
+.card-header .nav > li.active > a:hover, .card-header .nav > li.active > a:focus {
+  border-width: 0;
+  border-radius: 0;
+}
+
+.card-header .actions a {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.card-tabs {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+
+.card-tabs .tabs-list {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.card-tabs .tabs-list .tab {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  margin: 0;
+}
+
+.card-tabs .tabs-list .tab a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  margin: 0;
+  border: none;
+  text-align: center;
+}
+
+.card-tabs .tabs-list .tab a .icon {
+  display: block;
+  font-size: 16px;
+}
+
+.card-tabs .tabs-list .tab a:hover {
+  position: relative;
+  background: #FFF;
+}
+
+.card-tabs .tabs-list .tab a:hover .icon {
+  color: #5aa4d2;
+}
+
+.card-tabs .tabs-list .tab a.active {
+  position: relative;
+  background: #FFF;
+  border-bottom: 0;
+}
+
+.card-tabs .tabs-list .tab a.active .icon {
+  color: #5aa4d2;
+}
+
+.card-tabs .tabs-list .tab:last-child a {
+  border-right: none;
+}
+
+.card-footer.card-tabs .tabs-list {
+  border-radius: 0;
+}
+
+.card-footer.card-tabs .tabs-list .tab a {
+  border-radius: 0;
+}
+
+.card-footer.card-tabs .tabs-list .tab a.active {
+  border-top-color: transparent;
+}
+
+.card-footer.card-tabs .tabs-list .tab:first-child a {
+  border-radius: 0;
+}
+
+.card-footer.card-tabs .tabs-list .tab:last-child a {
+  border-right: none;
+  border-radius: 0;
+}
+
+.card-signets {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.card-signets .signets-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-order: 1;
+      order: 1;
+  min-width: 5em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.card-signets .signets-list .no-wrap {
+  white-space: nowrap;
+}
+
+.card-signets .signets-list .icon {
+  font-size: 16px;
+  vertical-align: bottom;
+}
+
+.card-signets .signets-list .signet > * {
+  border-radius: 0;
+}
+
+.card-signets .signets-list .signet > *:hover .icon, .card-signets .signets-list .active .icon {
+  color: #5aa4d2;
+}
+
+.card-signets .card-block, .card-signets .card-block:last-child {
+  -ms-flex-order: 0;
+      order: 0;
+  border-radius: 0;
+}
+
+.reverse.card-signets .signets-list {
+  -ms-flex-order: 0;
+      order: 0;
+}
+
+.reverse.card-signets .signets-list .signet > * {
+  border-radius: 0;
+}
+
+.reverse.card-signets .card-block {
+  -ms-flex-order: 1;
+      order: 1;
+  border-radius: 0;
+}
+
+.card-signets .card-block {
+  border-width: 0;
+  border-style: solid;
+  border-color: #464444;
+}
+
+.card-signets .signet {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 1px 0 0 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.card-signets .signet + .signet {
+  margin-left: 0;
+}
+
+.card-signets .signet:first-child {
+  margin-top: 2px;
+}
+
+.card-signets .signet > * {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card-signets .signet > *:hover {
+  background: #FFF;
+}
+
+.card-signets .signet.active {
+  z-index: 15;
+}
+
+.card-signets .signet.active > * {
+  background: #FFF;
+  z-index: 15;
+}
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.card-sponsor {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.card-block {
+  -ms-flex: 1;
+      flex: 1;
+  background: #FFF;
+}
+
+.card-block:last-child {
+  border-radius: 0;
+}
+
+.card-block-sponsor {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.card-block-sponsor:last-child {
+  border-radius: 0;
+}
+
+.search {
+  width: 20px;
+  margin-top: 6px;
+  padding: 0 5px 0 35px;
+  transition: all 300ms ease;
+  border: 1px solid #FFF;
+  background: url(../img/search-icon.jpg) no-repeat 10px 8px;
+  color: #FFF;
+  box-shadow: none;
+}
+
+.search:focus {
+  width: 180px;
+  margin-top: 5px;
+  transition: all 300ms ease;
+  font-weight: 300;
+  box-shadow: none;
+}
+
+#main-content {
+  margin-left: 17rem;
+  transition: all 300ms ease-in-out;
+  transition-property: margin;
+}
+
+.navigation-closed #main-content {
+  margin-left: 4rem;
+}
+
+.navigation-closed #navigation .sidebar-menu {
+  width: 4rem;
+}
+
+.navigation-closed #navigation .menu-sub-toggle {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.navigation-closed #navigation .sub-menu {
+  max-width: 0;
+  max-height: 0;
+  transition-duration: 150ms;
+  transition-delay: 0ms, 150ms;
+}
+
+.sidebar-toggle-box {
+  float: left;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.sidebar-toggle-box .fa-bars {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#navigation {
+  position: fixed;
+  height: 100%;
+  background: #2c2b2b;
+}
+
+.sidebar-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 17rem;
+  margin: 60px 0 0;
+  padding: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar-menu .menu-item {
+  display: block;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  transition: all 300ms ease-in-out;
+  border-radius: 0;
+}
+
+.sidebar-menu .menu-item .menu-label {
+  color: inherit;
+}
+
+.sidebar-menu .menu-item:hover, .sidebar-menu .menu-item:focus, .sidebar-menu .menu-item.is-open {
+  background: #5aa4d2;
+}
+
+.sidebar-menu .menu-item:hover .icon, .sidebar-menu .menu-item:focus .icon, .sidebar-menu .menu-item.is-open .icon {
+  color: #FFF;
+}
+
+.sidebar-menu .menu-item:hover > .menu-link, .sidebar-menu .menu-item:focus > .menu-link, .sidebar-menu .menu-item.is-open > .menu-link {
+  color: #FFF;
+}
+
+.sidebar-menu .menu-item.is-open .menu-sub-toggle .icon-toggle {
+  transform: rotate(180deg);
+}
+
+.sidebar-menu .menu-item.is-open .sub-menu {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.sidebar-menu .menu-link {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding: 0;
+  outline: none;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #FFF;
+}
+
+.sidebar-menu a,
+.sidebar-menu a.menu-link {
+  -ms-flex: 1;
+      flex: 1;
+  padding: 15px 0;
+  color: #605d5d;
+}
+
+.sidebar-menu .icon {
+  width: 4rem;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sidebar-menu .menu-sub-toggle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0.75em 1em 0 0;
+  transition: all 300ms ease-in-out;
+  border-radius: 50%;
+  background: #464444;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.sidebar-menu .menu-sub-toggle .icon-toggle {
+  margin: auto;
+  transition: all 300ms ease-in-out;
+  transition-duration: 150ms;
+}
+
+.sidebar-menu .menu-label {
+  -ms-flex: 1;
+      flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-menu .sub-menu {
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  transition-property: max-width, max-height;
+  transition-delay: 300ms;
+}
+
+.sidebar-menu .sub-menu .menu-item {
+  margin: 0;
+  padding-left: 4rem;
+}
+
+.sidebar-menu .sub-menu .menu-link {
+  color: #FFF;
+}
+
+.sidebar-menu .sub-menu .menu-link:hover {
+  color: #ff3333;
+}
+
+.timeline .timeline-item::before, .timeline .timeline-item.alt::after {
+  display: block;
+  width: 50%;
+  content: "";
+}
+
+.timeline {
+  display: table;
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  content: "";
+  z-index: 0;
+}
+
+.timeline .timeline-item {
+  display: table-row;
+  position: relative;
+}
+
+.timeline .timeline-item .timeline-point {
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+}
+
+.timeline .timeline-item .timeline-point .timeline-icon {
+  display: block;
+  position: relative;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+}
+
+.timeline .timeline-item .timeline-point .timeline-icon.red {
+  background: #cc0000;
+  box-shadow: 0 0 1px 3px #cc0000;
+}
+
+.timeline .timeline-item .timeline-point .timeline-icon.green {
+  background: #77be2b;
+  box-shadow: 0 0 1px 3px #77be2b;
+}
+
+.timeline .timeline-item .timeline-point .timeline-icon.blue {
+  background: #aad0e8;
+  box-shadow: 0 0 1px 3px #aad0e8;
+}
+
+.timeline .timeline-item .timeline-point .timeline-icon.purple {
+  background: #0aa292;
+  box-shadow: 0 0 1px 3px #0aa292;
+}
+
+.timeline .timeline-item .timeline-point .timeline-icon.light-green {
+  background: #a9df70;
+  box-shadow: 0 0 1px 3px #a9df70;
+}
+
+.timeline .timeline-item .timeline-point .timeline-date {
+  position: relative;
+  left: -70px;
+}
+
+.timeline .timeline-item .timeline-desk {
+  display: block;
+  width: 50%;
+  margin-right: 0;
+  margin-left: auto;
+  vertical-align: top;
+}
+
+.timeline .timeline-item .timeline-desk h2 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.timeline .timeline-item .timeline-desk p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.timeline .timeline-item .timeline-desk .arrow {
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.timeline .timeline-item .timeline-desk .card {
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+.timeline .timeline-item .timeline-desk .card .card-block {
+  margin-top: -3px;
+}
+
+.timeline .timeline-item.alt::before {
+  display: none;
+}
+
+.timeline .timeline-item.alt .timeline-date {
+  right: -25px;
+  left: auto;
+}
+
+.timeline .timeline-item.alt .timeline-desk {
+  margin-right: auto;
+  margin-left: 0;
+  text-align: right;
+}
+
+.timeline .timeline-item.alt .timeline-desk .arrow {
+  right: -7px;
+  left: auto;
+  border-right: 0 solid transparent;
+}
+
+.timeline .timeline-item.alt .timeline-desk .card {
+  margin-right: 25px;
+  margin-left: 0;
+}
+
+.timeline .time-icon::before {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.table tbody tr {
+  background-color: #FFF;
+}
+
+.table .fa {
+  width: 2rem;
+  padding: .2rem .5rem;
+  border-radius: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+.table .fa-check {
+  background-color: rgba(119, 190, 43, 0.6);
+}
+
+.table .fa-close {
+  background-color: rgba(204, 0, 0, 0.6);
+}
+
+.input-switch {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.input-switch input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 100%;
+  margin: 0;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.input-switch--label {
+  -ms-flex-order: 0;
+      order: 0;
+  margin: 0 5px;
+}
+
+.input-switch.reverse .input-switch--label {
+  -ms-flex-order: 1;
+      order: 1;
+}
+
+input[type="checkbox"]:checked ~ .input-switch--label {
+  color: #2a709c;
+}
+
+.input-switch--toggle {
+  -ms-flex-order: 1;
+      order: 1;
+  width: 24px;
+  height: 14px;
+  padding: 2px;
+  transition: background-color 200ms;
+  border-radius: 50%/14px;
+  background-color: currentColor;
+  cursor: pointer;
+}
+
+.input-switch--toggle::-moz-selection {
+  background: transparent;
+  color: inherit;
+}
+
+.input-switch--toggle::selection {
+  background: transparent;
+  color: inherit;
+}
+
+.input-switch--toggle::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  transform: translateX(100%);
+  transition: transform 200ms;
+  border-radius: 100%;
+  background: #FFF;
+  content: "";
+}
+
+input[type="checkbox"]:checked ~ .input-switch--toggle::before {
+  transform: translateX(0%);
+}
+
+.input-switch.reverse .input-switch--toggle {
+  -ms-flex-order: 0;
+      order: 0;
+}
+
+input[type="checkbox"]:checked ~ .input-switch--toggle {
+  background: #2a709c;
+}
+
+.top-nav {
+  float: right;
+  margin-top: 7px;
+}
+
+.top-nav .username {
+  color: #605d5d;
+  font-size: 13px;
+}
+
+.top-nav ul.top-menu > li {
+  margin-left: 10px;
+  float: left;
+}
+
+.top-nav ul.top-menu > li > a {
+  margin-right: 0;
+  padding: 6px;
+  border-radius: 0;
+  background: none;
+}
+
+.top-nav ul.top-menu > li > a:hover {
+  border-radius: 0;
+  color: #464444;
+  text-decoration: none;
+}
+
+.top-nav ul.top-menu > li > a:hover .caret {
+  border-top-color: #000;
+  border-bottom-color: #000;
+}
+
+.top-nav ul.top-menu > li .dropdown-menu.logout {
+  width: 268px !important;
+}
+
+.top-nav .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.top-nav .nav li a {
+  display: block;
+}
+
+.top-toolbar {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFF;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  min-height: 65px;
+}
+
+.top-toolbar .btn-group {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-toolbar .tabs-list {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  border-bottom: 0;
+  -ms-flex-align: shrink;
+      align-items: shrink;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.top-toolbar .tabs-list .tab {
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+  margin: 0;
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.top-toolbar .tabs-list .tab .nav-link {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+}
+
+.top-toolbar .tabs-list .tab .nav-link .title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.top-toolbar .tabs-list .tab .nav-link .infos {
+  font-size: .9rem;
+}
+
+.top-toolbar .tabs-list .tab span {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.top-toolbar .tabs-list .tab.tab-title {
+  background-color: #5aa4d2;
+}
+
+.top-toolbar .tabs-list .tab.tab-title span {
+  padding: 1rem;
+  color: #FFF;
+  font-style: italic;
+  font-weight: bold;
+}
+
 ::-moz-selection {
   background: #464444;
   color: #FFF;
 }
+
 ::selection {
   background: #464444;
   color: #FFF;

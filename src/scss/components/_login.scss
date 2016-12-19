@@ -1,34 +1,26 @@
-@import "../variables/sizes";
-@import "../variables/urls";
-@import "../variables/colors";
+// @import "../variables/sizes";
+// @import "../variables/urls";
+// @import "../variables/colors";
 
 .login-body {
   background-color: $white;
 }
-
 .form-signin {
   max-width: 330px;
   margin: 100px auto 0;
   border-radius: 5px;
-
   background: $white;
-
   .checkbox {
     margin-bottom: 14px;
-
-
     font-family: $font-0, $font-1;
     font-weight: 300;
   }
 
   .form-control {
     position: relative;
-
     height: auto;
     padding: 10px;
-
     font-size: 16px;
-
     box-sizing: border-box;
 
     &:focus {
