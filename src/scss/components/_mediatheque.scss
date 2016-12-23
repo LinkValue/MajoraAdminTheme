@@ -71,7 +71,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
 
       transition: all ease .3s;
 
-      background-color: $black-a20;
+      background-color: color-variant($black, 'lighter');
 
       content: "";
       opacity: 0;

@@ -31,7 +31,7 @@
 
       height: 100%;
 
-      background-color: $black-a20;
+      background-color: color-variant($black, 'lighter');
 
       content: "";
     }
