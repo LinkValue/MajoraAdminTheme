@@ -16,6 +16,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
     position: relative;
 
     width: $figure-size;
+    min-height: 11em;
     height: 0;
 
     margin: 0 $figure-spacing--sides $figure-spacing--bottom;
