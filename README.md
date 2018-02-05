@@ -1,4 +1,6 @@
 #MajoraAdminTheme
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLinkValue%2FMajoraAdminTheme.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FLinkValue%2FMajoraAdminTheme?ref=badge_shield)
+
 ===
 
 Simple Bootstrap 3 admin theme, helps to provide a clean admin interface.
@@ -34,3 +36,7 @@ To generate a new version of the dist css, run:
 To update the demo file or add new components, you can work with npm scritps and browser sync to facilitate de developement.
 
 Run `npm run watch` to start watching files modification and compile on change, as well as live reloading your browser.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FLinkValue%2FMajoraAdminTheme.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FLinkValue%2FMajoraAdminTheme?ref=badge_large)
