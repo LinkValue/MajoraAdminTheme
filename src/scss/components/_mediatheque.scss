@@ -16,6 +16,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
     position: relative;
 
     width: $figure-size;
+    min-height: 11em;
     height: 0;
 
     margin: 0 $figure-spacing--sides $figure-spacing--bottom;
@@ -34,6 +35,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
       $figure-size: calc(100% / 2 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
+      min-height: 26em;
       padding-bottom: $figure-size;
     }
 
@@ -41,6 +43,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
       $figure-size: calc(100% / 3 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
+      min-height: 20em;
       padding-bottom: $figure-size;
     }
 
@@ -48,6 +51,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
       $figure-size: calc(100% / 5 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
+      min-height: 14em;
       padding-bottom: $figure-size;
     }
 
@@ -55,6 +59,7 @@ $figure-size: calc(100% - #{$figure-spacing--sides} * 2);
       $figure-size: calc(100% / 7 - #{$figure-spacing--sides} * 2);
 
       width: $figure-size;
+      min-height: 12em;
       padding-bottom: $figure-size;
     }
   }
